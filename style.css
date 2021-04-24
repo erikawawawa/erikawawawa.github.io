@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Work+Sans:wght@400;600&display=swap");
 * {
-  font-family: "Space Mono", monospace;
+  font-family: "Work Sans", sans-serif;
 }
 
 body {
+  background-color: #FAFAF5;
   margin: auto;
   padding: 0;
   width: 80%;
@@ -17,12 +19,22 @@ body {
   box-shadow: 5px 10px;
 }
 
-h3 {
+h3, .inbulk {
   padding: 2% 5%;
 }
 
-h4 {
-  padding: 0 5%;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  transform: translate(0, -1.5%);
+}
+
+.navbar {
+  text-decoration: underline;
+  padding: 0 2%;
 }
 
 .buttons {
@@ -43,8 +55,16 @@ h4 {
   margin: 10% 0;
 }
 
+.main {
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  height: 30%;
+  width: auto;
+}
+
 img {
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   width: 100%;
   height: auto;
 }
@@ -61,4 +81,8 @@ img {
 
 .containertwo {
   grid-area: 1/2/2/3;
+}
+
+.other {
+  margin: 15% 0;
 }
