@@ -81,7 +81,7 @@ header {
     display: flex;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    animation: fade-in 700ms 500ms ease-out both;
+    animation: fade-in 650ms 500ms ease-out both;
 }
 
 footer {
@@ -109,6 +109,13 @@ footer {
     padding: 4em 0;
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
     url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1627583487/IAT339/img_2599_optimized_oy1qhp.png");
+    background-size: cover;
+}
+
+.project2-title {
+    padding: 4em 0;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1629409533/IMG_1621_qdtfid.png");
     background-size: cover;
 }
 
@@ -143,7 +150,7 @@ footer {
 }
 
 #landing > h2 {
-    animation: fade-in 700ms ease-out 600ms both;
+    animation: fade-in 650ms ease-out 600ms both;
 }
 
 .project-body {
