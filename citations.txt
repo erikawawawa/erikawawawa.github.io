@@ -1,5 +1,0 @@
-Noise texture - used in background:
-http://www.noisetexturegenerator.com/
-
-Changing opacity of a background image without affecting text - used in project.html:
-https://stackoverflow.com/questions/4997493/set-opacity-of-background-image-without-affecting-child-elements
