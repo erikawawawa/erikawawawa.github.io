@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-family: 'Space Grotesk', sans-serif;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
     font-size: 5rem;
     line-height: 0.9;
     overflow: hidden;
@@ -97,9 +97,14 @@ footer {
 }
 
 .opacity-medium {
-    opacity: 70%;
+    opacity: 80%;
 }
 
+.caption-text{
+    opacity: 60%;
+    line-height: 90%;
+    margin: 0 0 1rem 0;
+}
 .margin-small {
     margin: 1em 0;
 }
@@ -192,7 +197,7 @@ and (min-width: 768px) {
     }
 
     h1 {
-        letter-spacing: .15em;
+        letter-spacing: .3em;
         font-size: 6rem;
         line-height: 0.9;
         overflow-y: hidden;
