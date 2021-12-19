@@ -1,39 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
 body {
-    background-color: #18191B;
+    background-color: #F2F2F2;
+    color: #1E1E1E;
+    /*background-color: #18191B;*/
     background-image: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1628017565/noisy-texture-200x200-o3-d18-c-0f0d0e-t1_xavfng.png");
     background-attachment: fixed;
-    color: aliceblue;
-    font-family: 'Space Grotesk', sans-serif;
+    /*color: aliceblue;*/
+    font-family: 'Cabin', sans-serif;
     font-size: 1rem;
 }
 
 h1 {
-    letter-spacing: .3em;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.2em;
     font-size: 5rem;
     line-height: 0.9;
     overflow: hidden;
-    animation: fade-in 650ms ease-in both;
+    animation: fade-in 550ms ease-in both;
 }
 
 h2, h3, h4 {
-    letter-spacing: 0.15em;
-    margin: .4em 0;
+    font-family: 'Space Grotesk', sans-serif;
+
+    letter-spacing: 0.05em;
+    margin: .3em 0;
 }
 
 p {
     font-weight: 300;
     font-size: .9em;
     letter-spacing: .03em;
-    line-height: 1.7;
+    line-height: 1.2;
     margin: 1.2em 0;
-    opacity: 90%;
+    opacity: 85%;
 }
 
 small {
@@ -44,6 +49,7 @@ li {
     display: list-item;
     padding: 0 2rem;
     overflow-x: visible;
+    opacity: 85%;
 }
 
 img {
@@ -57,9 +63,10 @@ video {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
+    /*text-decoration: underline;*/
     text-underline-offset: .1em;
-    color: aliceblue;
+    color: #1E1E1E;
     letter-spacing: 0.1em;
     display: inline-block;
 }
@@ -78,10 +85,11 @@ nav > a {
 
 header {
     width: 100vw;
+    position: fixed;
     display: flex;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    animation: fade-in 650ms 500ms ease-out both;
+    animation: fade-in 550ms 400ms ease-out both;
 }
 
 footer {
@@ -110,13 +118,16 @@ footer {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
     url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1627583487/IAT339/img_2599_optimized_oy1qhp.png");
     background-size: cover;
+    color: aliceblue;
 }
 
 .project2-title {
     padding: 4em 0;
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
-    url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1629409533/IMG_1621_qdtfid.png");
+    url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1639872928/Group_16-notext_nfpk19.png");
     background-size: cover;
+    color: aliceblue;
+
 }
 
 .scroll-to-top {
@@ -124,14 +135,14 @@ footer {
     right: 5%;
     bottom: 1%;
     padding: 1rem;
-    background-color: #18191B;
+    background-color: #E2E2E2;
     z-index: 999;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .title-text{
     font-size: 4rem;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 
 .width-and-margin {
@@ -181,8 +192,8 @@ and (min-width: 768px) {
     }
 
     h1 {
-        letter-spacing: .5em;
-        font-size: 8rem;
+        letter-spacing: .15em;
+        font-size: 6rem;
         line-height: 0.9;
         overflow-y: hidden;
     }
@@ -203,7 +214,7 @@ and (min-width: 768px) {
 
     .title-text{
         font-size: 5rem;
-        letter-spacing: .3em;
+        letter-spacing: .25em;
     }
 
     #landing {
