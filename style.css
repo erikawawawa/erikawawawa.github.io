@@ -100,7 +100,7 @@ header {
     display: flex;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    animation: fade-in 550ms 1000ms ease-out both;
+    animation: fade-in 550ms 900ms ease-out both;
     background-color: rgba(226, 226, 226, 0.6);
 }
 
