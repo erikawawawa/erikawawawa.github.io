@@ -39,7 +39,7 @@ p {
     font-size: 1rem;
     letter-spacing: .04em;
     line-height: 1.4em;
-    margin: 2em 0;
+    margin: 1.2em 0;
     opacity: 85%;
 }
 
@@ -55,7 +55,7 @@ li {
 }
 
 img {
-    max-width: 80%;
+    max-width: 100%;
     max-height: fit-content;
     object-fit: contain;
 
@@ -100,7 +100,8 @@ header {
     display: flex;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    animation: fade-in 550ms 400ms ease-out both;
+    animation: fade-in 550ms 1000ms ease-out both;
+    background-color: rgba(226, 226, 226, 0.6);
 }
 
 footer {
@@ -124,6 +125,11 @@ footer {
     padding: 1em;
 }
 
+.scaleIFrame{
+    width: 448px;
+    height: 252px;
+}
+
 .twocolumns-nobreak {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -139,7 +145,7 @@ footer {
 
 .project2-title {
     padding: 4em 0;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)),
     url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1639872928/Group_16-notext_nfpk19.png");
     background-size: cover;
     color: aliceblue;
@@ -242,5 +248,12 @@ and (min-width: 768px) {
     .project-body {
         width: 95%;
         margin: auto;
+    }
+
+    .scaleIFrame{
+        width: 560px;
+        height: 315px;
+        /*width: 345px;*/
+        /*height: 194.06px;*/
     }
 }
