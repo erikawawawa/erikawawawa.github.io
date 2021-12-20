@@ -58,7 +58,7 @@ img {
     max-width: 100%;
     max-height: fit-content;
     object-fit: contain;
-
+margin: 0 1%;
 }
 
 .center {
@@ -222,7 +222,7 @@ and (min-width: 768px) {
 
     p {
         font-size: 1.1em;
-        width: 80%;
+
 
     }
 
