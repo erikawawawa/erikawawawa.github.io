@@ -35,11 +35,11 @@ h2, h3, h4 {
 }
 
 p {
-    font-weight: 300;
-    font-size: .9em;
-    letter-spacing: .03em;
-    line-height: 1.2;
-    margin: 1.3em 0;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: .04em;
+    line-height: 1.4em;
+    margin: 2em 0;
     opacity: 85%;
 }
 
@@ -55,10 +55,17 @@ li {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     max-height: fit-content;
     object-fit: contain;
 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 video {
@@ -110,7 +117,7 @@ footer {
     margin: 0.1rem 0 1rem 0;
 }
 .margin-small {
-    margin: 1em 0;
+    margin: 1.2em 0;
 }
 
 .padding-small {
@@ -208,7 +215,9 @@ and (min-width: 768px) {
     }
 
     p {
-        font-size: .9em;
+        font-size: 1.1em;
+        width: 80%;
+
     }
 
     footer {
