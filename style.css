@@ -72,6 +72,22 @@ small {
     width: 50%;
 }
 
+header {
+    width: 95%;
+    margin: 0 2.5%;
+    position: fixed;
+    top: 1rem;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+
+footer {
+    width: 50%;
+    margin: 2em auto;
+}
+
 a {
     text-decoration: underline;
     text-underline-offset: .1em;
