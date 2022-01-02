@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Kanit:wght@600&family=Red+Hat+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #DEDEDE;
+    /*background-color: #F2F2F2;*/
+    color: #1E1E1E;
+    /*background-color: #18191B;*/
+    background-image: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1628017565/noisy-texture-200x200-o3-d18-c-0f0d0e-t1_xavfng.png");
+    background-attachment: fixed;
+    /*color: aliceblue;*/
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 5rem;
+    line-height: 0.9;
+    overflow: hidden;
+    animation: fade-in 550ms ease-in both;
+}
+
+h2, h3, h4 {
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.05em;
+    margin: .3em 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: .04em;
+    line-height: 1.4em;
+    margin: 1.2em 0;
+    opacity: 85%;
+}
+
+small {
+    margin: auto;
+}
+
+li {
+    display: list-item;
+    padding: 0.2rem 2rem;
+    overflow-x: visible;
+    opacity: 85%;
+}
+
+img {
+    max-width: 100%;
+    max-height: fit-content;
+    object-fit: contain;
+    margin: 0 1%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    /*text-decoration: underline;*/
+    text-underline-offset: .1em;
+    color: #1E1E1E;
+    letter-spacing: 0.1em;
+    display: inline-block;
+}
+a:hover {
+    opacity: 50%;
+    transform: scale(0.98);
+}
+
+nav {
+    align-items: end;
+}
+
+nav > a {
+    padding: 0 1em;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    animation: fade-in 550ms 900ms ease-out both;
+    background-color: rgba(226, 226, 226, 0.6);
+}
+
+footer {
+    margin: 2em auto;
+}
+
+.opacity-medium {
+    opacity: 80%;
+}
+
+.caption-text{
+    opacity: 60%;
+    line-height: 90%;
+    margin: 0.1rem 0 1rem 0;
+}
+.margin-small {
+    margin: 1.2em 0;
+}
+
+.padding-small {
+    padding: 1em;
+}
+
+.scaleIFrame{
+    width: 448px;
+    height: 252px;
+}
+
+.twocolumns-nobreak {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+}
+.project-title {
+    padding: 4em 0;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1627583487/IAT339/img_2599_optimized_oy1qhp.png");
+    background-size: cover;
+    color: aliceblue;
+}
+
+.project2-title {
+    padding: 4em 0;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)),
+    url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1639872928/Group_16-notext_nfpk19.png");
+    background-size: cover;
+    color: aliceblue;
+
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 5%;
+    bottom: 1%;
+    padding: 1rem;
+    background-color: #E2E2E2;
+    z-index: 999;
+    opacity: 0.6;
+}
+
+.title-text{
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+}
+
+.width-and-margin {
+    width: 95%;
+    margin: auto;
+}
+
+.project-body {
+    width: 95%;
+    margin: auto;
+}
+
+#landing {
+    margin: auto 1em;
+    padding: 7rem 0;
+}
+
+#landing > h2 {
+    animation: fade-in 650ms ease-out 600ms both;
+}
+
+.project-body {
+    width: 90%;
+    margin: auto;
+}
+
+#svgcontainer-about {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen
+and (min-width: 768px) {
+    .twocolumns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+
+    h1 {
+        letter-spacing: .3em;
+        font-size: 6rem;
+        line-height: 0.9;
+        overflow-y: hidden;
+    }
+
+    p {
+        font-size: 1.1em;
+
+
+    }
+
+    footer {
+        margin: 2em 0;
+        text-align: center;
+    }
+
+    .width-and-margin {
+        width: 75%;
+        margin: auto;
+    }
+
+    .title-text{
+        font-size: 5rem;
+        letter-spacing: .25em;
+    }
+
+    #landing {
+        padding: 12rem 0;
+    }
+
+    .project-body {
+        width: 95%;
+        margin: auto;
+    }
+
+    .scaleIFrame{
+        width: 560px;
+        height: 315px;
+        /*width: 345px;*/
+        /*height: 194.06px;*/
+    }
+}
