@@ -22,20 +22,27 @@ h1, h2, h3, h4 {
     margin: 2%;
 }
 
+h1{
+    font-size: 5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
 p {
     opacity: 85%;
-    max-width: 75%;
+    max-width: 65%;
     padding: 1em 0;
     line-height: 1.4em;
     letter-spacing: .02em;
-    margin: 0 2%;
+    margin: 2%;
 
 }
 
 img, video{
-    max-width: 75%;
+    max-width: 65%;
     height: auto;
-    object-fit: contain;
     margin: 0 1%;
 }
 
@@ -45,10 +52,40 @@ small {
 
 .body-twocolumns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.7fr 1.1fr;
 }
 
-/*.width-and-margin {*/
-/*    width: 95%;*/
-/*    margin: auto;*/
-/*}*/
+.image-twocolumns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+}
+
+.center-headers{
+    margin: 2% auto;
+    padding: 1em 0;
+
+}
+
+.automargin{
+    margin: 2% auto;
+    width: 50%;
+}
+
+a {
+    text-decoration: underline;
+    text-underline-offset: .1em;
+    color: #1E1E1E;
+    letter-spacing: 0.1em;
+    display: inline-block;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 5%;
+    bottom: 1%;
+    padding: 1rem;
+    background-color: #E2E2E2;
+    z-index: 999;
+    opacity: 0.6;
+}
