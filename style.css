@@ -37,7 +37,6 @@ p {
     line-height: 1.4em;
     letter-spacing: .02em;
     margin: 2%;
-
 }
 
 img, video{
@@ -46,8 +45,27 @@ img, video{
     margin: 0 1%;
 }
 
-small {
-    margin: auto;
+.caption-text{
+    opacity: 65%;
+    margin: 0.1em 1% 1em 1%;
+    padding: 0;
+    line-height: 1em;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    font-size: 0.9em;
+    opacity: 85%;
+    max-width: 65%;
+    padding: 0 0 2rem 0;
+    line-height: 1.4em;
+    letter-spacing: .02em;
+    margin: 0 2% 1% 2%;
+}
+
+#addmargin{
+    margin: 2%;
 }
 
 .body-twocolumns {
@@ -64,11 +82,17 @@ small {
 .center-headers{
     margin: 2% auto;
     padding: 1em 0;
-
 }
 
 .automargin{
     margin: 2% auto;
+    width: 50%;
+}
+
+.footerstyling{
+    text-align: center;
+    padding: 3%;
+    margin: auto;
     width: 50%;
 }
 
@@ -80,12 +104,6 @@ header {
     display: flex;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-}
-
-
-footer {
-    width: 50%;
-    margin: 2em auto;
 }
 
 a {
