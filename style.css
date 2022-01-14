@@ -5,7 +5,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: visible;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Archivo', sans-serif;
-    margin: 4%;
+    margin: 5% 4% 0.3%;
 }
 
 h1{
@@ -69,7 +69,9 @@ ul {
 #addmargin{
     margin: 2%;
 }
-
+hr{
+    margin: 2em 0 1em 0;
+}
 .coverimg{
     width: 100vw;
     max-height: 80%;
@@ -77,8 +79,14 @@ ul {
 .cornerradii {
     border-radius: 32px;
 }
+.automargin{
+    margin: 12% auto 2%;
+}
 @media only screen
 and (min-width: 900px) {
+    *{
+        overflow-x: hidden;
+    }
     .body-twocolumns {
         display: grid;
         grid-template-columns: 0.7fr 1.1fr;
@@ -132,11 +140,11 @@ and (min-width: 900px) {
         height: auto;
         margin: auto;
     }
-}
 
-.automargin{
-    margin: 2% auto;
-    width: 50%;
+    .automargin{
+        margin: 2% auto 2%;
+        width: 50%;
+    }
 }
 
 .footerstyling{
