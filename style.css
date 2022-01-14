@@ -83,6 +83,10 @@ hr{
 .automargin{
     margin: 12% auto 2%;
 }
+
+.links{
+    font-size: 1.6em;
+}
 @media only screen
 and (min-width: 900px) {
     *{
