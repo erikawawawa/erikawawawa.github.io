@@ -180,14 +180,21 @@ header {
     top: 1rem;
     display: flex;
     grid-template-columns: 1fr 1fr;
+    letter-spacing: 0.1em;
+
     justify-content: space-between;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
 }
 
 a {
     text-decoration: underline;
     text-underline-offset: .1em;
     color: #1E1E1E;
-    letter-spacing: 0.1em;
     display: inline-block;
 }
 
