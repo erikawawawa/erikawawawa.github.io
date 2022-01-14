@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #DEDEDE;
+    background-color: #F8F9F9;
     color: #1E1E1E;
     background-image: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1628017565/noisy-texture-200x200-o3-d18-c-0f0d0e-t1_xavfng.png");
     background-attachment: fixed;
@@ -23,6 +23,7 @@ h1, h2, h3, h4 {
 
 h1{
     font-size: 5em;
+    line-height: 1em;
 }
 
 h2{
@@ -30,8 +31,9 @@ h2{
 }
 
 p {
+    font-size: 1.2em;
     opacity: 85%;
-    padding: 0.4em 0;
+    line-height: 1.5em;
     letter-spacing: .02em;
 }
 
@@ -96,24 +98,35 @@ a {
 
 .image-twocolumns {
     margin: auto;
-    padding: 0 0 2em 0;
+    padding: 0 0 4em 0;
 }
 .image-twocolumns:hover {
     opacity: 60%;
+}
+.center-page{
+    width: 80%;
+    padding: 1em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 @media only screen
 and (min-width: 900px) {
     .body-twocolumns {
         display: grid;
-        grid-template-columns: 0.7fr 1.1fr;
+        grid-template-columns: 1fr 0.1fr;
+        margin: auto;
     }
 
     .image-twocolumns {
         display: grid;
-        width: 60%;
+        width: 70%;
         grid-template-columns: repeat(2, 1fr);
         margin: auto;
         border-radius: 15px;
+        padding: 0 0 2em 0;
+
         /*justify-items: right;*/
         /*background-color: #FFFFFF;*/
     }
