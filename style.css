@@ -81,6 +81,7 @@ hr{
     max-height: 80%;
 }
 .cornerradii {
+    border-style: solid;
     border-radius: 32px;
 }
 .automargin{
