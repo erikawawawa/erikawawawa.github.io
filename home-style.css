@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    /*cursor: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642205653/Ellipse_1_jl0b11.svg"), auto;*/
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     background-attachment: fixed;
     font-family: 'Epilogue', sans-serif;
     font-size: 1rem;
+
 }
 
 h1, h2, h3, h4 {
