@@ -20,7 +20,7 @@
 
 <div class="automargin">
     <h1>SOUNDCLOUD FOCUS</h1>
-    <h3>FEATURE DESIGN</h3>
+    <h3>INTERACTION X INTERFACE DESIGN</h3>
 </div>
 
 <img class="coverimg" src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642036884/scf_cover_fjww3j.png">
@@ -102,7 +102,7 @@
                 <div>
 
                     <p class="margin-small">
-                <!-- SoundCloud Focus is a focus timer that allows easily distracted users to get productive using their pre-exisitng playlists. -->
+                SoundCloud Focus is a focus timer that allows easily distracted users to get productive using their pre-exisitng playlists.
                 They will be able to plan a session by picking a playlist and setting their timer.
                 They can also choose to log additional information such as their activies,
                 or be able to revisit a previous session from the menu screen to maximize their productivity.  </p>
