@@ -6,12 +6,14 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    /*cursor: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642205653/Ellipse_1_jl0b11.svg"), auto;*/
+    cursor: crosshair, auto;
 }
 
 body {
     background-color: #F8F9F9;
+    /*background-color: #d3dbd7;*/
     color: #1E1E1E;
+    /*color: #1b2854;*/
     background-image: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1628017565/noisy-texture-200x200-o3-d18-c-0f0d0e-t1_xavfng.png");
     background-attachment: fixed;
     font-family: 'Epilogue', sans-serif;
@@ -37,6 +39,7 @@ p {
     opacity: 85%;
     line-height: 1.5em;
     letter-spacing: .02em;
+    padding: 0 0 1em 0;
 }
 
 img, video{
@@ -70,6 +73,7 @@ small {
 .automargin{
     margin: 15% 10%;
     width: 70%;
+    animation: slide-top 350ms ease-in both;
 }
 
 header {
@@ -103,9 +107,9 @@ a {
     letter-spacing: 0.1em;
     display: inline-block;
 }
+
 .paddings{
     padding: 0 0 4em 0;
-
 }
 
 .image-twocolumns {
@@ -119,8 +123,8 @@ a {
     background-color: #69A0CD;
     border-style: solid;
     border-color: #69A0CD;
+    animation: colourShift 150ms ease-in both;
 }
-
 
 .center-page{
     width: 80%;
@@ -204,5 +208,27 @@ and (min-width: 900px) {
         /*max-width: 80%;*/
         height: auto;
         margin: auto;
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes colourShift {
+    0% {
+        background-color: #DEDEDE;
+        color: #1b2854;
+    }
+    100% {
+        background-color: #69A0CD;
+        color: whitesmoke;
     }
 }

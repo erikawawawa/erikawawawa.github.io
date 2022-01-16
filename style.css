@@ -80,10 +80,12 @@ hr{
     width: 100vw;
     max-height: 80%;
 }
+
 .cornerradii {
     border-style: solid;
     border-radius: 32px;
 }
+
 .automargin{
     margin: 12% auto 2%;
 }
