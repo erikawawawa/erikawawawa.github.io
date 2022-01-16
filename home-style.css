@@ -12,7 +12,7 @@
 body {
     background-color: #F8F9F9;
     /*background-color: #d3dbd7;*/
-    color: #1E1E1E;
+    color: #262626;
     /*color: #1b2854;*/
     background-image: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1628017565/noisy-texture-200x200-o3-d18-c-0f0d0e-t1_xavfng.png");
     background-attachment: fixed;
@@ -76,6 +76,10 @@ small {
     animation: slide-top 350ms ease-in both;
 }
 
+.accentcolor{
+    color: #3771ab;
+}
+
 header {
     width: 95%;
     margin: 0 2.5%;
@@ -103,7 +107,7 @@ hr{
 a {
     text-decoration: underline;
     text-underline-offset: .1em;
-    color: #1E1E1E;
+    color: #262626;
     letter-spacing: 0.1em;
     display: inline-block;
 }
