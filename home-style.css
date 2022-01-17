@@ -71,9 +71,9 @@ small {
 }
 
 .automargin{
-    margin: 15% 10%;
+    margin: 30% 10%;
     width: 70%;
-    animation: slide-top 350ms ease-in both;
+    animation: slide-top 350ms ease-in;
 }
 
 .accentcolor{
@@ -245,11 +245,11 @@ and (min-width: 900px) {
 
 @keyframes slide-top {
     0% {
-        transform: translateY(100px);
+        transform: translateY(100%);
         opacity: 0%;
     }
     100% {
-        transform: translateY(0px);
+        transform: translateY(0%);
         opacity: 100%;
     }
 }
