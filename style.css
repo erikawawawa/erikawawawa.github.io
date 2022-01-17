@@ -199,6 +199,25 @@ a {
     text-underline-offset: .1em;
     color: #1E1E1E;
     display: inline-block;
+    padding: 0.5rem 0;
+}
+a:hover{
+    background-color: #69A0CD;
+    color: #ffffff;
+}
+
+header > a, nav > a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d9d9d9;
+    color: #535353;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+header > a:hover, nav > a:hover{
+    background-color: #69A0CD;
+    color: #ffffff;
 }
 
 .scroll-to-top {
