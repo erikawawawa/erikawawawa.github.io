@@ -11,7 +11,6 @@
 
 body {
     background-color: #F8F9F9;
-    background-color: #F8F9F9;
     /*background-color: #d3dbd7;*/
     color: #262626;
     /*color: #1b2854;*/
@@ -150,6 +149,9 @@ header > a:hover, nav > a:hover{
 .image-twocolumns {
     margin: auto;
     text-decoration: none;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgb(255,255,255,0);
     letter-spacing: 0;
 }
 
@@ -157,6 +159,7 @@ header > a:hover, nav > a:hover{
     color: whitesmoke;
     background-color: #69A0CD;
     border-style: solid;
+    border-width: 0.3rem;
     border-color: #69A0CD;
     animation: colourShift 150ms ease-in both;
 }
@@ -169,6 +172,7 @@ header > a:hover, nav > a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .footerstyling{
     text-align: center;
     padding: 3%;
