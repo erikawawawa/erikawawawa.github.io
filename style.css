@@ -73,6 +73,7 @@ ul {
 #addmargin{
     margin: 2%;
 }
+
 hr{
     margin: 2em 0 1em 0;
 }
@@ -93,11 +94,13 @@ hr{
 .links{
     font-size: 1.6em;
 }
+
 @media only screen
 and (min-width: 764px) {
     *{
         overflow-x: hidden;
     }
+
     .body-twocolumns {
         display: grid;
         grid-template-columns: 0.7fr 1.1fr;
@@ -184,8 +187,12 @@ header {
     display: flex;
     grid-template-columns: 1fr 1fr;
     letter-spacing: 0.1em;
-
     justify-content: space-between;
+}
+
+.image-row {
+    width: 100%;
+    display: flex;
 }
 
 nav{
