@@ -95,6 +95,14 @@ hr{
     font-size: 1.6em;
 }
 
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    height: auto;
+    margin: 0.5% 0;
+}
+
 @media only screen
 and (min-width: 764px) {
     *{
@@ -131,6 +139,10 @@ and (min-width: 764px) {
     .cornerradii {
         border-radius: 32px;
         margin: 0 18.5%;
+    }
+    .image-row{
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     p {
@@ -170,6 +182,7 @@ and (min-width: 764px) {
         margin: 2% auto 2%;
         width: 50%;
     }
+
 }
 
 .footerstyling{
@@ -188,11 +201,6 @@ header {
     grid-template-columns: 1fr 1fr;
     letter-spacing: 0.1em;
     justify-content: space-between;
-}
-
-.image-row {
-    width: 100%;
-    display: flex;
 }
 
 nav{
