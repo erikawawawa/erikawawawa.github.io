@@ -157,14 +157,22 @@ header > a:hover, nav > a:hover{
 
 .image-twocolumns {
     margin: auto;
-    text-decoration: none;
     border-style: solid;
     border-width: 0.3rem;
     border-color: rgb(255,255,255,0);
-    letter-spacing: 0;
+
 }
 
-.image-twocolumns:hover {
+.changeOnHover{
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgb(255,255,255,0);
+}
+
+.changeOnHover:hover {
     color: whitesmoke;
     background-color: #69A0CD;
     border-style: solid;
@@ -207,10 +215,17 @@ and (min-width: 764px) {
         /*background-color: #FFFFFF;*/
     }
 
-.paddings{
-    padding: 1em 1em 3em 1em;
+    .paddings{
+        padding: 1em 1em 3em 1em;
+    }
 
-}
+    .paddings-headlines{
+        padding: 1em;
+        border-style: solid;
+        border-width: 0.3rem;
+        border-color: rgb(255,255,255,0);
+    }
+
     .center-headers {
         margin: 2% auto;
         padding: 1em 0;
@@ -242,7 +257,7 @@ and (min-width: 764px) {
         opacity: 85%;
         line-height: 1.5em;
         letter-spacing: .02em;
-        margin: 2%;
+        /*margin: 2%;*/
     }
     ul{
         max-width: 60%;
@@ -256,7 +271,7 @@ and (min-width: 764px) {
         font-size: 2em;
     }
     h1, h2, h3, h4 {
-        margin: 0.5% 2% 0.5% 2%;
+        /*margin: 0.5% 2% 0.5% 2%;*/
     }
     img, video{
         /*max-width: 80%;*/
