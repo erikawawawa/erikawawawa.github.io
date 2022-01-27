@@ -10,8 +10,11 @@
 }
 
 body {
-    background-color: #F8F9F9;
+    /*background-color: #e7e7e0;*/
+    background-color: #FEF4D0;
+    /*background-color: #F8F9F9;*/
     /*background-color: #d3dbd7;*/
+    /*color: #CB728B;*/
     color: #262626;
     /*color: #1b2854;*/
     background-image: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1628017565/noisy-texture-200x200-o3-d18-c-0f0d0e-t1_xavfng.png");
@@ -82,6 +85,8 @@ svg{
 }
 
 .accentcolor{
+    /*color: #CB728B;*/
+
     color: #21557c;
 }
 
