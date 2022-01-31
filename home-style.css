@@ -21,7 +21,6 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Sora', sans-serif;
     font-weight: bolder;
-    letter-spacing: 0.05rem;
 }
 
 #tagline{
@@ -121,7 +120,6 @@ hr{
 a {
     text-decoration: underline;
     text-underline-offset: .1em;
-    /*color: #262626;*/
     color: rgba(3, 23, 42, 0.93);
     display: inline-block;
 }
