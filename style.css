@@ -12,9 +12,7 @@
 
 body {
     background-color: #eef0eb;
-
     color: rgba(3, 23, 42, 0.93);
-
     background-image: url("https://res.cloudinary.com/dbiwj2oo8/image/upload/v1628017565/noisy-texture-200x200-o3-d18-c-0f0d0e-t1_xavfng.png");
     background-attachment: fixed;
     font-family: 'Outfit', sans-serif;
@@ -25,8 +23,11 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Sora', sans-serif;
     font-weight: bolder;
-    letter-spacing: 0.05rem;
     margin: 5% 4% 0.3%;
+}
+
+h2, h3, h4{
+    letter-spacing: -0.015rem;
 }
 
 h1{
