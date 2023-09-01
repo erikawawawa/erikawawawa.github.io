@@ -1,67 +1,132 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-	<div class="flex-container">	
-		<div>
-		<h1>About</h1>
-		<h2>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-			nisi ut aliquip ex ea commodo consequat. 
-			Duis aute irure dolor in reprehenderit in voluptate velit esse 
-			cillum dolore eu fugiat nulla pariatur. 
-			Excepteur sint occaecat cupidatat non proident, 
-			sunt in culpa qui officia deserunt mollit anim id est laborum."
-		</p>
-		</div>
-		<div class="about-buttons">
-			<a href="">Resume</a>
-			<a href="">Email</a>
-		</div>
-		<a href="/">Back to home</a>
-		
-</div>
-</main>
+<Layout title="About | Erika Wang">
+  <main>
+    <div>
+      <h1>About</h1>
+      <h2>
+        I'm Erika, a design student at Simon Fraser University, based in
+        Vancouver.<br /><br />
+         I believe that good design follows a well-defined objective. As a
+        designer, my principle is to embrace ambiguity by defining the unknown
+        and turning them into tangible actions. In every corner of my life, I am
+        constantly seeking for inspiration that could ultimately contribute to
+        informed, dynamic design solutions.
+        <br /><br />
+         Aside from design, I like to go on walks or play video games -
+        sometimes I'll do both by playing Pokemon Go. :)
+      </h2>
+    </div>
+    <div class="about-buttons">
+      <a
+        href="https://drive.google.com/file/d/1aJgqiQvRIoIQnFxjvA-QQ90RX8dmEZWN/view?usp=drive_link"
+        >Resume</a
+      >
+      <a href="mailto:erikaw@sfu.ca">Email</a>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	a{
-		max-width: fit-content;
-	}
-	.about-buttons{
-		padding-bottom: 8%;
-	}
-	.about-buttons>a{
-		padding-right: 1.4rem;
-	}
-	.flex-container{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		height: 75vh;
-		gap: 0rem;
-	}	
-	main {
-		margin: auto;
-		padding: 0rem;
-		max-width: 110ch;
-	}
-	h1 {
-		font-size: 1.5rem;
-		font-weight: 800;
-		margin: 0.5rem 0;
-		line-height: 150%;
-	}
-	h2{
-		font-size: 1.5rem;
-		font-weight: 250;
-		margin: 0;
-		line-height: 150%;
-		padding-bottom: 2%;
-	}
+  a {
+    max-width: fit-content;
+  }
+  .about-buttons {
+    padding-bottom: 10%;
+  }
+  .about-buttons > a {
+    padding-right: 1.4rem;
+  }
+  main {
+    margin: auto;
+    margin-top: 2.2rem;
+    padding: 0rem 0.5rem;
+  }
+  h1 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0.5rem 0;
+    line-height: 150%;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 0;
+    line-height: 150%;
+    padding-bottom: 3%;
+  }
 
+  @media only screen and (min-width: 768px) {
+    .projects > a {
+      font-size: 1.6rem;
+    }
+    .flex-container {
+      flex-direction: row;
+      height: 75vh;
+      gap: 2.06rem;
+    }
+    main {
+      margin: auto;
+      padding: 0rem;
+      max-width: 110ch;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 0.5rem 0;
+      line-height: 150%;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 0;
+      line-height: 150%;
+    }
+    .link-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+      gap: 1rem;
+      padding: 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    a {
+      max-width: fit-content;
+    }
+    .about-buttons {
+      padding-bottom: 8%;
+    }
+    .about-buttons > a {
+      padding-right: 1.4rem;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 75vh;
+      gap: 0rem;
+    }
+    main {
+      margin: auto;
+      padding: 0rem;
+      max-width: 110ch;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 0.5rem 0;
+      line-height: 150%;
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin: 0;
+      line-height: 150%;
+      padding-bottom: 2%;
+    }
+  }
 </style>
