@@ -6,6 +6,7 @@ register();
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://erikawawawa.github.io',
   integrations: [
   ]
 });
