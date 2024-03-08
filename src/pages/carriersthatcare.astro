@@ -15,7 +15,7 @@ import Card from "../components/Card.astro";
 
   <!-- <hr /> -->
   <!-- <h2>Overview</h2> -->
-  <h2>
+  <h2 style="color: #6c6c6c;">
     A proposal for a check-in service to be delivered to seniors living
     independently & their loved ones.
   </h2>
@@ -70,7 +70,7 @@ import Card from "../components/Card.astro";
     <div>
       <h3>THE FINANCIAL STATE OF CANADA POST</h3>
       <div style="background-color: #FAFAFA; border: 1px dashed #333;">
-        <p>
+        <p class="quote">
           "With more people shifting to the internet and smart mobile devices to
           communicate and transact, posts have experienced a <strong
             >structural decline in mail volumes</strong
@@ -184,37 +184,78 @@ import Card from "../components/Card.astro";
   <hr />
   <h2>Carriers that Care: Walkthrough</h2>
   <div class="grid-twocol">
-    <h3>Phase 1: Setting up visits</h3>
+    <h2>Phase 1</h2>
+    <div>
+      <h3>SETTING UP VISITS</h3>
+      <video
+        width="720"
+        controls
+        src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854884/Carriers_that_Care_-_Landing_page_scrollthrough_-_Made_with_Clipchamp_va8vbw.mp4"
+      ></video>
+      <p>
+        Audience would familiarize themselves with our service through the
+        landing page of the service. Here, we outline a description of the
+        service.
+      </p>
+      <img
+        src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709854854/Property_1_Sign_Up_7_bltl3y.png"
+      />
 
-    <p>
-      Audience would familiarize themselves with our service through the landing
-      page of the service. Here, we outline a description of the service.
-      <br />
-      Ensuring that loved ones have consented to the service, Canada Post will ask
-      for contact information of both the loved one and family. The final step of
-      the sign-up process will involve the senior recipient of the service, with
-      Canada Post reaching out through a phone call to ensure that seniors will be
-      aware of the service. Carriers that Care will not begin until this step is
-      completed.
-    </p>
+      <p>
+        Ensuring that loved ones have consented to the service, Canada Post will
+        ask for contact information of both the loved one and family.
+      </p>
+      <img
+        src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709854855/Property_1_Dashboard_Property_2_Pending_s5e213.png"
+      />
+      <p>
+        The final step of the sign-up process will involve the senior recipient
+        of the service, with Canada Post reaching out through a phone call to
+        ensure that seniors will be aware of the service. <strong
+          >Carriers that Care will not begin until this step is completed.</strong
+        >
+      </p>
+    </div>
   </div>
 
   <div class="grid-twocol">
-    <h3>Phase 2: Postal Worker App</h3>
+    <h2>Phase 2</h2>
     <div>
+      <h3>POSTAL WORKER VISITATIONS</h3>
       <p>
         Postal workers can use this app to quickly send reports and access
         resources they may need during the visits.
       </p>
+      <div class="grid-twocol">
+        <img
+          src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709847841/Overview_of_all_their_visits_how_they_will_do_the_report_rfe5fz.png"
+        />
+        <img
+          src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709847847/Overview_of_all_their_visits_how_they_will_do_the_report-1_qwajua.png"
+        />
+      </div>
+
       <p>
         Steps involved in reporting will include reporting on their well-being,
         reporting on topics of interest, and et cetra.
       </p>
+      <video width="240" controls>
+        <source
+          src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854862/Carriers_that_Care_-_Letter_Carrier_Survey_-_Made_with_Clipchamp_fer7sg.mp4"
+        />
+      </video>
       <p>
         Following the visit, Postal worker will fill out and upload a report on
         observations they made during the visit. Reports will be optimized for
         Postal workers to be able to fill out while on-the-go.
       </p>
+      <div class="grid-twocol">
+        <img
+          src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709847839/Emergency_wejrlq.png"
+        /><img
+          src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709847852/Resources_pk5dtp.png"
+        />
+      </div>
       <p>
         Should any unexpected events occur during the visits, we plan equip
         postal workers with an ‘emergency resources’ page on the app.
@@ -224,16 +265,13 @@ import Card from "../components/Card.astro";
     </div>
   </div>
   <div class="grid-twocol">
-    <h3>Phase 3: Post-Visit Updates</h3>
+    <h2>Phase 3</h2>
     <div>
-      <!-- <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe
-      src="https://player.vimeo.com/video/902436807?h=752ba33798"
-      style="position:absolute;top:0;left:0;width:100%;height:100%;"
-      frameborder="0"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen></iframe>
-  </div><script src="https://player.vimeo.com/api/player.js"></script> -->
+      <h3>POST-VISIT UPDATES</h3>
+      <img
+        style="border-style: none;"
+        src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709848320/E-mail_text_p3kfek.png"
+      />
       <p>
         Family members can stay updated of the visits after they occur through
         notifications sent through text and email.
@@ -245,6 +283,11 @@ import Card from "../components/Card.astro";
         a gift to Rachel to be hand-delivered by the carrier, or add other family
         members to get notified about reports.
       </p>
+      <video
+        width="720"
+        controls
+        src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854858/Carriers_that_Care_-_Dashboard_-_check_gift_-_Made_with_Clipchamp_yaxakv.mp4"
+      ></video>
     </div>
   </div>
   <!-- <h2>What about Consent and Privacy?</h2>
@@ -261,5 +304,5 @@ import Card from "../components/Card.astro";
   <!-- <h2>Design decisions and strategies</h2> -->
   <!-- <h2>Reflection</h2>
   <h3>Taking leaps of faith</h3> -->
-  <a href="/" class="prototype"><strong>Back to home</strong></a>
+  <a href="/" class="prototype">Back to home</a>
 </LayoutProject>
