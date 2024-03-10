@@ -5,22 +5,22 @@ import Card from "../components/Card.astro";
 
 <Layout title="About | Erika Wang">
   <main>
-    <div>
+    <a href="/">Back</a>
+    <div class="content">
       <h1>About</h1>
       <h2>
         I'm Erika, a design student at Simon Fraser University, based in
-        Vancouver.<br /><br />
-         I believe that good design follows a well-defined objective. As a
-        designer, my principle is to embrace ambiguity by defining the unknown
-        and turning them into tangible actions. In every corner of my life, I am
-        constantly seeking for inspiration that could ultimately contribute to
-        informed, dynamic design solutions.
-        <br /><br />
-         Aside from design, I like to go on walks or play video games -
-        sometimes I'll do both by playing Pokemon Go. :)
-      </h2>
+        Vancouver.<br /><br /></h2>
+        <p> I believe that good design follows a well-defined objective. As a
+          designer, my principle is to embrace ambiguity by defining the unknown
+          and turning them into tangible actions. In every corner of my life, I am
+          constantly seeking for inspiration that could ultimately contribute to
+          informed, dynamic design solutions.
+          <br /><br />
+           Aside from design, I like to go on walks or play video games -
+          sometimes I'll do both by playing Pokemon Go. :)</p>
     </div>
-    <div class="about-buttons">
+    <div class="about-buttons content">
       <a
         href="https://drive.google.com/file/d/1aJgqiQvRIoIQnFxjvA-QQ90RX8dmEZWN/view?usp=drive_link"
         >Resume</a
@@ -40,16 +40,21 @@ import Card from "../components/Card.astro";
   .about-buttons > a {
     padding-right: 1.4rem;
   }
+  .content{
+    margin: 0% 8%;
+  }
   main {
     margin: auto;
     margin-top: 2.2rem;
     padding: 0rem 0.5rem;
   }
   h1 {
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 2.5rem;
+    font-weight: 300;
     margin: 0.5rem 0;
-    line-height: 150%;
+    line-height: 140%;
+    max-width: 54rem;
+    letter-spacing: -0.04em;
   }
   h2 {
     font-size: 1.3rem;
@@ -60,22 +65,25 @@ import Card from "../components/Card.astro";
   }
 
   @media only screen and (min-width: 768px) {
+    .content{
+    margin: 0% 8%;
+  }
     .projects > a {
       font-size: 1.6rem;
     }
     .flex-container {
       flex-direction: row;
-      height: 75vh;
+      /* height: 75vh; */
       gap: 2.06rem;
     }
     main {
       margin: auto;
       padding: 0rem;
-      max-width: 110ch;
+      max-width: 300ch;
     }
     h1 {
       font-size: 2rem;
-      font-weight: 800;
+      font-weight: 300;
       margin: 0.5rem 0;
       line-height: 150%;
     }
@@ -94,6 +102,9 @@ import Card from "../components/Card.astro";
   }
 
   @media only screen and (min-width: 768px) {
+    .content{
+    margin: 0% 8%;
+  }
     a {
       max-width: fit-content;
     }
@@ -107,17 +118,18 @@ import Card from "../components/Card.astro";
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 75vh;
+      /* height: 75vh; */
       gap: 0rem;
+      margin: 0% 8%;
     }
     main {
       margin: auto;
       padding: 0rem;
-      max-width: 110ch;
+      max-width: 300ch;
     }
     h1 {
       font-size: 2rem;
-      font-weight: 800;
+      font-weight: 300;
       margin: 0.5rem 0;
       line-height: 150%;
     }

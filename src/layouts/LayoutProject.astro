@@ -17,14 +17,14 @@ const { title } = Astro.props;
   </head>
 
   <body>
-    <nav>
+    <!-- <nav>
       <a href="/">Erika Wang</a>
       <div class="nav-right">
-        <!-- <a href="/">Work</a> -->
+        <a href="/">Work</a>
         <a href="https://www.erika.wang/about/">About</a>
-        <!-- <a href="/">Resume</a> -->
+        <a href="/">Resume</a>
       </div>
-    </nav>
+    </nav> -->
 
     <main>
       <slot />
@@ -98,30 +98,33 @@ const { title } = Astro.props;
     }
     html {
       font-family: "Noto Serif", serif;
-      /* font-family: "Hanken Grotesk", sans-serif; */
-      /* font-family: "Martel Sans", sans-serif; */
-      background-color: #f6f6f6;
+      background-color: #fafafa;
       color: #000;
     }
 
     main {
-      margin: auto;
+      margin: 100px 8% 0%;
       /* padding: 1rem; */
-      max-width: 120ch;
+      max-width: 110ch;
+
     }
+
+    .backbutton{
+      position: fixed;
+      transform: translateX(-100%);
+      padding-right: 3rem;
+    }
+
     .quote {
       font-family: "Noto Serif" sans-serif;
     }
     h1 {
       font-family: "Noto Serif", serif;
-      font-optical-sizing: auto;
-      /* font-family: "Gelasio", serif; */
-      font-size: 4.5rem;
-      font-weight: 200;
-      font-variation-settings: "wdth" 100;
+      font-size: 2.5rem;
+      font-weight: 300;
       letter-spacing: -0.1rem;
       line-height: 100%;
-      margin: 0;
+      margin: 0.5rem 0;
     }
 
     h2 {
@@ -156,18 +159,6 @@ const { title } = Astro.props;
       bottom: 0.2rem;
       left: 1rem;
       background-color: #f6f6f6b3;
-    }
-
-    code {
-      font-family:
-        Menlo,
-        Monaco,
-        Lucida Console,
-        Liberation Mono,
-        DejaVu Sans Mono,
-        Bitstream Vera Sans Mono,
-        Courier New,
-        monospace;
     }
 
     a {
@@ -249,7 +240,6 @@ const { title } = Astro.props;
 
     .sansserif {
       font-family: "Noto Sans", sans-serif;
-      /* font-family: "Gelasio", serif; */
       font-size: 2rem;
     }
     ul,
@@ -264,13 +254,11 @@ const { title } = Astro.props;
         font-size: 1.3rem;
         padding: 0 8% 1%;
       }
-      /* h1 {
-        padding: 0 8%;
-      } */
+
       h1,
       h2,
       h3 {
-        padding: 0 2%;
+        /* padding: 0 2%; */
       }
       a:hover {
         font-weight: 800;
