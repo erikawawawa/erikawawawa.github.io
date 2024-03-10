@@ -10,27 +10,55 @@ import Card from "../components/Card.astro";
   <main>
     <div class="flex-container">
       <div class="width">
-        <h1>Erika Wang</h1>
-        <h2>Design student at Simon Fraser University</h2>
+        <h1>Erika Wang <span>is a Vancouver-based designer, with a particular interest in</span> brand strategy, UX research, <span>and</span> experience design.</h1>
+        <h2>Previously, she was designing software for clinicians at <a href="https://www.excelar.ca/">Excelar Technologies</a>.</h2>
+        <br>
+        <a href="/about" id="buttonFive">About</a>
+        <a
+          href="https://drive.google.com/file/d/1aJgqiQvRIoIQnFxjvA-QQ90RX8dmEZWN/view?usp=drive_link"
+          >Resume</a
+        >
+   
+        
+        <div>
+          <br>
 
-        <div class="projects" id="project-wrapper">
+<h2>Projects</h2>
+<br>
+
+<div>
+  <a style="text-decoration: none;" href="/carriersthatcare">
+  <h2>Canada Post</h2>
+  <h2 class="black">How could letter carriers support seniors living in isolation?</h2>
+  <h2>Service Design, Experience Design, Interface Design</p>
+  </a>
+</div>
+<br>
+<div>
+  <a style="text-decoration: none;" href="/careflow">
+  <h2>Careflow</h2>
+  <h2 class="black">How will clinicians help patients transition from in-hospital to at-home care?</h2>
+  <h2>Co-op internship, User experience design, User research, Interface design</p>
+  </a>
+</div>
+</div>
+        <!-- <div class="projects" id="project-wrapper">
           <a href="sc-focus" id="buttonFour">SoundCloud Focus</a>
           <a href="mariner" id="buttonThree">Mariner Brewing</a>
-          <!-- <a href="allseason" id="buttonTwo">All Season</a> -->
+          <a href="allseason" id="buttonTwo">All Season</a>
           <a href="careflow" id="buttonOne">Careflow</a>
           <a href="carriersthatcare" style="opacity: 50%;"
             >(Coming soon) Canada Post</a
           >
-        </div>
-        <h2><a href="/about" id="buttonFive">About me</a></h2>
-      </div>
+        </div> -->
+      <!-- </div> -->
 
-      <div>
+      <!-- <div>
         <img
           id="topImage"
           src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1690334948/triplets_fxawtk.png"
         />
-      </div>
+      </div> -->
     </div>
   </main>
 </Layout>
@@ -38,6 +66,7 @@ import Card from "../components/Card.astro";
 <style>
   .width {
     width: 100%;
+    margin-top: 5%;
   }
   .projects {
     display: flex;
@@ -71,12 +100,15 @@ import Card from "../components/Card.astro";
       opacity: 1;
     }
   }
+  .black{
+    color: black;
+  }
   .flex-container {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    height: 75vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 80vh;
     gap: 0rem;
     margin: 0 8%;
   }
@@ -90,16 +122,24 @@ import Card from "../components/Card.astro";
     max-width: 100ch;
   }
   h1 {
-    font-size: 3rem;
-    /* font-weight: 800; */
+    font-size: 2.5rem;
+    font-weight: 300;
     margin: 0.5rem 0;
-    line-height: 150%;
+    line-height: 140%;
+    max-width: 54rem;
+    letter-spacing: -0.04em;
+  }
+  span{
+    color:#818181;
   }
   h2 {
-    font-size: 1.5rem;
-    font-weight: 200;
+    color:#818181;
+    font-size: 1.25rem;
+    font-weight: 300;
     margin: 0;
     line-height: 150%;
+    letter-spacing: -0.03em;
+
   }
 
   @media only screen and (min-width: 768px) {
@@ -120,7 +160,7 @@ import Card from "../components/Card.astro";
     main {
       margin: auto;
       padding: 0rem;
-      max-width: 110ch;
+      max-width: 300ch;
     }
     /* h1 {
       font-size: 2rem;
@@ -157,7 +197,7 @@ import Card from "../components/Card.astro";
     main {
       margin: auto;
       padding: 0rem;
-      max-width: 110ch;
+      /* max-width: 110ch; */
     }
     h1 {
       font-size: 1.5rem;
