@@ -4,21 +4,41 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout title="About | Erika Wang">
+  <a class="backbutton" href="/">🡐Back</a>
+
   <main>
-    <a href="/">Back</a>
     <div class="content">
       <h1>About</h1>
       <h2>
         I'm Erika, a design student at Simon Fraser University, based in
-        Vancouver.<br /><br /></h2>
-        <p> I believe that good design follows a well-defined objective. As a
+        Vancouver.</h2>
+        <p>
+          Previously, I was at Excelar Technologies, working closely with anesthesiologists and other medical specialists.
+          My other non-design experiences include helping out as a Japanese to English language interpreter; working closely with Japanese
+          voice acting professionals and speaking on their behalf at panels at Anime Revolution, and event that would gather over 30,000 attendees.
+        <br>
+          To me, design is a way to learn about myself through learning about the world around us - I love learning about new domains and having the ability to apply that knowledge through design to understand different communities. 
+        <br>
+        On an average day, you'll be able to find me going on walks or playing video games. Sometimes, I'll do both by playing Pokemon GO. 
+        </p>
+        <!-- <p>
+          - Previously at Excelar, working on CCPC project 
+          - Idk also am a Japanese-English language interpreter at Anirevo
+          - I also read and draw and I love gaming on old handheld consoles
+
+          - My approach to design is to read as much as I can (95% reading 5% designing)
+          - I love learning about new domains and applying that knowledge to understand different communities
+          - Design is a way to learn about myself and my place by learning about the world we live in. 
+        </p> -->
+        <!-- <p> I believe that good design follows a well-defined objective. As a
           designer, my principle is to embrace ambiguity by defining the unknown
           and turning them into tangible actions. In every corner of my life, I am
           constantly seeking for inspiration that could ultimately contribute to
           informed, dynamic design solutions.
-          <br /><br />
+          <br /><br /> -->
+          <!-- <p>
            Aside from design, I like to go on walks or play video games -
-          sometimes I'll do both by playing Pokemon Go. :)</p>
+          sometimes I'll do both by playing Pokemon Go. :)</p> -->
     </div>
     <div class="about-buttons content">
       <a
@@ -31,6 +51,7 @@ import Card from "../components/Card.astro";
 </Layout>
 
 <style>
+  
   a {
     max-width: fit-content;
   }
@@ -42,6 +63,7 @@ import Card from "../components/Card.astro";
   }
   .content{
     margin: 0% 8%;
+    max-width: 70%;
   }
   main {
     margin: auto;
