@@ -5,16 +5,34 @@ import Card from "../components/Card.astro";
 ---
 
 <LayoutProject title="Carriers That Care">
-  <a class="backbutton" href="/">🡐Back</a>
 
+<nav>
+    <ul>
+      <li id="overview"><a href="#overview">Overview</a></li>
+        <li id="ctc"><a href="#ctc">Opportunity</a></li>
+        <li id="whatbutton"><a href="#whatissm">Ideation</a></li>
+        <li id="whybutton"><a href="#whyusesm">Phase 1</a></li>
+        <li id="offerbutton"><a href="#whatdoessmoffer">Phase 2</a></li>
+        <li id="contactbutton"><a href="#contactus">Phase 3</a></li>
+        <li id="consentprivacybutton"><a href="#consentprivacy">Consent & Privacy</a></li>
+
+    </ul>
+</nav>
+
+  <a class="backbutton" href="/">🡐Back</a>
 
   <h1>Canada Post: Carriers that Care</h1>
 
-  <h2 style="color: #6c6c6c;">
+  <h2 id="overview" style="color: #6c6c6c;">
     A proposal for a check-in service to be delivered to seniors living
     independently & their loved ones.
   </h2>
-
+  <!-- <div>
+    <h1 id="whatissm"><span>what we are</span></h1>
+    <h1 id="whyusesm"><span>why us</span></h1>
+    <h1 id="whatdoessmoffer"><span>what we offer</span></h1>
+    <h1 id="contactus"><span>Contact Us</span></h1>  
+</div> -->
   <!-- <div>
     <p><span style="color: #c13145;">What was delivered?</span></p>
     <p>
@@ -73,7 +91,7 @@ import Card from "../components/Card.astro";
     <p>- Canada Post Corporation, 2022 Annual Report</p>
   </div>
   <div class="grid-twocol">
-    <h2>Opportunity</h2>
+    <h2 id="ctc">Opportunity</h2>
 
     <div>
       <h3>THE FINANCIAL STATE OF CANADA POST</h3>
@@ -133,7 +151,7 @@ import Card from "../components/Card.astro";
   </div>
 
   <div class="grid-twocol">
-    <h2>Ideation</h2>
+    <h2 id="whatissm">Ideation</h2>
     <div>
       <h3>PROPERLY SCOPING WHAT A POSTAL WORKER CAN AND CANNOT DO</h3>
       <p>
@@ -188,9 +206,9 @@ import Card from "../components/Card.astro";
   </div>
 
   <hr />
-  <h2>Carriers that Care: Walkthrough</h2>
+  <h3>Carriers that Care: Walkthrough</h2>
   <div class="grid-twocol">
-    <h2>Phase 1</h2>
+    <h2 id="whyusesm">Phase 1</h2>
     <div>
       <h3>SETTING UP VISITS</h3>
       <video
@@ -225,7 +243,7 @@ import Card from "../components/Card.astro";
   </div>
 
   <div class="grid-twocol">
-    <h2>Phase 2</h2>
+    <h2 id="whatdoessmoffer">Phase 2</h2>
     <div>
       <h3>POSTAL WORKER VISITATIONS</h3>
       <p>
@@ -271,7 +289,7 @@ import Card from "../components/Card.astro";
     </div>
   </div>
   <div class="grid-twocol">
-    <h2>Phase 3</h2>
+    <h2 id="contactus">Phase 3</h2>
     <div>
       <h3>POST-VISIT UPDATES</h3>
       <img
@@ -307,7 +325,7 @@ import Card from "../components/Card.astro";
   </div>
   <hr />
 <div class="grid-twocol">
-  <h2>What about Consent and Privacy?</h2>
+  <h2 id="consentprivacy">What about Consent and Privacy?</h2>
   <p>
     A primary issue we need to address is the potential invasiveness of the
     service. To counter this, we have taken various measures across the site to
@@ -322,4 +340,6 @@ import Card from "../components/Card.astro";
   <h3>Taking leaps of faith</h3> -->
   <hr />
   <a href="/" class="prototype">Back to home</a>
+ 
 </LayoutProject>
+

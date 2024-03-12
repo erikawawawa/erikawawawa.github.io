@@ -13,9 +13,9 @@ import Card from "../components/Card.astro";
         <h1>Erika Wang <span> is a Vancouver-based designer, with a particular interest in</span> brand strategy, UX research, <span>and</span> experience design.</h2>
         <h2>Previously, she was designing software for clinicians at <a href="https://www.excelar.ca/">Excelar Technologies</a>.</h2>
         <br>
-        <a href="/about" id="buttonFive">About</a>
+        <a style="padding-right: 1%;" href="/about" id="buttonFive">About</a>
         <a
-          href="https://drive.google.com/file/d/1aJgqiQvRIoIQnFxjvA-QQ90RX8dmEZWN/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1CTj3YgbJDFsbBrXd4ySg99gA3_Z4TB7u/view?usp=drive_link"
           >Resume</a
         >
         <div>
@@ -23,31 +23,33 @@ import Card from "../components/Card.astro";
           <br>
           <br>
 
-<h2>Projects</h2>
-<br>
-<hr>
-<br>
-<div>
+<h2 style="padding-bottom: 1%;">Projects</h2>
+
+<div class="wrap-project">
+  <div class="wrap-project-inner">
   <a style="text-decoration: none;" href="/carriersthatcare">
   <h2>Canada Post</h2>
+  <!-- <img
+  src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709854854/Property_1_Sign_Up_7_bltl3y.png"
+/> -->
   <h2 class="black">How could letter carriers support seniors living in isolation?</h2>
   <h3>Service Design, Experience Design, Interface Design</h3>
   </a>
 </div>
-<br>
-<hr>
-<br>
-<div>
+</div>
+
+<div class="wrap-project">
+  <div class="wrap-project-inner">
   <a style="text-decoration: none;" href="/careflow">
   <h2>Careflow</h2>
   <h2 class="black">How will clinicians help patients transition from in-hospital to at-home care?</h2>
   <h3>Internship, User experience design, User research, Interface design</h3>
   </a>
 </div>
-<br>
-<hr>
-<br>
-<div>
+</div>
+
+<div class="wrap-project">
+  <div class="wrap-project-inner">
   <a style="text-decoration: none;" href="/mariner">
   <h2>Mariner Brewing</h2>
   <h2 class="black">Is there a fun, engaging way to keep customers updated on beer education? </h2>
@@ -81,6 +83,19 @@ import Card from "../components/Card.astro";
     width: 100%;
     margin-top: 5%;
   }
+
+  .wrap-project{
+    width: 50%;
+    padding: 1.8% 0%;
+    border-top: 0.1px solid  #6c6c6c7d;
+    /* border-bottom: 0.1px solid  #6c6c6c7d; */
+
+  }
+  .wrap-project-inner:hover{
+    /* background-color: red; */
+    margin-left: 2%;
+  }
+
   .projects {
     display: flex;
     flex-wrap: nowrap;

@@ -57,9 +57,7 @@ const { title } = Astro.props;
 
   <style is:global>
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
-    /* @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600&display=swap"); */
-    /* @import
-      url("https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=Hanken+Grotesk:wght@350&display=swap"); */
+
     :root {
       --accent: 124, 58, 237;
       --accent-gradient: linear-gradient(
@@ -69,17 +67,13 @@ const { title } = Astro.props;
         white 60%
       );
     }
+    .active {
+    color: red;
+}
     swiper-container {
       width: 100%;
       height: 100%;
     }
-    /* .noto-serif-<uniquifier > {
-      font-family: "Noto Serif", serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
-    } */
 
     swiper-slide {
       text-align: center;
@@ -96,6 +90,7 @@ const { title } = Astro.props;
       height: 100%;
       object-fit: cover;
     }
+
     html {
       font-family: "Noto Serif", serif;
       background-color: #fafafa;
@@ -103,9 +98,8 @@ const { title } = Astro.props;
     }
 
     main {
-      margin: 100px 8% 0%;
-      /* padding: 1rem; */
-      max-width: 110ch;
+      margin: 4% 8% 0%;
+      max-width: 150ch;
 
     }
 
@@ -196,8 +190,10 @@ const { title } = Astro.props;
     } */
 
     nav {
-      position: sticky;
-      top: 0;
+      position: fixed;
+      top: 3%;
+      right: 0;
+      transform: translateX(-50%);
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -205,7 +201,13 @@ const { title } = Astro.props;
       margin: 0;
       padding: 0rem 0.5rem;
       font-size: 1rem;
-      background-color: #f6f6f6b3;
+      z-index: 9;
+      /* background-color: #f6f6f6b3; */
+    }
+    nav>ul{
+      font-size: 1rem;
+      list-style-type: none;
+     
     }
     .nav-right > a {
       padding-left: 1.2rem;
@@ -266,19 +268,17 @@ const { title } = Astro.props;
       }
       p {
         font-size: 0.9rem;
-        color: #808080;
-        padding: 0 2%;
-        /* margin: 1% 0 4%; */
+        color: #818181;
         font-weight: 400;
-        line-height: 1.6;
+        line-height: 1.7;
         letter-spacing: -0.005em;
       }
       hr {
         margin: 5% 0;
       }
       nav {
-        padding: 1.5rem 1.8rem;
-        font-size: 1.1rem;
+        /* padding: 1.5rem 1.8rem;
+        font-size: 1.1rem; */
       }
       .nav-right > a {
         padding-left: 2rem;
@@ -327,4 +327,37 @@ const { title } = Astro.props;
       }
     }
   </style>
+  <script>
+    // Get all h1 elements within the body
+const anchorArr = Array.from(document.querySelectorAll('body h2'));
+let anchors = [];
+anchorArr.forEach((anchor) => {
+  anchors.push(anchor as HTMLElement);
+  console.log(anchor);
+});
+
+// Add scroll event listener to window
+window.addEventListener('scroll', function() {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    
+    // Highlight the last scrolled-to: set everything inactive first
+    for (var i = 0; i < anchors.length; i++) {
+      // console.log(anchors[i])
+      const myElement = document.querySelector('nav ul li a[href="#' + anchors[i].getAttribute('id') + '"]');  
+      // console.log('a[href="#' + anchors[i].getAttribute('id') + '"]');
+        myElement.classList.remove('active');
+        // document.querySelector('nav ul li a[href="#' + anchors[i].getAttribute('id') + '"]').classList.remove('active');
+    }
+    
+    // Then iterate backwards, on the first match highlight it and break
+    for (var i = anchors.length - 1; i >= 0; i--) {
+        if (scrollTop > anchors[i].offsetTop - 75) {
+            document.querySelector('nav ul li a[href="#' + anchors[i].getAttribute('id') + '"]').classList.add('active');
+            break;
+        }
+    }
+});
+
+  </script>
 </html>
+

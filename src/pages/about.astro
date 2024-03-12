@@ -4,10 +4,12 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout title="About | Erika Wang">
-  <a class="backbutton" href="/">🡐Back</a>
 
   <main>
+
     <div class="content">
+      <a class="backbutton" href="/">🡐Back</a>
+
       <h1>About</h1>
       <h2>
         I'm Erika, a design student at Simon Fraser University, based in
@@ -19,7 +21,7 @@ import Card from "../components/Card.astro";
         <br>
           To me, design is a way to learn about myself through learning about the world around us - I love learning about new domains and having the ability to apply that knowledge through design to understand different communities. 
         <br>
-        On an average day, you'll be able to find me going on walks or playing video games. Sometimes, I'll do both by playing Pokemon GO. 
+        On an average day, you'll be able to find me going on walks or playing video games. Sometimes, I'll do both by playing Pokemon GO. :)
         </p>
         <!-- <p>
           - Previously at Excelar, working on CCPC project 
@@ -52,8 +54,15 @@ import Card from "../components/Card.astro";
 
 <style>
   
+  .backbutton{
+      position: fixed;
+      transform: translateX(-100%);
+      padding-right: 3rem;
+    }
+
   a {
     max-width: fit-content;
+    text-decoration: none;
   }
   .about-buttons {
     padding-bottom: 10%;
@@ -63,7 +72,7 @@ import Card from "../components/Card.astro";
   }
   .content{
     margin: 0% 8%;
-    max-width: 70%;
+    max-width: 68%;
   }
   main {
     margin: auto;
@@ -88,7 +97,7 @@ import Card from "../components/Card.astro";
 
   @media only screen and (min-width: 768px) {
     .content{
-    margin: 0% 8%;
+    margin: 3% 8%;
   }
     .projects > a {
       font-size: 1.6rem;
@@ -125,7 +134,7 @@ import Card from "../components/Card.astro";
 
   @media only screen and (min-width: 768px) {
     .content{
-    margin: 0% 8%;
+    margin: 3% 8%;
   }
     a {
       max-width: fit-content;
