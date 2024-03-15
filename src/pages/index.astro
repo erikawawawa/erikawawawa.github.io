@@ -10,46 +10,69 @@ import Card from "../components/Card.astro";
   <main>
     <div class="flex-container">
       <div class="width">
+<<<<<<< HEAD
         <h1>Erika Wang <span> is a Vancouver-based designer, with a particular interest in</span> brand <span>and</span> experience design.</h2>
 
         <!-- <h1>Erika Wang <span> is a Vancouver-based designer, with a particular interest in</span> brand strategy, UX research, <span>and</span> experience design.</h2> -->
         <h2>Previously, she was designing software for clinicians at <a href="https://www.excelar.ca/">Excelar Technologies</a>.</h2>
         <br>
+=======
+        <h1>
+          Erika Wang <span>
+            is a Vancouver-based designer, with a particular interest in</span
+          > brand strategy, UX research, <span>and</span> experience design.
+        </h1>
+        <h2>
+          Previously, she was designing software for clinicians at <a
+            href="https://www.excelar.ca/">Excelar Technologies</a
+          >.
+        </h2>
+        <br />
+>>>>>>> 7083eac6d752efacfd3ab0207a9b63a88c15cc42
         <a style="padding-right: 1%;" href="/about" id="buttonFive">About</a>
         <a
           href="https://drive.google.com/file/d/1CTj3YgbJDFsbBrXd4ySg99gA3_Z4TB7u/view?usp=drive_link"
           >Resume</a
         >
         <div>
-          <br>
-          <br>
-          <br>
+          <br />
+          <br />
+          <br />
 
-<h2 style="padding-bottom: 1%;">Projects</h2>
+          <h2 style="padding-bottom: 1%;">Projects</h2>
 
-<div class="wrap-project">
-  <div class="wrap-project-inner">
-  <a style="text-decoration: none;" href="/carriersthatcare">
-  <h2>Canada Post</h2>
-  <!-- <img
+          <div class="wrap-project">
+            <div class="wrap-project-inner">
+              <a style="text-decoration: none;" href="/carriersthatcare">
+                <h2>Canada Post</h2>
+                <!-- <img
   src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709854854/Property_1_Sign_Up_7_bltl3y.png"
 /> -->
-  <h2 class="black">How could letter carriers support seniors living in isolation?</h2>
-  <h3>Service Design, Experience Design, Interface Design</h3>
-  </a>
-</div>
-</div>
+                <h2 class="black">
+                  How could letter carriers support seniors living in isolation?
+                </h2>
+                <h3>Service Design, Experience Design, Interface Design</h3>
+              </a>
+            </div>
+          </div>
 
-<div class="wrap-project">
-  <div class="wrap-project-inner">
-  <a style="text-decoration: none;" href="/careflow">
-  <h2>Careflow</h2>
-  <h2 class="black">How will clinicians help patients transition from in-hospital to at-home care?</h2>
-  <h3>Internship, User experience design, User research, Interface design</h3>
-  </a>
-</div>
-</div>
+          <div class="wrap-project">
+            <div class="wrap-project-inner">
+              <a style="text-decoration: none;" href="/careflow">
+                <h2>Careflow</h2>
+                <h2 class="black">
+                  How will clinicians help patients transition from in-hospital
+                  to at-home care?
+                </h2>
+                <h3>
+                  Internship, User experience design, User research, Interface
+                  design
+                </h3>
+              </a>
+            </div>
+          </div>
 
+<<<<<<< HEAD
 <div class="wrap-project">
   <div class="wrap-project-inner">
   <a style="text-decoration: none;" href="/mariner">
@@ -60,9 +83,199 @@ import Card from "../components/Card.astro";
 </div>
 </div>
 
+=======
+          <div class="wrap-project">
+            <div class="wrap-project-inner">
+              <a style="text-decoration: none;" href="/mariner">
+                <h2>Mariner Brewing</h2>
+                <h2 class="black">
+                  Is there a fun, engaging way to keep customers updated on beer
+                  education?
+                </h2>
+                <h3>Brand Strategy, Content Design, Interaction Design</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+>>>>>>> 7083eac6d752efacfd3ab0207a9b63a88c15cc42
     </div>
+
+    <style>
+      .width {
+        width: 100%;
+        margin-top: 5%;
+      }
+
+      .wrap-project {
+        width: 50%;
+        padding: 1.8% 0%;
+        border-top: 0.1px solid #6c6c6c7d;
+      }
+      .wrap-project-inner:hover {
+        margin-left: 2%;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .black {
+        color: black;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0rem;
+        margin: 0 8%;
+      }
+      #topImage {
+        display: none;
+      }
+      main {
+        margin: auto;
+        margin-top: 2.2rem;
+        padding: 0rem 0.5rem;
+        max-width: 100ch;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin: 0.5rem 0;
+        line-height: 140%;
+        max-width: 54rem;
+        letter-spacing: -0.04em;
+      }
+      span {
+        color: #818181;
+      }
+      h2 {
+        color: #818181;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin: 0;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+      }
+
+      @media only screen and (min-width: 768px) {
+        #topImage {
+          display: inline;
+          max-width: 400px;
+          height: auto;
+        }
+
+        .projects > a {
+          font-size: 1.6rem;
+        }
+        .flex-container {
+          flex-direction: row;
+          height: 75vh;
+          gap: 2.06rem;
+        }
+        main {
+          margin: auto;
+          padding: 0rem;
+          max-width: 300ch;
+        }
+        .link-card-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+          gap: 1rem;
+          padding: 0;
+        }
+      }
+
+      @media only screen and (min-width: 1920px) {
+        .projects > a {
+          font-size: 1.9rem;
+        }
+        #topImage {
+          display: inline;
+        }
+        .flex-container {
+          flex-direction: row;
+          height: 75vh;
+          gap: 0rem;
+        }
+        main {
+          margin: auto;
+          padding: 0rem;
+        }
+      }
+    </style>
+
+    <script>
+      const topImage = document.getElementById("topImage");
+
+      document
+        .getElementById("buttonOne")
+        .addEventListener("mouseenter", myFunction);
+      document
+        .getElementById("buttonTwo")
+        .addEventListener("mouseenter", myFunction2);
+      document
+        .getElementById("buttonThree")
+        .addEventListener("mouseenter", myFunction3);
+      document
+        .getElementById("buttonFour")
+        .addEventListener("mouseenter", myFunction4);
+      document
+        .getElementById("buttonFive")
+        .addEventListener("mouseenter", myFunction5);
+      // document
+      //   .getElementById("project-wrapper")
+      //   .addEventListener("mouseout", myFunction5);
+
+      function myFunction(setImage) {
+        topImage.setAttribute(
+          "src",
+          "https://res.cloudinary.com/dbiwj2oo8/image/upload/v1690334948/triplets_fxawtk.png",
+
+          // "https://res.cloudinary.com/dbiwj2oo8/image/upload/v1690327861/mariner-splash_u4y2bs.png",
+        );
+        console.log("Hello1");
+      }
+
+      function myFunction2(setImage) {
+        topImage.setAttribute(
+          "src",
+          "https://res.cloudinary.com/dbiwj2oo8/image/upload/v1690505840/Slide_16_9_-_11_2_boogvu.png",
+        );
+      }
+
+      function myFunction3(setImage) {
+        topImage.setAttribute(
+          "src",
+          "https://res.cloudinary.com/dbiwj2oo8/image/upload/v1690505997/Slide_16_9_-_20_1_p0ob1n.png",
+        );
+        console.log("Hello3");
+      }
+
+      function myFunction4(setImage) {
+        topImage.setAttribute(
+          "src",
+          "https://res.cloudinary.com/dbiwj2oo8/image/upload/v1690505840/Frame_80_oarmiy.png",
+        );
+        console.log("Hello4");
+      }
+
+      function myFunction5(setImage) {
+        topImage.setAttribute(
+          "src",
+          "https://res.cloudinary.com/dbiwj2oo8/image/upload/v1690334948/triplets_fxawtk.png",
+        );
+        console.log("Hello5");
+      }
+    </script>
   </main>
 </Layout>
+<<<<<<< HEAD
 
 <style>
   .width {
@@ -258,3 +471,5 @@ import Card from "../components/Card.astro";
     console.log("Hello5");
   }
 </script>
+=======
+>>>>>>> 7083eac6d752efacfd3ab0207a9b63a88c15cc42
