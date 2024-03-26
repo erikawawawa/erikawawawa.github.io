@@ -11,7 +11,7 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/Ellipse.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Star.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -52,26 +52,7 @@ const { title } = Astro.props;
     .active {
     color: red;
 }
-    swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-
-    swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+ 
 
     html {
       font-family: "Noto Serif", serif;
@@ -80,14 +61,30 @@ const { title } = Astro.props;
     }
 
     main {
-      margin: 4% 8% 0%;
-      max-width: 60%;
+      margin: 5% 9% 0%;
+      max-width: 75%;
     }
 
     .backbutton{
       position: fixed;
       transform: translateX(-100%);
       padding-right: 3rem;
+    }
+    .blue{
+      color: #0F3AAA; 
+      font-weight: 400; 
+      font-family: 'Noto Serif', sans-serif;
+    }
+
+    .heavy{
+      font-family: 'Noto Serif', sans-serif;
+      font-weight: 300;
+      letter-spacing: -0.05rem;
+    }
+
+    .tags{
+      font-size: medium;
+      /* font-weight: 300; */
     }
 
     .quote{
@@ -98,25 +95,23 @@ const { title } = Astro.props;
       color: #000000;
     }
 
-    .quote > p{
-    }
-
     h1 {
       font-family: "Noto Serif", serif;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: 300;
-      letter-spacing: -0.1rem;
-      line-height: 100%;
+      letter-spacing: -0.07rem;
+      line-height: 105%;
       margin: 0.5rem 0;
     }
 
     h2 {
       font-size: 1.6rem;
-      letter-spacing: -0.05rem;
+      letter-spacing: -0.03rem;
       font-weight: 300;
       line-height: 150%;
-      margin-top: 2%;
-      margin-bottom: 0;
+      margin: 0;
+      /* margin-top: 2%;
+      margin-bottom: 0; */
     }
 
     ul,
@@ -130,8 +125,8 @@ const { title } = Astro.props;
     }
 
     h3 {
+      font-family: 'Noto Serif', sans-serif;
       font-weight: 400;
-      color: #000;
       line-height: 1.55;
       letter-spacing: -0.005em;
     }
@@ -190,25 +185,13 @@ const { title } = Astro.props;
       font-size: 1rem;
       z-index: 9;
     }
+
     nav>ul{
       font-size: 1rem;
       list-style-type: none;
      
     }
-    .nav-right > a {
-      padding-left: 1.2rem;
-    }
-    nav > a,
-    .nav-right > a {
-      font-size: 1rem;
-      text-decoration: none;
-      line-height: 1.4;
-      opacity: 0.9;
-    }
-    nav > a:hover,
-    .nav-right > a:hover {
-      text-decoration: underline;
-    }
+
     footer {
       font-size: small;
       font-weight: 100;
@@ -231,6 +214,14 @@ const { title } = Astro.props;
       margin-bottom: 6%;
     }
 
+    .wrap-project-inner{
+      padding: 2% 0;
+    }
+    .wrap-project-inner>h2,h3,a{
+      margin: 0;
+      padding: 0;
+    }
+
     @media only screen and (min-width: 768px) {
       ul,
       ol {
@@ -238,7 +229,7 @@ const { title } = Astro.props;
         padding: 0 8% 1%;
       }
       a:hover {
-        font-weight: 800;
+        font-weight: 300;
         text-decoration: underline;
       }
       p {
@@ -249,9 +240,6 @@ const { title } = Astro.props;
       }
       hr {
         margin: 5% 0;
-      }
-      .nav-right > a {
-        padding-left: 2rem;
       }
       footer {
         margin: 2% 0 1% 0;
@@ -294,6 +282,27 @@ const { title } = Astro.props;
       .sansserif {
         padding: 1% 8% 0;
       }
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 
