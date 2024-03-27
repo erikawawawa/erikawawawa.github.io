@@ -50,9 +50,8 @@ const { title } = Astro.props;
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
     .active {
-    color: red;
-}
- 
+      color: red;
+    }
 
     html {
       font-family: "Noto Serif", serif;
@@ -65,29 +64,38 @@ const { title } = Astro.props;
       max-width: 75%;
     }
 
-    .backbutton{
+    .button-alt {
+      text-decoration: underline;
+      letter-spacing: -0.03rem;
+    }
+
+    .grey {
+      color: grey;
+    }
+
+    .backbutton {
       position: fixed;
       transform: translateX(-100%);
       padding-right: 3rem;
     }
-    .blue{
-      color: #0F3AAA; 
-      font-weight: 400; 
-      font-family: 'Noto Serif', sans-serif;
+    .blue {
+      color: #0f3aaa;
+      font-weight: 400;
+      font-family: "Noto Serif", sans-serif;
     }
 
-    .heavy{
-      font-family: 'Noto Serif', sans-serif;
+    .heavy {
+      font-family: "Noto Serif", sans-serif;
       font-weight: 300;
       letter-spacing: -0.05rem;
     }
 
-    .tags{
+    .tags {
       font-size: medium;
       /* font-weight: 300; */
     }
 
-    .quote{
+    .quote {
       font-family: "Noto Serif", sans-serif;
       font-size: 1rem;
       margin: auto 4%;
@@ -97,17 +105,15 @@ const { title } = Astro.props;
 
     h1 {
       font-family: "Noto Serif", serif;
-      font-size: 2.8rem;
+      font-size: 2.7rem;
       font-weight: 300;
       letter-spacing: -0.07rem;
       line-height: 105%;
       margin: 0.5rem 0;
       /* animation: text-focus-in 400ms ease-in both; */
-
     }
-    .everything-else{
+    .everything-else {
       /* animation: text-focus-in 400ms ease-in 0.3s both; */
-
     }
 
     h2 {
@@ -131,7 +137,7 @@ const { title } = Astro.props;
     }
 
     h3 {
-      font-family: 'Noto Serif', sans-serif;
+      font-family: "Noto Serif", sans-serif;
       font-weight: 400;
       line-height: 1.55;
       letter-spacing: -0.005em;
@@ -155,10 +161,9 @@ const { title } = Astro.props;
       text-decoration: underline;
     }
 
-    .wrap-project-inner>a:hover{
-      color: #0F3AAA;
+    .wrap-project-inner > a:hover {
+      color: #0f3aaa;
       animation: slit-in-vertical 0.45s ease-out both;
-
     }
 
     /* .hover-underline-animation {
@@ -194,9 +199,9 @@ const { title } = Astro.props;
       margin-bottom: 3%;
     }
     video {
-  width: 100%    !important;
-  height: auto   !important;
-}
+      width: 100% !important;
+      height: auto !important;
+    }
 
     img {
       display: block;
@@ -221,10 +226,9 @@ const { title } = Astro.props;
       z-index: 9;
     }
 
-    nav>ul{
+    nav > ul {
       font-size: 1rem;
       list-style-type: none;
-     
     }
 
     footer {
@@ -249,10 +253,12 @@ const { title } = Astro.props;
       margin-bottom: 6%;
     }
 
-    .wrap-project-inner{
+    .wrap-project-inner {
       padding: 2% 0;
     }
-    .wrap-project-inner>h2,h3,a{
+    .wrap-project-inner > h2,
+    h3,
+    a {
       margin: 0;
       padding: 0;
     }
@@ -263,7 +269,7 @@ const { title } = Astro.props;
         font-size: 1.3rem;
         padding: 0 8% 1%;
       }
-  
+
       p {
         font-size: 0.9rem;
         font-weight: 400;
@@ -338,103 +344,109 @@ const { title } = Astro.props;
     }
 
     @-webkit-keyframes slit-in-vertical {
-  0% {
-    -webkit-transform: translateZ(-800px) rotateY(90deg);
-            transform: translateZ(-800px) rotateY(90deg);
-    opacity: 0;
-  }
-  54% {
-    -webkit-transform: translateZ(-160px) rotateY(87deg);
-            transform: translateZ(-160px) rotateY(87deg);
-  }
-  100% {
-    -webkit-transform: translateZ(0) rotateY(0);
-            transform: translateZ(0) rotateY(0);
-  }
-}
-@keyframes slit-in-vertical {
-  0% {
-    -webkit-transform: translateZ(-800px) rotateY(90deg);
-            transform: translateZ(-800px) rotateY(90deg);
-    opacity: 0.5;
-  }
-  54% {
-    -webkit-transform: translateZ(-160px) rotateY(87deg);
-            transform: translateZ(-160px) rotateY(87deg);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateZ(0) rotateY(0);
-            transform: translateZ(0) rotateY(0);
-  }
-}
-.slit-in-vertical {
-	-webkit-animation: slit-in-vertical 0.45s ease-out both;
-	        animation: slit-in-vertical 0.45s ease-out both;
-}
+      0% {
+        -webkit-transform: translateZ(-800px) rotateY(90deg);
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0;
+      }
+      54% {
+        -webkit-transform: translateZ(-160px) rotateY(87deg);
+        transform: translateZ(-160px) rotateY(87deg);
+      }
+      100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+      }
+    }
+    @keyframes slit-in-vertical {
+      0% {
+        -webkit-transform: translateZ(-800px) rotateY(90deg);
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 1;
+      }
+      54% {
+        -webkit-transform: translateZ(-160px) rotateY(87deg);
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 0.7;
+      }
+      100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+        opacity: 0.7;
+      }
+    }
+    .slit-in-vertical {
+      -webkit-animation: slit-in-vertical 0.45s ease-out both;
+      animation: slit-in-vertical 0.45s ease-out both;
+    }
 
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
+    @-webkit-keyframes text-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes text-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+      }
+    }
 
-.text-focus-in {
-	-webkit-animation: text-focus-in 600ms ease-in both;
-	        animation: text-focus-in 600ms ease-in both;
-}
+    .text-focus-in {
+      -webkit-animation: text-focus-in 600ms ease-in both;
+      animation: text-focus-in 600ms ease-in both;
+    }
   </style>
 
   <script>
     // Get all h1 elements within the body
-const anchorArr = Array.from(document.querySelectorAll('body h2'));
-let anchors = [];
-anchorArr.forEach((anchor) => {
-  anchors.push(anchor as HTMLElement);
-  console.log(anchor);
-});
+    const anchorArr = Array.from(document.querySelectorAll("body h2"));
+    let anchors = [];
+    anchorArr.forEach((anchor) => {
+      anchors.push(anchor as HTMLElement);
+      console.log(anchor);
+    });
 
-// Add scroll event listener to window
-window.addEventListener('scroll', function() {
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    
-    // Highlight the last scrolled-to: set everything inactive first
-    for (var i = 0; i < anchors.length; i++) {
-      // console.log(anchors[i])
-      const myElement = document.querySelector('nav ul li a[href="#' + anchors[i].getAttribute('id') + '"]');  
-      // console.log('a[href="#' + anchors[i].getAttribute('id') + '"]');
-        myElement.classList.remove('active');
+    // Add scroll event listener to window
+    window.addEventListener("scroll", function () {
+      var scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
+
+      // Highlight the last scrolled-to: set everything inactive first
+      for (var i = 0; i < anchors.length; i++) {
+        // console.log(anchors[i])
+        const myElement = document.querySelector(
+          'nav ul li a[href="#' + anchors[i].getAttribute("id") + '"]'
+        );
+        // console.log('a[href="#' + anchors[i].getAttribute('id') + '"]');
+        myElement.classList.remove("active");
         // document.querySelector('nav ul li a[href="#' + anchors[i].getAttribute('id') + '"]').classList.remove('active');
-    }
-    
-    // Then iterate backwards, on the first match highlight it and break
-    for (var i = anchors.length - 1; i >= 0; i--) {
-        if (scrollTop > anchors[i].offsetTop - 75) {
-            document.querySelector('nav ul li a[href="#' + anchors[i].getAttribute('id') + '"]').classList.add('active');
-            break;
-        }
-    }
-});
+      }
 
+      // Then iterate backwards, on the first match highlight it and break
+      for (var i = anchors.length - 1; i >= 0; i--) {
+        if (scrollTop > anchors[i].offsetTop - 75) {
+          document
+            .querySelector(
+              'nav ul li a[href="#' + anchors[i].getAttribute("id") + '"]'
+            )
+            .classList.add("active");
+          break;
+        }
+      }
+    });
   </script>
 </html>
-

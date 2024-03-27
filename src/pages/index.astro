@@ -7,69 +7,93 @@ import Card from "../components/Card.astro";
 ---
 
 <LayoutProject title="Erika Wang">
+  <h1>
+    Erika Wang <span class="grey">
+      is a Vancouver-based designer, with a particular interest in
+    </span>brand strategy, UX research,<span class="grey"> and </span> experience
+    design.
+  </h1>
 
-        <h1>
-          Erika Wang <span>
-            is a Vancouver-based designer, with a particular interest in</span
-          > brand strategy, UX research, <span>and</span> experience design.
-        </h1>
-        <div class="everything-else">
+  <div class="everything-else">
+    <h2 class="grey">
+      Previously, she was designing software for clinicians at <a
+        class="button-alt grey"
+        href="https://www.excelar.ca/">Excelar Technologies</a
+      >.
+    </h2>
+    <br />
+    <a
+      class="button-alt"
+      style="padding-right: 2%; color: grey;"
+      href="/about"
+      id="buttonFive">About</a
+    >
+    <a
+      class="button-alt grey"
+      href="https://drive.google.com/file/d/1CTj3YgbJDFsbBrXd4ySg99gA3_Z4TB7u/view?usp=drive_link"
+      >Resume</a
+    >
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
-        <h2>
-          Previously, she was designing software for clinicians at <a
-            href="https://www.excelar.ca/">Excelar Technologies</a
-          >.
-        </h2>
-        <br />
-        <a style="padding-right: 1%;" href="/about" id="buttonFive">About</a>
+    <!-- <h2>Projects</h2> -->
+
+    <div class="wrap-project">
+      <div class="wrap-project-inner">
         <a
-          href="https://drive.google.com/file/d/1CTj3YgbJDFsbBrXd4ySg99gA3_Z4TB7u/view?usp=drive_link"
-          >Resume</a
+          class="hover-underline-animation"
+          style="text-decoration: none;"
+          href="/carriersthatcare"
         >
-          <br />
-          <br />
-          <br />
+          <h2 class="blue">Canada Post</h2>
+          <h2 class="heavy">
+            How could letter carriers support seniors living in isolation?
+          </h2>
+          <h3 class="tags">
+            Service Design, Experience Design, Interface Design
+          </h3>
+        </a>
+      </div>
+    </div>
 
-          <!-- <h2>Projects</h2> -->
+    <div class="wrap-project">
+      <div class="wrap-project-inner">
+        <a
+          class="hover-underline-animation"
+          style="text-decoration: none;"
+          href="/careflow"
+        >
+          <h2 class="blue">Careflow</h2>
+          <h2 class="heavy">
+            How will clinicians help patients transition from in-hospital to
+            at-home care?
+          </h2>
+          <h3 class="tags">
+            Internship, User experience design, User research, Interface design
+          </h3>
+        </a>
+      </div>
+    </div>
 
-          <div class="wrap-project">
-            <div class="wrap-project-inner">
-              <a class="hover-underline-animation" style="text-decoration: none;" href="/carriersthatcare">
-                <h2 class="blue">Canada Post</h2>
-                <h2 class="heavy">
-                  How could letter carriers support seniors living in isolation?
-                </h2>
-                <h3 class="tags">Service Design, Experience Design, Interface Design</h3>
-              </a>
-            </div>
-          </div>
-
-          <div class="wrap-project">
-            <div class="wrap-project-inner">
-              <a class="hover-underline-animation" style="text-decoration: none;" href="/careflow">
-                <h2 class="blue">Careflow</h2>
-                <h2 class="heavy">
-                  How will clinicians help patients transition from in-hospital
-                  to at-home care?
-                </h2>
-                <h3 class="tags">
-                  Internship, User experience design, User research, Interface
-                  design
-                </h3>
-              </a>
-            </div>
-          </div>
-
-<div class="wrap-project">
-  <div class="wrap-project-inner">
-  <a style="text-decoration: none;" href="/mariner">
-  <h2 class="blue">Mariner Brewing</h2>
-  <h2 class="heavy">Is there a fun, engaging way to keep customers updated on beer education? </h2>
-  <h3 class="tags">Brand Strategy,  Content Design, Interaction Design</h3>
-  </a>
-</div>
-</div>
-<!-- <div class="wrap-project">
+    <div class="wrap-project">
+      <div class="wrap-project-inner">
+        <a style="text-decoration: none;" href="/mariner">
+          <h2 class="blue">Mariner Brewing</h2>
+          <h2 class="heavy">
+            Is there a fun, engaging way to keep customers updated on beer
+            education?
+          </h2>
+          <h3 class="tags">
+            Brand Strategy, Content Design, Interaction Design
+          </h3>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="wrap-project">
   <div class="wrap-project-inner">
   <a style="text-decoration: none;" href="/fuorisalone">
   <h2>Fuori Salone</h2>
@@ -78,8 +102,8 @@ import Card from "../components/Card.astro";
   </a>
 </div>
 </div> -->
-    </div>
-<!-- 
+  </div>
+  <!-- 
     <style>
       .width {
         width: 100%;
@@ -189,9 +213,8 @@ import Card from "../components/Card.astro";
       }
     </style> -->
   <!-- </main> -->
-</LayoutProject>
 
-<!-- <style>
+  <!-- <style>
   .width {
     width: 100%;
     margin-top: 5%;
@@ -310,7 +333,4 @@ import Card from "../components/Card.astro";
 
   }
 </style>  -->
-
-
-
-     
+</LayoutProject>
