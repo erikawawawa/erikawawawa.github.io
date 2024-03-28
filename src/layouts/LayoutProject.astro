@@ -62,6 +62,8 @@ const { title } = Astro.props;
     main {
       margin: 5% 9% 0%;
       max-width: 75%;
+      -webkit-animation: slide-in-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: slide-in-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
 
     .button-alt {
@@ -406,6 +408,32 @@ const { title } = Astro.props;
         opacity: 1;
       }
     }
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
     .text-focus-in {
       -webkit-animation: text-focus-in 600ms ease-in both;
