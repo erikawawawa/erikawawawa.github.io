@@ -4,7 +4,13 @@ import LayoutProject from "../layouts/LayoutProject.astro";
 import Card from "../components/Card.astro";
 ---
 
+<nav>
+  <a>Home</a>
+  <a>About</a>
+</nav>
+
 <LayoutProject title="Carriers That Care">
+  <a class="backbutton" href="/">🡐Back</a>
 
 <!-- <nav>
     <ul>
@@ -19,7 +25,7 @@ import Card from "../components/Card.astro";
     </ul>
 </nav> -->
 
-<a class="backbutton" href="/">🡐Back</a>
+
 
   <h1>Canada Post: Carriers that Care</h1>
   <br>
@@ -99,7 +105,7 @@ import Card from "../components/Card.astro";
 
     <div>
       <h3>The financial state of Canada Post</h3>
-   
+  
       <p>
         Canada Post has, for the last 17 years, been seeing a decline in their
         profits as letter delivery becomes replaced by the
@@ -124,6 +130,7 @@ import Card from "../components/Card.astro";
         </p>
         <p class="quote"><i>- Canada Post Corporation, 2022 Annual Report</i></p>
       </div>
+      
       <br>
       <h3>The potential of postal workers as part of senior care</h3>
 
@@ -426,8 +433,6 @@ import Card from "../components/Card.astro";
   <!-- <h2>Design decisions and strategies</h2> -->
   <!-- <h2>Reflection</h2>
   <h3>Taking leaps of faith</h3> -->
-  <hr />
-  <a href="/" class="prototype">Back to home</a>
- 
-</LayoutMarch>
+
+</LayoutProject>
 

@@ -17,11 +17,19 @@ const { title } = Astro.props;
   </head>
 
   <body>
+    <nav>
+      <a href="/about">About</a>
+      <a href="/about">Home</a>
+    </nav>
+
     <main>
       <slot />
     </main>
 
     <footer>
+      <hr />
+      <a href="/" class="prototype">Back to home</a>
+     
       © Erika Wang 2024 | Built with <a
         style="text-decoration: underline;"
         href="https://astro.build/">Astro</a
@@ -65,6 +73,8 @@ const { title } = Astro.props;
       -webkit-animation: slide-in-bottom 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: slide-in-bottom 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
+    
+  
 
     .button-alt {
       text-decoration: underline;
@@ -226,7 +236,7 @@ const { title } = Astro.props;
       border: 1px solid #222;
     }
 
-    nav {
+    /* nav {
       position: fixed;
       top: 3%;
       right: 0;
@@ -239,11 +249,26 @@ const { title } = Astro.props;
       padding: 0rem 0.5rem;
       font-size: 1rem;
       z-index: 9;
+    } */
+
+
+    nav{
+      position: fixed;
+      display: flex;
+      flex-wrap: wrap;
+      top: 0;
+      margin: auto;
+      padding: 1% 13%;
+      font-size: 1rem;
+      z-index: 9;
+      width: 100%;
+      background-color: #fafafa;
+      /* border-bottom: solid 0.5px #000; */
     }
 
     nav > ul {
       font-size: 1rem;
-      list-style-type: none;
+      list-style-type: one;
     }
 
     footer {
