@@ -29,7 +29,7 @@ const { title } = Astro.props;
     <footer>
       <hr />
       <a href="/" class="prototype">Back to home</a>
-     
+
       © Erika Wang 2024 | Built with <a
         style="text-decoration: underline;"
         href="https://astro.build/">Astro</a
@@ -68,13 +68,12 @@ const { title } = Astro.props;
     }
 
     main {
-      margin: 5% auto;
+      margin: 7% auto;
       max-width: 75%;
-      -webkit-animation: slide-in-bottom 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: slide-in-bottom 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      -webkit-animation: slide-in-bottom 0.6s
+        cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      animation: slide-in-bottom 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
     }
-    
-  
 
     .button-alt {
       text-decoration: underline;
@@ -111,15 +110,15 @@ const { title } = Astro.props;
 
     .quote {
       font-family: "Noto Serif", sans-serif;
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       font-weight: 300;
-      color: black;
+      color: darkblue;
       /* margin: auto 4%; */
     }
 
     h1 {
       font-family: "Noto Serif", serif;
-      font-size: 2.9rem;
+      font-size: 3rem;
       font-weight: 300;
       letter-spacing: -0.09rem;
       line-height: 115%;
@@ -181,16 +180,16 @@ const { title } = Astro.props;
       color: #0f3aaa;
       animation: slit-in-vertical 0.45s ease-out both;
     }
-    .box{
-  display:flex;
-  justify-content: space-between;
-  padding-bottom: 2rem;
-}
+    .box {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 2rem;
+    }
 
-.container{
-  /* background-color:grey; */
-  padding: 1rem;
-}
+    .container {
+      /* background-color:grey; */
+      padding: 1rem;
+    }
     /* .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -251,8 +250,7 @@ const { title } = Astro.props;
       z-index: 9;
     } */
 
-
-    nav{
+    nav {
       position: fixed;
       display: flex;
       flex-wrap: wrap;
@@ -323,10 +321,9 @@ const { title } = Astro.props;
         margin: 2% 0 1% 0;
       }
       .grid-fourcol {
-        padding: 0 2%;
-
+        padding: 0;
         display: grid;
-        grid-template-columns: 30% 30% 30% 10%;
+        grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 1fr;
         grid-column-gap: 0.1em;
       }
@@ -344,7 +341,7 @@ const { title } = Astro.props;
         grid-column-gap: 0.1em;
       }
       .grid-twocol-even {
-        padding: 0 2%;
+        padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -445,31 +442,30 @@ const { title } = Astro.props;
       }
     }
 
-@-webkit-keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(80px);
-            transform: translateY(80px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(80px);
-            transform: translateY(80px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
+    @-webkit-keyframes slide-in-bottom {
+      0% {
+        -webkit-transform: translateY(80px);
+        transform: translateY(80px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-bottom {
+      0% {
+        -webkit-transform: translateY(80px);
+        transform: translateY(80px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
 
     .text-focus-in {
       -webkit-animation: text-focus-in 600ms ease-in both;
