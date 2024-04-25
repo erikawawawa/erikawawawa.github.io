@@ -4,13 +4,8 @@ import LayoutProject from "../layouts/LayoutProject.astro";
 import Card from "../components/Card.astro";
 ---
 
-<nav>
-  <a>Home</a>
-  <a>About</a>
-</nav>
-
 <LayoutProject title="Carriers That Care">
-  <a class="backbutton" href="/">🡐Back</a>
+  <a class="backbutton" href="/">Back</a>
 
   <h1>Canada Post: Carriers that Care</h1>
 
@@ -18,7 +13,7 @@ import Card from "../components/Card.astro";
     Strengthening connections between independently living seniors and their
     loved ones
   </h2>
-
+  <hr />
   <div class="grid-fourcol">
     <div>
       <p>Duration</p>
@@ -39,13 +34,51 @@ import Card from "../components/Card.astro";
       </p>
     </div>
   </div>
-  <hr />
 
+  <hr />
+  <br />
+
+  <div class="grid-twocol">
+    <h2>Opportunity</h2>
+
+    <div>
+      <!-- <p class="quote">
+        <i
+          >"With more people shifting to the internet and smart mobile devices
+          to communicate and transact, posts have experienced a <strong
+            >structural decline in mail volumes</strong
+          > as customers shift to digital alternatives, while the widespread adoption
+          of ecommerce, accelerated by COVID-19, has created a
+          <strong>highly competitive parcel delivery landscape</strong>."</i
+        >
+      </p>
+      <p class="quote">
+        <i>- Canada Post Corporation, 2022 Annual Report</i>
+      </p> -->
+      <p>
+        Canada Post has, for the last 17 years, been seeing a decline in their
+        profits as letter delivery becomes replaced by the internet, while
+        faster, cheaper competitors such as UPS and FedEx have been growing
+        their shares in the parcel delivery market.
+        <br />
+        <p>
+          On the other hand, they are in a unique position as a federal Crown
+          corporation to deliver services to all communities across Canada. As
+          underpinned in initiatives such as their introduction of 'community
+          hub'-style post offices, they are increasing efforts in serving rural
+          areas as part of their solution outside of their existing services in
+          order to establish financial self-sustainability.
+        </p>
+        <br />
+      </p>
+    </div>
+  </div>
+  <hr />
   <div>
     <p class="quote">
       <i
-        >With an aging population, we’re going to see a decrease in the number
-        of available family caregivers; we’re going to see more people living
+        >With an aging population, we're going to see a decrease in the number
+        of available family caregivers; we're going to see more people living
         alone in the community, at a greater risk of social isolation. And so,
         we need to find creative ways that can help people remain independent
         and feel well supported.</i
@@ -59,7 +92,17 @@ import Card from "../components/Card.astro";
       </i>
     </p>
   </div>
-  <!-- <br />
+  <hr />
+  <div class="grid-twocol">
+    <h2>Solution</h2>
+    <p>
+      Carriers that Care is a proposal for a senior check-in service to be
+      delivered by mail carriers. This case study divides the service into three
+      parts - pre-visit & sign-up, letter carrier visits, and post-visit updates
+      - and talks through each touchpoint that occurs throughout.
+    </p>
+  </div>
+  <br />
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe
       src="https://player.vimeo.com/video/892041896?h=7962b203ac"
@@ -68,141 +111,18 @@ import Card from "../components/Card.astro";
       allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen></iframe>
   </div><script src="https://player.vimeo.com/api/player.js"></script>
-  <br /> -->
-  <hr />
   <br />
-
+  <hr />
   <div class="grid-twocol">
-    <h2 id="ctc">Opportunity</h2>
-
+    <h2>Scoping</h2>
     <div>
       <p>
-        Canada Post has, for the last 17 years, been seeing a decline in their
-        profits as letter delivery becomes replaced by the internet, while
-        faster, cheaper competitors such as UPS and FedEx have been growing
-        their shares in the parcel delivery market.
-        <br /><br />
-        <p class="quote">
-          <i
-            >"With more people shifting to the internet and smart mobile devices
-            to communicate and transact, posts have experienced a <strong
-              >structural decline in mail volumes</strong
-            > as customers shift to digital alternatives, while the widespread adoption
-            of ecommerce, accelerated by COVID-19, has created a
-            <strong>highly competitive parcel delivery landscape</strong>."</i
-          >
-        </p>
-        <p class="quote">
-          <i>- Canada Post Corporation, 2022 Annual Report</i>
-        </p>
-        <p>
-          On the other hand, they are in a unique position as a federal Crown
-          corporation to deliver services to all communities across Canada. As
-          underpinned in initiatives such as their introduction of ‘community
-          hub’-style post offices, they are increasing efforts in serving rural
-          areas as part of their solution outside of their existing services in
-          order to establish financial self-sustainability.
-        </p>
-
-        <br />
-        <h3>The potential of postal workers as part of senior care</h3>
-
-        <p>
-          Across the globe, postal companies have successfully demonstrated
-          success in expanding their businesses, notably through senior check-in
-          services delivered by letter carriers. Examples include the “Mimamori”
-          program from Japan Post, and “Veiller sur mes parents” program from
-          the French La Poste.
-          <br /><br />
-          But how does this evidence that such a service would benefit Canada Post?
-          Through investigating potential stakeholders - postal workers, and those
-          in senior care - we discovered the following insights:
-        </p>
-
-        <h3><i>87% of Canadians trust their mail carriers.</i></h3>
-        <p>
-          Through a special report released in 2023, our team discovered that
-          the National Institute on Ageing (NIA), a research centre based at
-          Toronto Metropolitan University, advocates that Canada Post is in a
-          unique position to deliver such a service. Citing a poll conducted by
-          Leger conducted in 2015, they state that letter carriers are amongst
-          the most trusted professions in Canada, with 87% of Canadians saying
-          they trusted their mail carriers.
-        </p>
-
-        <h3><i>Canadians are getting older.</i></h3>
-        <p>
-          Furthermore, within the Canadian context, Statistics Canada has
-          reported that 1 in 4 Canadians will be over the age of 65 by 2030 (in
-          comparison to 15.3% in 2013), and the NIA and Canadian Medical
-          Association reporting that 96% of Canadians want to age at home for as
-          long as possible.
-        </p>
-
-        <h3>
-          <i>Postal worker unions have been advocating for such a service.</i>
-        </h3>
-        <p>
-          It was also promising that we were able to discover interest for this
-          service amongst employees of Canada Post as well - a report written in
-          2016, with several follow-ups since (the latest one written in 2023),
-          evidenced to us that the Canadian Union of Postal Workers has been
-          continuously advocating for Canada Post to leverage its unique
-          positioning and network of over (12540 + 28,400) letter carriers to
-          establish a check-in service for seniors for several years now.
-        </p>
-        <p></p> However, in order for Canada Post to properly adopt a senior-oriented
-        check-in service, there were areas of consideration that would have to be
-        designed to. Upon presenting our idea in-class, we were met with a few concerns
-        from peers that helped narrowed down these concerns: How would they prevent
-        this service from interfering with what's currently available to Canadians?
-        How would the service be modelled so that it would avoid invasiveness? What
-        sort of unique needs and wants would we need to address in re-creating a
-        foreign service for a Canadian demographic?
-        <br /><br />
+        The solution is made in consideration to the "Four Essential Pillars for
+        Supporting Ageing in the Right Place", authored by the Canadian National
+        Institute of Aging, with a particular focus on pillar 4 - improving
+        social connections to reduce loneliness & social isolation.
       </p>
     </div>
-  </div>
-
-  <div class="grid-twocol">
-    <h2 id="whatissm">Ideation</h2>
-    <div>
-      <h3>Properly scoping what a postal worker can or cannot do</h3>
-
-      <p>
-        With the goal of identifying underlying gaps in a Canada Post-based
-        senior check-in service, as a first step my team and I created a website
-        mockup introducing our service, which we named Carriers that Care (CtC),
-        to user-test with our target demographic: adults who have an elderly
-        loved one who lives alone.
-        <br /><br />
-        Initial proposals of Carriers that Care were met with a lot of hesitation
-        from user testers. Having conducted user interviews with seven individuals
-        with ages ranging from 20s to 50s, centering our questions around allowed
-        us to sort concerns into four categories:
-      </p>
-    </div>
-  </div>
-  <img
-    style="border-style: none; width: 80%;"
-    src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709585139/Group_47_etzxgi.svg"
-  />
-  <div class="grid-twocol">
-    <div></div>
-    <p>
-      Across all seven interviewees, the tangible aspects of Carriers That Care
-      was universally agreed with to be valuable. However, there was concern
-      over the concept of relying on letter carriers to report on senior
-      wellbeing - the idea of 'caring for seniors' is accompanied by nuanced
-      implications of medical care and invasion of privacy, which would put
-      seniors in a vulnerable position as letter carriers would be granted a
-      position of authority without going through the proper training.
-      <br />
-      Given our results, there was a need to properly define the domains in which
-      a letter carrier would support within Carrier that Care. In order to accomplish
-      this, we evaluated a framework by the NIA that defines four essential pillars
-      that are crucial to supporting ageing comfortably at home.
-    </p>
   </div>
   <div>
     <img
@@ -213,24 +133,28 @@ import Card from "../components/Card.astro";
   <div class="grid-twocol">
     <div></div>
     <p>
-      Amongst the four pillars, we scoped our service and moved forwards with an
-      focus on designing around improving social connections to reduce
-      loneliness and social isolation, a domain that postal workers can
-      reasonably intervene with without reducing the credibility or trust in
-      Carriers That Care.
+      This decision was made from my team and I's awareness that the idea of
+      'caring for seniors' is accompanied by nuanced implications of medical
+      care and invasion of privacy. We agree with this notion, and the idea that
+      a service like Carriers That Care could unfairly put letter carriers in a
+      position of authority without the proper training for it, thus putting
+      seniors in a vulnerable position.
+    </p>
+  </div>
+
+  <div class="grid-twocol">
+    <div></div>
+    <p>
+      Our intention with introducing this framework is to ensure that we
+      properly establish that we are designing around a domain within senior
+      support that postal workers can reasonably intervene with, without
+      reducing credibility or trust in Carriers that Care.
     </p>
   </div>
 
   <hr />
-  <div class="grid-twocol">
-    <h2>Service Walkthrough</h2>
 
-    <p>
-      The final prototype of Carriers that Care is divded into three parts:
-      Set-up, visitations, and post-visit reports.
-    </p>
-  </div>
-  <div class="box">
+  <!-- <div class="box">
     <div class="container">
       <h2>Phase 1</h2>
       <p>Sign-up & consent</p>
@@ -252,171 +176,124 @@ import Card from "../components/Card.astro";
         src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1713659797/MacBook_Pro_16_w5qpvv.png"
       />
     </div>
-  </div>
+  </div> -->
   <!-- <img src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1710484642/Touchpoints_xb5jwf.png"> -->
   <!--  <note>Maybe images/illustrations at the top of each secion might help differentiate users...?</note>-->
 
-  <br />
+  <h2>Pre-visit</h2>
   <br />
 
-  <div class="grid-twocol">
-    <h2 id="whyusesm">Phase 1</h2>
+  <div class="grid-twocol-even">
     <div>
-      <video
-        width="720"
-        controls
-        src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854884/Carriers_that_Care_-_Landing_page_scrollthrough_-_Made_with_Clipchamp_va8vbw.mp4"
-      ></video>
+      <h3>Defining the service</h3>
       <p>
-        Audience would familiarize themselves with our service through the
-        landing page of the service. Here, we outline a description of the
-        service.
+        A web portal, accessible from Canada Post's pre-existing website, would
+        describe the details of Carriers That Care, allowing for a shared
+        understanding of the service between families and seniors. To ensure
+        that contents of this website are also available offline, we have
+        designed a brochure to be mailed to indicate from one party to the other
+        their interest in the service.
       </p>
+    </div>
+    <img src="/src/assets/Landing Page Scrollthrough.gif" />
+    <!-- <video
+      width="100"
+      controls
+      src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854884/Carriers_that_Care_-_Landing_page_scrollthrough_-_Made_with_Clipchamp_va8vbw.mp4"
+    ></video> -->
+
+    <div>
+      <h3>Setting expectations & Consent</h3>
+      <p>
+        The sign-up process places emphasis on ensuring that the senior, who
+        will be the recipient of the service, is aware of Carriers that Care and
+        is consenting to receiving the service. Anticipating cases where
+        families will be signing up on the senior's behalf, we have included
+        callouts throughout the process, and will not begin delivery of the
+        service until Canada Post receives vocal consent from the recipient.
+      </p>
+    </div>
+    <div>
+      <br />
+      <br />
+
       <img
+        style="margin: 1% 0;"
         src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709854854/Property_1_Sign_Up_7_bltl3y.png"
       />
-
-      <p>
-        Ensuring that loved ones have consented to the service, Canada Post will
-        ask for contact information of both the loved one and family.
-      </p>
       <img
         src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709854855/Property_1_Dashboard_Property_2_Pending_s5e213.png"
       />
-      <p>
-        The final step of the sign-up process will involve the senior recipient
-        of the service, with Canada Post reaching out through a phone call to
-        ensure that seniors will be aware of the service. <strong
-          >Carriers that Care will not begin until this step is completed.</strong
-        >
-      </p>
     </div>
+    <!-- <video
+      width="720"
+      controls
+      src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854884/Carriers_that_Care_-_Landing_page_scrollthrough_-_Made_with_Clipchamp_va8vbw.mp4"
+    ></video> -->
   </div>
-
-  <div class="grid-twocol">
-    <h2 id="whatdoessmoffer">Phase 2</h2>
-    <div>
-      <h3>Postal worker visitations</h3>
-      <p>
-        Postal workers can use this app to quickly send reports and access
-        resources they may need during the visits.
-      </p>
-      <div class="grid-twocol-even">
-        <img
-          src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709847841/Overview_of_all_their_visits_how_they_will_do_the_report_rfe5fz.png"
-        />
-        <img
-          src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709847847/Overview_of_all_their_visits_how_they_will_do_the_report-1_qwajua.png"
-        />
-      </div>
-
-      <p>
-        Steps involved in reporting will include reporting on their well-being,
-        reporting on topics of interest, and et cetra.
-      </p>
-      <video width="240" controls>
-        <source
-          src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854862/Carriers_that_Care_-_Letter_Carrier_Survey_-_Made_with_Clipchamp_fer7sg.mp4"
-        />
-      </video>
-      <p>
-        Following the visit, Postal worker will fill out and upload a report on
-        observations they made during the visit. Reports will be optimized for
-        Postal workers to be able to fill out while on-the-go.
-      </p>
-      <div class="grid-twocol-even">
-        <img
-          src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709847839/Emergency_wejrlq.png"
-        /><img
-          src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709847852/Resources_pk5dtp.png"
-        />
-      </div>
-      <p>
-        Should any unexpected events occur during the visits, we plan equip
-        postal workers with an ‘emergency resources’ page on the app.
-        Addtionally, we through Canada Post’s exisiting training portal, we
-        expect carriers to be able to handle certain events to some degree.
-      </p>
-    </div>
-  </div>
-  <div class="grid-twocol">
-    <h2 id="contactus">Phase 3</h2>
-    <div>
-      <h3>Post-visit updates</h3>
-      <img
-        style="border-style: none;"
-        src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1709848320/E-mail_text_p3kfek.png"
-      />
-      <p>
-        Family members can stay updated of the visits after they occur through
-        notifications sent through text and email.
-      </p>
-      <video
-        width="720"
-        controls
-        src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854869/Carriers_that_Care_-_Dashboard_sendgift_-_Made_with_Clipchamp_p9vshe.mp4"
-      ></video>
-
-      <p>
-        If they wish to get a closer look on the reports, they may choose to
-        view reports through the dashboard.
-      </p>
-      <video
-        width="720"
-        controls
-        src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854858/Carriers_that_Care_-_Dashboard_-_check_gift_-_Made_with_Clipchamp_yaxakv.mp4"
-      ></video>
-      <p>
-        From the dashboard, families are able to adjust visitation details, send
-        a gift to Rachel to be hand-delivered by the carrier, or add other
-        family members to get notified about reports.
-      </p>
-    </div>
-  </div>
-  <hr />
-  <div class="grid-twocol">
-    <h2 id="consentprivacy">What about Consent and Privacy?</h2>
-    <div>
-      <p>
-        A primary issue we need to address is the potential invasiveness of the
-        service. To counter this, we have taken various measures across the site
-        to ensure families inform their loved ones of the service and gain their
-        consent to sign up through callouts, physical information packages and
-        the call after the signup.
-      </p>
-    </div>
-  </div>
-  <img
-    style="border-style: none;"
-    src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1710484912/Group_372_r5ppcv.png"
-  />
-  <hr />
-  <div class="grid-twocol">
-    <h2 id="consentprivacy">Sub-brand creation</h2>
-    <div>
-      <p>
-        Another issue we encountered was a general ovrall confusion on the
-        difference between Carriers that Care and letter and parcel devliery
-        services offered by Canada Post. In order to address this, we created a
-        sub-brand for the service, which also addes a touch of approachability
-        to the overall tone compared to Canada Post's current branding. As a fun
-        fact, illustrations were hand-drawn by me!
-      </p>
-    </div>
-  </div>
+  <br />
+  <h2>Postal worker visit</h2>
+  <br />
   <div class="grid-twocol-even">
-    <img
-      style="border-style: none;"
-      src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1710485851/Sub-brand_a7lcil.png"
-    />
-    <br />
-    <img
-      style="border-style: none;"
-      src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1710485851/Sub-brand-1_h4kjss.png"
-    />
+    <img style="width: 40%;" src="/src/assets/Letter Carrier Survey.gif" />
+    <!-- <video
+      width="720"
+      controls
+      src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854884/Carriers_that_Care_-_Landing_page_scrollthrough_-_Made_with_Clipchamp_va8vbw.mp4"
+    ></video> -->
+    <div>
+      <h3>Equipping letter carriers with the right tools</h3>
+      <p>
+        To assist with effective check-ins, postal workers will be provided with
+        an app that includes details about the people they are visiting, a form
+        to report check-ins, and emergency contacts as well as resources to
+        better equip them for unexpected situations. The check-in report is made
+        to be as short-handed as possible to ensure that postal workers may fill
+        them out while they are on the go.
+      </p>
+    </div>
   </div>
-  <!-- <hr /> -->
-  <!-- <h2>Design decisions and strategies</h2> -->
-  <!-- <h2>Reflection</h2>
-  <h3>Taking leaps of faith</h3> -->
+  <br />
+
+  <h2>Post-visit</h2>
+  <br />
+
+  <div class="grid-twocol-even">
+    <div>
+      <h3>Reports delivered to your email</h3>
+      <p>
+        Reports filled out by letter carriers will be sent to the recipient and
+        their loved ones through text or e-mail. Full reports may be viewed
+        through a Carriers That Care dashboard, where families can adjust
+        visitation details such as date or time, get information about the
+        letter carrier who is visiting.
+      </p>
+    </div>
+    <!-- <video
+      width="720"
+      controls
+      src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854884/Carriers_that_Care_-_Landing_page_scrollthrough_-_Made_with_Clipchamp_va8vbw.mp4"
+    ></video> -->
+    <img src="/src/assets/Dashboard - Send gift.gif" />
+    <div>
+      <h3>Facilitating further engagement</h3>
+      <p>
+        Canada Post may also utilise this dashboard to connect Carriers That
+        Care to other services in their ecosystem - including sending gifts
+        through Canada Shops, an e-commerce store they were piloting in Fall of
+        2023.
+      </p>
+    </div>
+    <div>
+      <br />
+      <br />
+      <img src="/src/assets/Dashboard - check gift.gif" />
+    </div>
+
+    <!-- <video
+      width="720"
+      controls
+      src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854884/Carriers_that_Care_-_Landing_page_scrollthrough_-_Made_with_Clipchamp_va8vbw.mp4"
+    ></video> -->
+  </div>
 </LayoutProject>
