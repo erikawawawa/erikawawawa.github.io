@@ -346,7 +346,13 @@ const { title } = Astro.props;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-column-gap: 1em;
+        justify-items: center;
+        align-content: space-evenly;
       }
+      .grid-twocol-even > div {
+        align-self: center;
+      }
+
       .details {
         padding: 1% 4% 2%;
         margin: 2% 0;
