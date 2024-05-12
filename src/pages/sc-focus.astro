@@ -6,15 +6,16 @@ import LayoutProject from "../layouts/LayoutProject.astro";
 <LayoutProject title="Sc-focus">
   <!-- <div class="grid-twocol"> -->
 
-  <h1>SoundCloud Focus</h1>
   <img
     src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642281828/Slide_16_9_-_10_xoxmpo.png"
   />
-  <h2 style="padding-top:3%;">Overview</h2>
-  <p>
+  <h1>SoundCloud Focus</h1>
+
+  <h2 id="overview" style="color: #6c6c6c;">A "focus timer" feature for SoundCloud's mobile application</h2>
+  <!-- <p>
     A "focus timer" feature for SoundCloud's mobile application, designed and
     prototyped as part of a senior-level interaction design course.
-  </p>
+  </p> -->
   <hr>
   
   <div class="grid-fourcol">
@@ -104,7 +105,7 @@ import LayoutProject from "../layouts/LayoutProject.astro";
     >
   </p> -->
   <hr />
-
+<div class="grid-twocol">
   <h2>Pitch</h2>
   <p>
     Seeing that outside distractions seemed to be the leading obstacle in user
@@ -117,6 +118,8 @@ import LayoutProject from "../layouts/LayoutProject.astro";
       minimizing their likelihood of leaving the app</strong
     > due to distractions.
   </p>
+</div>
+<br>
   <img
     src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642579525/Frame_5_vcqqum.png"
   />
@@ -127,8 +130,8 @@ import LayoutProject from "../layouts/LayoutProject.astro";
     >
   </p>
 
+  <div class="grid-twocol">
   <h2>Prototype</h2>
-
   <p>
     I created three rounds of wireframes for the focus timer in the span of one
     week, from low fidelity to high. Throughout the process, I was able to get
@@ -143,7 +146,7 @@ import LayoutProject from "../layouts/LayoutProject.astro";
   <p>
     <small>First round of wireframes, done on paper with pencil.</small>
   </p> -->
-
+  </div>
   <img
     style="border: none; width: 75%;"
     src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1641174861/Group_39_glsqdr.png"
@@ -163,8 +166,8 @@ import LayoutProject from "../layouts/LayoutProject.astro";
   </p> -->
   <!-- <hr /> -->
 
-  <div style="background-color: #FAFAFA; border: 1px dashed #333;">
-    <h2 class="sansserif">Side note: Dissecting the design system</h2>
+  <div style="background-color: #FAFAFA; border: 1px dashed #333; padding: 5%;">
+    <h2>Side note: Dissecting the design system</h2>
     <p>
       To ensure that there would not be in gaps between SoundCloud's design
       systems and my prototype, almost every component incorporated was traced
@@ -215,7 +218,10 @@ import LayoutProject from "../layouts/LayoutProject.astro";
     </div>
   </div>
   <!-- <hr /> -->
+<br>
+<br>
 
+  <div class="grid-twocol">
   <h2>Solution: Focus mode</h2>
 
   <p>
@@ -224,42 +230,57 @@ import LayoutProject from "../layouts/LayoutProject.astro";
     their activities, or be able to revisit a previous session from the menu
     screen to maximize their productivity.
   </p>
+</div>
+<br>
 
   <!-- <h3>Plan your session</h3> -->
+  <div class="grid-twocol-even">
+    <img
+    style="margin-left: 8%; width: auto; border-radius: 30px;"
+    src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642150944/Start_AdobeCreativeCloudExpress_jzsime.gif"
+  />
   <p>
     Before using the timer, listeners are asked to set a time and a playlist to
     use during the session. Returning users are able to pick from a previously
     planned session, or view their previous activity to guide them in planning a
     new one.
   </p>
-  <img
-    style="margin-left: 8%; width: auto; border-radius: 30px;"
-    src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642150944/Start_AdobeCreativeCloudExpress_jzsime.gif"
-  />
 
-  <!-- <h3>Focus</h3> -->
-  <p>
-    To eliminate distractions on their phone, the only controls that are
-    available to the listener during focus mode is “shuffle”, “repeat”, or
-    “cancel”. Listeners are only able to exit this mode through the exit button
-    or by waiting for the timer to reach 0.
-  </p>
+</div>
+<br>
+
+    <!-- <h3>Focus</h3> -->
+    <div class="grid-twocol-even">
+
   <img
-    style="margin-left: 8%; width: auto; border-radius: 30px;"
-    src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642150946/time_AdobeCreativeCloudExpress_uluo3g.gif"
-  />
+  style="margin-left: 8%; width: auto; border-radius: 30px;"
+  src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642150946/time_AdobeCreativeCloudExpress_uluo3g.gif"
+/>
+<p>
+  To eliminate distractions on their phone, the only controls that are
+  available to the listener during focus mode is “shuffle”, “repeat”, or
+  “cancel”. Listeners are only able to exit this mode through the exit button
+  or by waiting for the timer to reach 0.
+</p>
+</div>
+<br>
+<div class="grid-twocol-even">
 
   <!-- <h3>Track your activity</h3> -->
-  <p>
-    Listeners are able to view their listening activity at the beginning or end
-    of each session. To utilize SoundCloud's social features, they will also be
-    able to share their sessions with their followers.
-  </p>
   <img
-    style="margin-left: 8%; width: auto; border-radius: 30px;"
-    src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642150952/end_AdobeCreativeCloudExpress_sqewvf.gif"
-  />
+  style="margin-left: 8%; width: auto; border-radius: 30px;"
+  src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642150952/end_AdobeCreativeCloudExpress_sqewvf.gif"
+/>
+<p>
+  Listeners are able to view their listening activity at the beginning or end
+  of each session. To utilize SoundCloud's social features, they will also be
+  able to share their sessions with their followers.
+</p>
+</div>
 
+<hr>
+
+<div class="grid-twocol">
   <h2>Outcome</h2>
   <p>
     This project was important to me in understanding the process behind
@@ -268,59 +289,5 @@ import LayoutProject from "../layouts/LayoutProject.astro";
     that SoundCloud Focus is an accurate portrayal of my ability to immerse
     myself with any business within a short period of time.
   </p>
-  <hr />
-  <a href="/" class="prototype"><strong>Back to home</strong></a>
-
-  <style>
-    /* h2,
-  h4 {
-    font-weight: 250;
-    margin: 0;
-    padding: 0 8%;
-
-    line-height: 150%;
-    margin-bottom: 2%;
-  }
-
-  ul {
-    font-size: 1.2rem;
-    padding: 0 8%;
-  }
-
-  li {
-    margin: 0 6%;
-  }
-  hr {
-    padding: 0 8%;
-  }
-  h3,
-  h4,
-  p {
-    color: #333;
-    line-height: 1.55;
-    letter-spacing: -0.005em;
-  }
-  .grid-threecol {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0.1em;
-  }
-  .grid-twocol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0.1em;
-  }
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    border: 1px solid #222;
-  } */
-    /* body {
-      background: #333;
-    } */
-  </style>
+</div>
 </LayoutProject>
