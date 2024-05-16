@@ -37,6 +37,7 @@ const { title } = Astro.props;
     </footer>
   </body>
 
+
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -54,11 +55,12 @@ const { title } = Astro.props;
     });
   </script>
 
+
   <style is:global>
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
     .active {
-      color: 17C37B;
+      color: #17C37B;
     }
 
     html {
@@ -118,8 +120,8 @@ const { title } = Astro.props;
       font-size: 1.4rem;
       font-weight: 300;
       color: darkblue;
-      /* margin: auto 4%; */
     }
+
     h1 {
       font-family: "Noto Serif", serif;
       font-size: 2rem;
@@ -128,8 +130,8 @@ const { title } = Astro.props;
       line-height: 120%;
       margin: 0.5rem 0;
       max-width: 90%;
-      /* animation: text-focus-in 400ms ease-in both; */
     }
+
     h2 {
       font-size: 1.4rem;
       letter-spacing: -0.04rem;
@@ -137,74 +139,24 @@ const { title } = Astro.props;
       line-height: 125%;
       margin: 0;
     }
-    
+
     h3.tags{
       font-size: 1rem;
       color: #878787
     }
+
     .projectimg{
           border:none;
           margin-left: 0;
           padding: 1% 0;
-    }
-    p {
-          font-family: "Noto Sans", sans-serif; 
-          color: #3a3a3a;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.3;
-          margin-bottom: 4%;
-        }
-
-    @media only screen and (min-width: 768px) {
-      main {
-        margin: 10% auto;
-        max-width: 75%;
-        -webkit-animation: slide-in-bottom 0.6s
-          cubic-bezier(0.215, 0.61, 0.355, 1) both;
-        animation: slide-in-bottom 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-      }
-      h1 {
-        font-family: "Noto Serif", serif;
-        font-size: 3rem;
-        font-weight: 300;
-        letter-spacing: -0.09rem;
-        line-height: 115%;
-        margin: 0.5rem 0;
-        max-width: 90%;
-        /* animation: text-focus-in 400ms ease-in both; */
-      }
-
-      h2 {
-        font-size: 1.8rem;
-        letter-spacing: -0.04rem;
-        font-weight: 300;
-        line-height: 150%;
-        margin: 0;
-        /* margin-top: 2%;
-      margin-bottom: 0; */
-        p {
-          font-family: "Noto Sans", sans-serif;
-          /* max-width: 100ch; */
-          color: #3a3a3a;
-          font-size: 1.4rem;
-          font-weight: 400;
-          line-height: 1.3;
-          margin-bottom: 3%;
-        }
-        .projectimg{
-          border:none;
-          width: 85%;
-          margin-left: 0;
-          padding: 1% 0;
-        }
-      }
     }
 
     ul,
     ol {
       font-size: 1.3rem;
       padding: 0%;
+      margin-bottom: 6%;
+
     }
 
     li {
@@ -219,62 +171,16 @@ const { title } = Astro.props;
       letter-spacing: -0.01em;
     }
 
-    .back {
-      bottom: 0.2rem;
-      left: 1rem;
-      background-color: #f6f6f6b3;
+    p {
+          font-family: "Noto Sans", sans-serif; 
+          color: #3a3a3a;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.3;
+          margin-bottom: 4%;
     }
 
-    a {
-      font-family: "Noto Sans", sans-serif;
-      font-weight: 300;
-      color: #000;
-      text-decoration: none;
-    }
-
-    a:hover {
-      font-weight: 300;
-      text-decoration: underline;
-    }
-
-    .wrap-project-inner > a:hover {
-      color: #17C37B;
-      animation: slit-in-vertical 0.3s ease-out both;
-    }
-    .box {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 2rem;
-    }
-
-    .container {
-      /* background-color:grey; */
-      padding: 1rem;
-    }
-    /* .hover-underline-animation {
-  display: inline-block;
-  position: relative;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: -10%;
-  left: 0;
-  background-color: #000;
-  transform-origin: bottom right;
-  transition: transform 0.35s ease;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-} */
-
-    video {
+    video{
       width: 100% !important;
       height: auto !important;
     }
@@ -287,22 +193,19 @@ const { title } = Astro.props;
       border: 0.5px solid #b4b4b4;
     }
 
-    /* nav {
-      position: fixed;
-      top: 3%;
-      right: 0;
-      transform: translateX(-50%);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0;
-      padding: 0rem 0.5rem;
-      font-size: 1rem;
-      z-index: 9;
-    } */
+    a{
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 300;
+      color: #000;
+      text-decoration: none;
+    }
 
-    nav {
+    a:hover {
+      font-weight: 300;
+      text-decoration: underline;
+    }
+
+    nav{
       position: fixed;
       display: flex;
       flex-wrap: wrap;
@@ -329,6 +232,28 @@ const { title } = Astro.props;
       width: 100%;
       text-align: center;
     }
+
+    .back {
+      bottom: 0.2rem;
+      left: 1rem;
+      background-color: #f6f6f6b3;
+    }
+
+    .wrap-project-inner > a:hover {
+      color: #17C37B;
+      animation: slit-in-vertical 0.3s ease-out both;
+    }
+    .box {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 2rem;
+    }
+
+    .container {
+      /* background-color:grey; */
+      padding: 1rem;
+    }
+
     .details {
       padding: 1% 2%;
       margin: 2% 0;
@@ -338,34 +263,64 @@ const { title } = Astro.props;
       font-family: "Noto Sans", sans-serif;
       font-size: 2rem;
     }
-    ul,
-    ol {
-      font-size: 1.2rem;
-      margin-bottom: 6%;
-    }
 
     .wrap-project-inner {
       padding: 2% 0;
     }
-    .wrap-project-inner > h2,
-    h3,
-    a {
+
+    .wrap-project-inner > h2, h3,a {
       margin: 0;
       padding: 0;
     }
 
     @media only screen and (min-width: 768px) {
+      main {
+        margin: 6.5% auto;
+        max-width: 75%;
+        -webkit-animation: slide-in-bottom 0.6s
+          cubic-bezier(0.215, 0.61, 0.355, 1) both;
+        animation: slide-in-bottom 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      }
+
+      h1 {
+        font-family: "Noto Serif", serif;
+        font-size: 3rem;
+        font-weight: 300;
+        letter-spacing: -0.09rem;
+        line-height: 115%;
+        margin: 0.5rem 0;
+        max-width: 90%;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+        letter-spacing: -0.04rem;
+        font-weight: 300;
+        line-height: 130%;
+        margin: 0;
+      }
+
+      p {
+        font-family: "Noto Sans", sans-serif;
+        color: black;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.3;
+        margin-bottom: 3%;
+        letter-spacing: -0.005em;
+      }
+
+      .projectimg{
+        border:none;
+        width: 85%;
+        margin-left: 0;
+        padding: 1% 0;
+      }
+
       ul,
       ol {
         font-size: 1.3rem;
         padding: 0 8% 1%;
-      }
-
-      p {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: -0.005em;
       }
       hr {
         margin: 5% 0;
@@ -403,6 +358,7 @@ const { title } = Astro.props;
         justify-items: center;
         align-content: space-evenly;
       }
+
       .grid-twocol-even > div {
         align-self: center;
       }
@@ -418,6 +374,7 @@ const { title } = Astro.props;
         padding: 1% 8% 0;
       }
     }
+
 
     swiper-container {
       width: 100%;
@@ -439,6 +396,7 @@ const { title } = Astro.props;
       height: 100%;
       object-fit: cover;
     }
+
 
     @-webkit-keyframes slit-in-vertical {
       0% {
