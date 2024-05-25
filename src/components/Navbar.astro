@@ -1,0 +1,27 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+---
+
+<ul>
+	<li><a href="/">Erika Wang</a></li>
+	<li><a><h3>
+	  Brand experience design
+	  </h3></a></li>
+  <li><a class={currentPath === "carriersthatcare" ? "active" : ""} href="/carriersthatcare">Canada Post</a></li>
+	<li><a class={currentPath === "fuorisalone" ? "active" : ""} href="/fuorisalone">Milan Design Week</a></li>
+	<li><a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus">SoundCloud</a></li>
+	<!-- <li><a><h3>
+	  Internship
+	  </h3></a></li>
+	<li><a href="/careflow">CareFlow</a></li> -->
+	<li><a class={currentPath === "about" ? "active" : ""} href="/about"><h3>
+	  About
+	  </h3></a></li>
+  </ul>
