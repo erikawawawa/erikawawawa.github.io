@@ -30,16 +30,29 @@ import Navbar from "../components/Navbar.astro";
 
 </html>
 <style is:global>
+    @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
     html {
-      font-family: "Noto Serif", serif;
+        font-family: "Public Sans", sans-serif;
+
+      /* font-family: "Noto Serif", serif; */
+      font-weight: 300;
       background-color: #fafafa;
       color: #000;
     }
+
     body {
       margin: 0;
     }
+
+    h1,h2,h3{
+        font-weight: 300;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+
       h2{
         position: sticky;
         top: 0;
@@ -68,12 +81,12 @@ import Navbar from "../components/Navbar.astro";
     }
     
     li a.active {
-      background-color: #04AA6D;
+      background-color: blue;
       color: white;
     }
     
     li a:hover:not(.active) {
-      background-color: #555;
+      background-color: #827b90;
       color: white;
     }
     </style>
