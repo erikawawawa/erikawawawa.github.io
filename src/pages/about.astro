@@ -1,22 +1,28 @@
 ---
-import Layout from "../layouts/Layout.astro";
+// import Layout from "../layouts/Layout.astro";
 import LayoutProject from "../layouts/LayoutProject.astro";
-
+import LayoutMay from "../layouts/Layout-May.astro";
 import Card from "../components/Card.astro";
+import Navbar from "../components/Navbar.astro";
+
 ---
 
-<LayoutProject title="About | Erika Wang">
+<LayoutMay title="About | Erika Wang">
   <!-- <main> -->
 
+<Navbar/>
+
   <div class="content">
-    <a class="backbutton" href="/">🡐Back</a>
+    <!-- <a class="backbutton" href="/">🡐Back</a> -->
     <h1>About</h1>
-    <h2 style="max-width: 70%;">
+    <h2>
+    <!-- <h2 style="max-width: 70%;"> -->
       I'm Erika, a design student at Simon Fraser University, based in
       Vancouver.
     </h2>
 
-    <p style="max-width: 70%;">
+    <!-- <p style="max-width: 70%;"> -->
+      <p>
       To me, design is a way to learn about myself through learning about the
       world around us - I love learning about new domains and having the ability
       to apply that knowledge through design to understand different
@@ -65,7 +71,7 @@ import Card from "../components/Card.astro";
     <a href="mailto:erikaw@sfu.ca">Email</a>
   </div>
   <!-- </main> -->
-</LayoutProject>
+</LayoutMay>
 
 <!-- <style>
   

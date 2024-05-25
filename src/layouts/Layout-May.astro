@@ -1,0 +1,108 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+// const pathname = new URL(Astro.request.url).pathname;
+// const currentPath = pathname.slice(1); // remove the first "/"
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/Star.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+</head>
+
+<body>
+<!-- <ul>
+  <li><a class={currentPath === "/" ? "active" : ""} href="/">Erika Wang</a></li>
+  <li><a><h3>
+    Brand experience design
+    </h3></a></li>
+<li><a class={currentPath === "/carriersthatcare" ? "active" : ""} href="/carriersthatcare">Canada Post</a></li>
+  <li><a href="/fuorisalone">Milan Design Week</a></li>
+  <li><a href="/sc-focus">SoundCloud</a></li>
+  <li><a><h3>
+    Internship
+    </h3></a></li>
+  <li><a href="/careflow">CareFlow</a></li>
+  <li><a href="/about"><h3>
+    About
+    </h3></a></li>
+</ul> -->
+
+
+<!-- <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>CARRIERS THAT CARE</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <h2>AKJLJLDFJKJSLF</h2>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div> -->
+<main style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <slot />
+</main>
+</body>
+
+</html>
+<style is:global>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+    html {
+      font-family: "Noto Serif", serif;
+      background-color: #fafafa;
+      color: #000;
+    }
+    body {
+      margin: 0;
+    }
+      h2{
+        position: sticky;
+        top: 0;
+      }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      position: fixed;
+      height: 110%;
+      overflow: scroll;
+    }
+    
+    img{
+        display: inline-block;
+        width: 100%;
+    }
+    
+    li a{
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    li a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    </style>
+
