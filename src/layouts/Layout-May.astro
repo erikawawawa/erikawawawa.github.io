@@ -7,158 +7,200 @@ const { title } = Astro.props;
 // const pathname = new URL(Astro.request.url).pathname;
 // const currentPath = pathname.slice(1); // remove the first "/"
 import Navbar from "../components/Navbar.astro";
-
+import Footer from "../components/Footer.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/Star.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-</head>
+  </head>
 
-<body>
-    <Navbar/>
+  <body>
+    <Navbar />
 
-<main style="margin-left:30%;padding:1px 16px;height:1000px;">
-    <slot />
-</main>
-</body>
-
+    <main style="margin-left:25%; padding-right: 1%;">
+      <slot />
+      <Footer />
+    </main>
+  </body>
 </html>
 <style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-
-    @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
-       
-        @font-face {
-  font-family: "myfont";
-  src: url("/public/bianzhidai-Cloud.woff") format('woff');
-}
-       
-@font-face {
-  font-family: "base";
-  src: url("/public/bianzhidai-Base.woff") format('woff');
-}
-       
-@font-face {
-  font-family: "pearl";
-  src: url("/public/bianzhidai-Pearl.woff") format('woff');
-}
-:root {
-  --background: #fafafa;
-  --white: #ffffff;
-}
-.myfont{
-    font-family: myfont;
-    font-size: 4.5rem;
-    margin: 5% 0;
-    line-height: 100%;
-}
-.base{
-    font-family: base;
-    margin: 5% 0;
-    line-height: 100%;
-    font-size: 2rem;
-
-}
-.pearl{
-    font-family: pearl;
-    margin: 5% 0;
-    line-height: 100%;
+  @font-face {
+  font-family: Pilcrow;
+  src: url("/public/PilcrowRounded-Medium.woff") format('woff');
 }
 
+  :root {
+    --background: #fafafa;
+    --black: #161618;
+    --grey: #6c6c6c;
+    --white: #ffffff;
+    --blue: #0074e1;
+  }
 
-    html {
+  html {
     font-family: "Public Sans", sans-serif;
-      /* font-family: "Noto Serif", serif; */
-      font-weight: 300;
-      background-color: var(--background);
-      color: #000;
-    }
+    /* font-family: "Noto Serif", serif; */
+    font-weight: 350;
+    background-color: var(--background);
+    color: var(--black);
+  }
 
-    .headline{
+  .headline {
     font-family: "Noto Serif", serif;
     font-weight: 300;
     line-height: 100%;
-}
-    body {
-      margin: 0;
-    }
+  }
 
-    h1,h2,h3{
-        font-weight: 200;
-        letter-spacing: -2%;
-        max-width:95%;
-    }
+  .highlight{
+    font-weight: 400;
+    color: var(--blue);
+  }
 
-    p{
-        letter-spacing: -2%;
-        max-width:95%; 
-    }
+  body {
+    margin: 0;
+  }
 
-    h1{
-        line-height: 100%;
-        font-size: 3.5rem;
-        letter-spacing: -1px;
-    }
+  footer a{
+    padding: 3% 0;
+    text-decoration: none;
+    color: var(--black);
+  }
+  a{
+    text-decoration: none;
+    color: var(--black);
+  }
 
-      h2{
-        font-size: 2.3rem;
-        /* position: sticky; */
-        top: 1%;
-        background-color: var(--background);
-      }
-    
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 25%;
-      position: fixed;
-      height: 110%;
-      overflow: scroll;
-    }
-    
-    img{
-        display: inline-block;
-        width: 100%;
-    }
-    
-    li a, li h3{
-      display: block;
-      color: #000;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-    
-    li a.active {
-      background-color: blue; 
-      color: white;
-    }
-    
-    li a:hover:not(.active) {
-      background-color: #827b90;
-     color: white;
-  
-    }
+  h1,
+  h2,
+  h3 {
+    max-width: 95%;
+    line-height: 125%;
+    letter-spacing: -0.6px;
 
-    .grid-threecol {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0.1em;
-      }
+  }
 
-    .blue{
-        font-size: 2.2rem;
-        color: #3CA0FF;
-    }
-    </style>
+  p {
+    font-size: 1.1rem;
+    letter-spacing: -2%;
+    max-width: 85%;
+    line-height: 140%;
+  }
+
+  h1 {
+    /* font-family: Pilcrow; */
+    font-weight: 400;
+    line-height: 105%;
+    font-size: 4rem;
+    letter-spacing: -2px;
+
+  }
+
+  .project-titles{
+    margin: 2% 0 4% 0;
+  }
+
+  .design-tags{
+    padding: 0.3%;
+    margin: 1% 1% 1% 0;
+    border: 0.5px solid var(--blue);
+  }
+
+  h2 {
+    /* font-family: Pilcrow; */
+    font-weight: 300;
+    font-size: 2.3rem;
+    /* position: sticky; */
+  }
+
+  .stack{
+    /* position: sticky; */
+    background-color: var(--background);
+    padding: 0.1rem 0 0 0;
+    margin: 0;
+    top: 0;
+    border-bottom: 1px solid var(--blue);
+    z-index: 999;
+    width: 100%;
+  }
+
+  h3 {
+    font-weight: 350;
+    font-size: 1.6rem;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    position: fixed;
+    height: 150%;
+    overflow: scroll;
+  }
+
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+
+  hr{
+    border: 1px solid #d8d8d8;
+  }
+
+  li a,
+  li h3 {
+    display: block;
+    padding: 8px 16px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: -0.5px;
 
 
+  }
+
+  li a.active {
+    font-weight: 700;
+    /* background-color: blue;
+    color: var(--white); */
+  }
+
+  li a:hover:not(.active) {
+    /* color: var(--grey); */
+    text-decoration: underline;
+    /* background-color: var(--grey);
+    color: var(--white); */
+  }
+
+  .grid-twocolumn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0.1em;
+  }
+
+  .grid-threecol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0.1em;
+  }
+
+
+  .flex-threecol{
+    display: flex;
+    align-items: center;
+  }
+
+  .blue {
+    font-size: 2rem;
+    color: var(--blue);
+  }
+</style>

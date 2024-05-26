@@ -1,28 +1,42 @@
 ---
-export interface Props {
-}
+export interface Props {}
 
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
 <ul>
-	<li><h1 ><a class="blue" href="/">Erika Wang</a></h1></li>
-	<!-- <li><h3>
+  <li><h1><a class="blue" href="/">Erika Wang</a></h1></li>
+  <!-- <li><h3>
 	  Brand design
 	  </h3></li> -->
-  <li><a class={currentPath === "carriersthatcare" ? "active" : ""} href="/carriersthatcare">Canada Post</a></li>
-	<li><a class={currentPath === "fuorisalone" ? "active" : ""} href="/fuorisalone">Milan Design Week</a></li>
-	<li><a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus">SoundCloud</a></li>
-	<!-- <li><a><h3>
+  <li>
+    <a
+      class={currentPath === "carriersthatcare" ? "active" : ""}
+      href="/carriersthatcare">Canada Post</a>
+  </li>
+  <li>
+    <a class={currentPath === "fuorisalone" ? "active" : ""} href="/fuorisalone"
+      >Milan Design Week</a>
+  </li>
+  <li>
+    <a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus"
+      >SoundCloud</a>
+  </li>
+  <!-- <li><a><h3>
 	  Internship
 	  </h3></a></li>
 	
       <li><a href="/careflow">CareFlow</a></li> -->
-	<hr>
-      <li><a class={currentPath === "about" ? "active" : ""} href="/about">
-	  About
-	  </a></li>
-      <li><a href="https://drive.google.com/file/d/1nC4aRLPUDE3zWpH1NjcSoiwINQORwxyv/view?usp=drive_link"
-        >Resume</a></li>
-  </ul>
+  <br />
+  <br />
+
+  <li>
+    <a class={currentPath === "about" ? "active" : ""} href="/about"> About </a>
+  </li>
+  <li>
+    <a
+      href="https://drive.google.com/file/d/1nC4aRLPUDE3zWpH1NjcSoiwINQORwxyv/view?usp=drive_link"
+      >Resume</a>
+  </li>
+</ul>
