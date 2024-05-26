@@ -23,7 +23,7 @@ import Navbar from "../components/Navbar.astro";
 <body>
     <Navbar/>
 
-<main style="margin-left:27%;padding:1px 16px;height:1000px;">
+<main style="margin-left:30%;padding:1px 16px;height:1000px;">
     <slot />
 </main>
 </body>
@@ -73,6 +73,7 @@ import Navbar from "../components/Navbar.astro";
     line-height: 100%;
 }
 
+
     html {
     font-family: "Public Sans", sans-serif;
       /* font-family: "Noto Serif", serif; */
@@ -81,17 +82,28 @@ import Navbar from "../components/Navbar.astro";
       color: #000;
     }
 
+    .headline{
+    font-family: "Noto Serif", serif;
+    font-weight: 300;
+    line-height: 100%;
+}
     body {
       margin: 0;
     }
 
-    h1,h2,h3, p{
-        font-weight: 300;
+    h1,h2,h3{
+        font-weight: 200;
         letter-spacing: -2%;
-        max-width:96%;
-
+        max-width:95%;
     }
+
+    p{
+        letter-spacing: -2%;
+        max-width:95%; 
+    }
+
     h1{
+        line-height: 100%;
         font-size: 3.5rem;
         letter-spacing: -1px;
     }
@@ -126,7 +138,6 @@ import Navbar from "../components/Navbar.astro";
     }
     
     li a.active {
-
       background-color: blue; 
       color: white;
     }
@@ -143,6 +154,11 @@ import Navbar from "../components/Navbar.astro";
         grid-template-rows: 1fr;
         grid-column-gap: 0.1em;
       }
+
+    .blue{
+        font-size: 2.2rem;
+        color: #3CA0FF;
+    }
     </style>
 
 
