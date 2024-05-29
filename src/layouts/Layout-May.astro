@@ -23,7 +23,7 @@ import Footer from "../components/Footer.astro";
   <body>
     <Navbar />
 
-    <main style="margin-left:25%; padding-right: 1%;">
+    <main style="margin-left:26%; padding-right: 4%;">
       <slot />
     </main>
   </body>
@@ -33,16 +33,18 @@ import Footer from "../components/Footer.astro";
   @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
   @font-face {
-  font-family: Pilcrow;
-  src: url("/public/PilcrowRounded-Medium.woff") format('woff');
-}
+    font-family: Pilcrow;
+    src: url("/public/PilcrowRounded-Medium.woff") format("woff");
+  }
 
   :root {
     --background: #fafafa;
+    /* --background: #3d3d3d; */
+
     --black: #161618;
     --grey: #6c6c6c;
     --white: #ffffff;
-    --blue: #0074e1;
+    --blue: #07c4ba;
   }
 
   html {
@@ -59,7 +61,7 @@ import Footer from "../components/Footer.astro";
     line-height: 100%;
   }
 
-  .highlight{
+  .highlight {
     font-weight: 400;
     color: var(--blue);
   }
@@ -68,12 +70,12 @@ import Footer from "../components/Footer.astro";
     margin: 0;
   }
 
-  footer a{
+  footer a {
     padding: 3% 0;
     text-decoration: none;
     color: var(--black);
   }
-  a{
+  a {
     text-decoration: none;
     color: var(--black);
   }
@@ -81,10 +83,10 @@ import Footer from "../components/Footer.astro";
   h1,
   h2,
   h3 {
+    font-family: Pilcrow;
     max-width: 95%;
     line-height: 125%;
     letter-spacing: -0.6px;
-
   }
 
   p {
@@ -95,7 +97,6 @@ import Footer from "../components/Footer.astro";
   }
 
   h1 {
-    /* font-family: Pilcrow; */
     font-weight: 400;
     line-height: 105%;
     font-size: 4rem;
@@ -103,11 +104,11 @@ import Footer from "../components/Footer.astro";
     margin: 0;
   }
 
-  .project-titles{
+  .project-titles {
     margin: 2% 0 4% 0;
   }
 
-  .design-tags{
+  .design-tags {
     padding: 0.3%;
     margin: 1% 1% 1% 0;
     border: 0.5px solid var(--blue);
@@ -120,7 +121,7 @@ import Footer from "../components/Footer.astro";
     /* position: sticky; */
   }
 
-  .stack{
+  .stack {
     /* position: sticky; */
     background-color: var(--background);
     padding: 0.1rem 0 0 0;
@@ -137,20 +138,22 @@ import Footer from "../components/Footer.astro";
   }
   ul {
     list-style-type: none;
-    margin: 0;
+    margin: 1%;
     padding: 0;
-    width: 23%;
+    width: 18%;
     position: fixed;
+    /* background-color: rgb(255, 255, 157); */
+    border-radius: 15px;
     height: 100%;
-    overflow: scroll;
+    /* overflow: scroll; */
   }
 
   img {
     display: inline-block;
-    width: 100%;
+    width: 85%;
   }
 
-  hr{
+  hr {
     border: 1px solid #d8d8d8;
   }
 
@@ -161,8 +164,6 @@ import Footer from "../components/Footer.astro";
     font-weight: 300;
     text-decoration: none;
     letter-spacing: -0.5px;
-
-
   }
 
   li a.active {
@@ -184,6 +185,10 @@ import Footer from "../components/Footer.astro";
     grid-template-rows: 1fr;
     grid-column-gap: 0.1em;
   }
+  .flex-twocolumn {
+    display: flex;
+    align-content: space-evenly;
+  }
 
   .grid-threecol {
     display: grid;
@@ -192,14 +197,15 @@ import Footer from "../components/Footer.astro";
     grid-column-gap: 0.1em;
   }
 
-
-  .flex-threecol{
+  .flex-threecol {
     display: flex;
     align-items: center;
   }
 
   .blue {
-    font-size: 2rem;
-    color: var(--blue);
+    font-family: pilcrow;
+    line-height: 85%;
+    font-size: 3rem;
+    margin: 10% 0;
   }
 </style>
