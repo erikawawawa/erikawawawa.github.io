@@ -39,11 +39,10 @@ import Card from "../components/Card.astro";
     <hr />
     <h3>Final Deliverables</h3>
     <p>
-      - Concept/Strategy/Framework for a check-in service for Canadian seniors,
-      delivered by Canada Post letter carriers.<br />
-      - App for postal workers to send information to families and seniors (Stakeholders?)<br
+      - Service Concept/Strategy/Framework
+      <br />
+      - UX/UI design for 3 digital touchpoints (Web portal, app, dashboard)<br
       />
-      - Web portal for customers to receive information from the service.<br />
       - Web pages, e-mails and other collateral to explain the service to potential
       and existing customers.<br />
       - Other miscellaneous touchpoints, ie. sign-up process, brochures.
@@ -315,7 +314,7 @@ import Card from "../components/Card.astro";
     <img src="/Persona.png" />
   </p>
   <p>
-    In general, we imagine that a user’s first interaction with Carriers That
+    In general, we imagine that a user's first interaction with Carriers That
     Care will be a three-step process, eventually simplifying into two steps as
     they get used to the routine of postal worker check-ins. The interfaces that
     were designed aim to encapsulate the digital touchpoints that would be
@@ -330,7 +329,7 @@ import Card from "../components/Card.astro";
         At this initial point of contact with the service, the user would need
         to learn about the service and potentially need to be able to share this
         information with the loved ones that they do not live with. A web
-        portal, accessible from Canada Post’s pre-existing website, would be
+        portal, accessible from Canada Post's pre-existing website, would be
         available in conjunction with a mailable brochure, for family members
         who wish to indicate to loved ones without requiring them to access the
         internet.
@@ -409,6 +408,15 @@ import Card from "../components/Card.astro";
   <br />
   <div class="grid-twocol">
     <h2>Commencement of the service</h2>
+    <p>
+      Once committed to the service, a postal worker will be assigned to conduct
+      routine visits to the recipient's home.
+    </p>
+    <p>
+      In order to provide the postal workers with some guidance during
+      check-ins, we want to equip them with an app that would provide them with
+      tools. A features map would be as follows:
+    </p>
 
     <!-- <video
       width="720"
@@ -416,14 +424,40 @@ import Card from "../components/Card.astro";
       src="https://res.cloudinary.com/dbiwj2oo8/video/upload/v1709854884/Carriers_that_Care_-_Landing_page_scrollthrough_-_Made_with_Clipchamp_va8vbw.mp4"
     ></video> -->
     <div>
-      <h3>Tools for letter carriers</h3>
+      <h3>Filling out & Sending reports</h3>
       <p>
-        To assist with effective check-ins, postal workers will be provided with
-        an app that includes details about the people they are visiting, a form
-        to report check-ins, and emergency contacts as well as resources to
-        better equip them for unexpected situations. The check-in report is made
-        to be as short-handed as possible to ensure that postal workers may fill
-        them out while they are on the go.
+        This would be the core feature of the carrier-side app. To best
+        accommodate postal workers who are constantly on the go, the report has
+        been made to be as short-handed as possible: interactions will be
+        primarily through button inputs, and text input prompts will be kept to
+        a bare minimum of one field.
+      </p>
+      <h3>
+        Side note: Framing of questions - what are letter carriers reporting on?
+      </h3>
+      <p>
+        Most letter carriers will not have undergone the necessary training to
+        be able to make observations pertaining to medical conditions. Thus
+        interpretations pertaining mood, appetite, and other lifestyle choices
+        can be largely subjective and fluctuating based on letter carrier.
+      </p>
+      <p>
+        As we do not wish to place expectations on letter carriers without
+        proper training to be able to correctly interpret the health conditions
+        of older adults, the questions they would be required to answer are
+        framed so they would be centred around objective observations, which
+        allow the families and recipients to interpret the observations based on
+        their knowledge.
+      </p>
+      <h3>Resources for unexpected events & emergencies</h3>
+      <p>
+        To alleviate the pressure on postal carriers to be experts on handling
+        risks that are outside of their expertise, would allow them to maintain
+        their focus on this service's core strategy, on preventing social
+        isolation. The 'resources' tab will act as a manual to answer questions
+        such as 'what do I do if the recipient is not answering the door'; the
+        'report an emergency' tab will connect the letter carrier to the
+        appropriate emergency service, such as the police or the ambulance.
       </p>
       <img
         style="width: 25%; border-radius: 12px;"
@@ -459,7 +493,7 @@ import Card from "../components/Card.astro";
       <p>
         Full reports will be available to view through a Carriers That Care
         dashboard, accessible through the web portal or through logging into
-        Canada Post’s website.
+        Canada Post's website.
       </p>
     </div>
     <h3>Dashboard</h3>
