@@ -1,43 +1,37 @@
 ---
-import Layout from "../layouts/Layout.astro";
+// import Layout from "../layouts/Layout.astro";
 import LayoutProject from "../layouts/LayoutProject.astro";
-
+import LayoutMay from "../layouts/Layout-May.astro";
 import Card from "../components/Card.astro";
 ---
 
-<LayoutProject title="About | Erika Wang">
-  <!-- <main> -->
+<LayoutMay title="About | Erika Wang">
+  <br />
+  <br />
+  <h1>Hi, I'm Erika</h1>
+  <h2>A design student at Simon Fraser University, based in Vancouver.</h2>
 
-  <div class="content">
-    <a class="backbutton" href="/">🡐Back</a>
-    <h1>About</h1>
-    <h2 style="max-width: 70%;">
-      I'm Erika, a design student at Simon Fraser University, based in
-      Vancouver.
-    </h2>
+  <p>
+    To me, design is a way to learn about myself through learning about the
+    world around us - I love learning about new domains and having the ability
+    to apply that knowledge through design to understand different communities.
+    <br />
+    <br />
 
-    <p style="max-width: 70%;">
-      To me, design is a way to learn about myself through learning about the
-      world around us - I love learning about new domains and having the ability
-      to apply that knowledge through design to understand different
-      communities.
-      <br />
-      <br />
+    Previously, I was at Excelar Technologies, working closely with
+    anesthesiologists and other medical specialists. My other non-design
+    experiences include helping out as a Japanese to English language
+    interpreter; working closely with Japanese voice acting professionals and
+    speaking on their behalf at panels at Anime Revolution, and event that would
+    gather over 30,000 attendees.
+    <br />
+    <br />
 
-      Previously, I was at Excelar Technologies, working closely with
-      anesthesiologists and other medical specialists. My other non-design
-      experiences include helping out as a Japanese to English language
-      interpreter; working closely with Japanese voice acting professionals and
-      speaking on their behalf at panels at Anime Revolution, and event that
-      would gather over 30,000 attendees.
-      <br />
-      <br />
+    On an average day, you'll be able to find me going on walks or playing video
+    games. Sometimes, I'll do both by playing Pokemon GO. :)
+  </p>
 
-      On an average day, you'll be able to find me going on walks or playing
-      video games. Sometimes, I'll do both by playing Pokemon GO. :)
-    </p>
-
-    <!-- <p>
+  <!-- <p>
           - Previously at Excelar, working on CCPC project 
           - Idk also am a Japanese-English language interpreter at Anirevo
           - I also read and draw and I love gaming on old handheld consoles
@@ -46,145 +40,20 @@ import Card from "../components/Card.astro";
           - I love learning about new domains and applying that knowledge to understand different communities
           - Design is a way to learn about myself and my place by learning about the world we live in. 
         </p> -->
-    <!-- <p> I believe that good design follows a well-defined objective. As a
+  <!-- <p> I believe that good design follows a well-defined objective. As a
           designer, my principle is to embrace ambiguity by defining the unknown
           and turning them into tangible actions. In every corner of my life, I am
           constantly seeking for inspiration that could ultimately contribute to
           informed, dynamic design solutions.
           <br /><br /> -->
-    <!-- <p>
+  <!-- <p>
            Aside from design, I like to go on walks or play video games -
           sometimes I'll do both by playing Pokemon Go. :)</p> -->
-  </div>
-  <div class="about-buttons content">
-    <a
-      href="https://drive.google.com/file/d/1nC4aRLPUDE3zWpH1NjcSoiwINQORwxyv/view?usp=drive_link"
-      >Resume</a
-    >
-    <div></div>
-    <a href="mailto:erikaw@sfu.ca">Email</a>
-  </div>
-  <!-- </main> -->
-</LayoutProject>
+  <a
+    href="https://drive.google.com/file/d/1nC4aRLPUDE3zWpH1NjcSoiwINQORwxyv/view?usp=drive_link"
+    >Resume</a
+  >
+  <br />
 
-<!-- <style>
-  
-  .backbutton{
-      position: fixed;
-      transform: translateX(-100%);
-      padding-right: 3rem;
-    }
-
-  a {
-    max-width: fit-content;
-    text-decoration: none;
-  }
-  .about-buttons {
-    padding-bottom: 10%;
-  }
-  .about-buttons > a {
-    padding-right: 1.4rem;
-  }
-  .content{
-    margin: 0% 8%;
-    max-width: 68%;
-  }
-  main {
-    margin: auto;
-    margin-top: 2.2rem;
-    padding: 0rem 0.5rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin: 0.5rem 0;
-    line-height: 140%;
-    max-width: 54rem;
-    letter-spacing: -0.04em;
-  }
-  h2 {
-    font-size: 1.3rem;
-    font-weight: 200;
-    margin: 0;
-    line-height: 150%;
-    padding-bottom: 3%;
-  }
-
-  @media only screen and (min-width: 768px) {
-    .content{
-    margin: 3% 8%;
-  }
-    .projects > a {
-      font-size: 1.6rem;
-    }
-    .flex-container {
-      flex-direction: row;
-      /* height: 75vh; */
-      gap: 2.06rem;
-    }
-    main {
-      margin: auto;
-      padding: 0rem;
-      max-width: 300ch;
-    }
-    h1 {
-      font-size: 2rem;
-      font-weight: 300;
-      margin: 0.5rem 0;
-      line-height: 150%;
-    }
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 300;
-      margin: 0;
-      line-height: 150%;
-    }
-    .link-card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-      gap: 1rem;
-      padding: 0;
-    }
-  }
-
-  @media only screen and (min-width: 768px) {
-    .content{
-    margin: 3% 8%;
-  }
-    a {
-      max-width: fit-content;
-    }
-    .about-buttons {
-      padding-bottom: 8%;
-    }
-    .about-buttons > a {
-      padding-right: 1.4rem;
-    }
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      /* height: 75vh; */
-      gap: 0rem;
-      margin: 0% 8%;
-    }
-    main {
-      margin: auto;
-      padding: 0rem;
-      max-width: 300ch;
-    }
-    h1 {
-      font-size: 2rem;
-      font-weight: 300;
-      margin: 0.5rem 0;
-      line-height: 150%;
-    }
-    h2 {
-      font-size: 1.3rem;
-      font-weight: 300;
-      margin: 0;
-      line-height: 150%;
-      padding-bottom: 2%;
-    }
-  }
-</style> -->
+  <a href="mailto:erikaw@sfu.ca">Email</a>
+</LayoutMay>

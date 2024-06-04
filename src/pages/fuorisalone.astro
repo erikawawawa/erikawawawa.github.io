@@ -1,38 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import LayoutProject from "../layouts/LayoutProject.astro";
+import LayoutMay from "../layouts/Layout-May.astro";
+
 import Card from "../components/Card.astro";
 ---
 
-<LayoutProject title="Fuori Salone">
-  <a class="backbutton" href="/">🡐 Back</a>
+<LayoutMay title="Fuori Salone">
+  <img class="img-header" src="/Frame 424.png" />
+  <br />
 
-  <img src="/Frame 424.png" />
-  <br>
-
-  <h1>Fuori Salone</h1>
+  <h1 class="project-titles">Milan Design Week - Fuori Salone</h1>
 
   <!-- <hr /> -->
   <!-- <h2>Overview</h2> -->
-  <h2 style="color: #6c6c6c;">
+  <!-- <h2 style="color: #6c6c6c;">
     Microsite for Fuori Salone, part of Milan Design Week. 
-  </h2>
+  </h2> -->
 
-
-  <hr />
+  <!-- <hr /> -->
   <div class="grid-twocol">
-    <h2>Introduction</h2>
-    <p>
-      Fuorisalone is an annual design festival held in Milan that celebrates and
-      showcases design throughout the city. It is characterized by the lack of a
-      central organizer, making it free for anyone to participate as long as
-      they can secure a space. Boasting a total of over 900 exhibitions,
-      visitors are guaranteed with something to see or do at any given time
-      throughout the week.
-    </p>
+    <!-- <h2>Introduction</h2> -->
+    <h2>
+      Fuori Salone, unofficially hosted during Milan Design Week, is an annual
+      design festival held in Milan that celebrates and showcases design
+      throughout the city.
+    </h2>
+    <h2>
+      The Fuori Salone microsite aims to excite potential event-goers by
+      allowing them to preview exhibits through a 'choose-your-own-adventure'
+      approach. With participants coming from across the globe, we wanted to
+      highlight the wonders of exploration that Fuori Salone brings to Milan.
+    </h2>
   </div>
   <hr />
-  <div class="grid-fourcol">
+  <div class="grid-threecol">
     <div>
       <p><span>Duration</span></p>
       <p>Sept 2023 - Oct 2023</p>
@@ -51,14 +53,14 @@ import Card from "../components/Card.astro";
       </p>
     </div>
   </div>
-<hr>
-  <img
-    style="border-style: none;"
-    src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1710022524/Frame_412_bks0jd.png"
-  />
+  <hr />
 
   <div class="grid-twocol">
-    <h2>Approach</h2>
+    <h2>Website Strategy</h2>
+    <img
+      style="border-style: none;"
+      src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1710022524/Frame_412_bks0jd.png"
+    />
     <div>
       <h3>It's <i>your</i> adventure</h3>
 
@@ -69,44 +71,46 @@ import Card from "../components/Card.astro";
         approach that focuses on the districts, through tools such as quizzes,
         layouts, and custom-created content.
       </p>
+      
     </div>
-    </div>
-      <hr />
-      <div class="grid-twocol">
-        <h2>Introduction</h3>
-      <p>
-        Upon entering the site, users are given a brief introduction to the site
-        then prompted to complete a quiz.
-      </p>
-      </div>
-      <img src="/Intro_tcld6k.gif" />
-      <div class="grid-twocol">
-      <div></div>
-      <p>
-        The quiz connects each district to their respective themes, while
-        personalizing the site experience to the audience. Results of the quiz
-        inform the navigational order of the site.
-      </p>
-    </div>
+  </div>
+  <hr />
+  <div class="grid-twocol">
+    <h2>Entry Point</h2>
+    <p>
+      Upon entering the site, users are given a brief introduction to the site
+      then prompted to complete a quiz.
+    </p>
+  </div>
+  <img src="/Intro_tcld6k.gif" loading="lazy" />
+  <div class="grid-twocol">
+    <h2>Quiz</h2>
+    <p>
+      The quiz connects each district to their respective themes, while
+      personalizing the site experience to the audience. Results of the quiz
+      inform the navigational order of the site.
+    </p>
+  </div>
 
-      <img src="/Quiz_ickmya.gif" />
+  <img src="/Quiz_ickmya.gif" loading="lazy" />
 
-      <hr />
+  <hr />
 
-      <div class="grid-twocol">
+  <div class="grid-twocol">
+    <h2>Synthesizing the themes</h2>
+    <p>
+      Each page in the site is structured to show a summary of the theme,
+      referenced from their respective press releases, as well as a list of
+      exhibits, referenced from various sources, including fuorisalone.it.
+      Followed by the statement is a brief description of the district and its
+      relationship to design, meant to give the audience context before they
+      visit the districts in-person.
+    </p>
+  </div>
 
-      <h2>Synthesizing the themes</h2>
-      <p>
-        Each page in the site is structured to show a summary of the theme,
-        referenced from their respective press releases, as well as a list of
-        exhibits, referenced from various sources, including fuorisalone.it.
-        Followed by the statement is a brief description of the district and its
-        relationship to design, meant to give the audience context before they
-        visit the districts in-person.
-      </p>
-    </div>
+  <img src="/Scrollthrough_n38l2l.gif" loading="lazy" />
+  <br />
+  <h2>Exploring exhibits</h2>
 
-      <img src="/Scrollthrough_n38l2l.gif" />
-      <br />
-      <img src="/Gallery_xlhzdb.gif" />
-</LayoutProject>
+  <img src="/Gallery_xlhzdb.gif" loading="lazy" />
+</LayoutMay>

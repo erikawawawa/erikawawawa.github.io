@@ -1,0 +1,224 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+// const pathname = new URL(Astro.request.url).pathname;
+// const currentPath = pathname.slice(1); // remove the first "/"
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/Star.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <Navbar />
+
+    <main style="margin-left:26%; padding-right: 4%;">
+      <slot />
+    </main>
+  </body>
+</html>
+<style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+  @font-face {
+    font-family: Pilcrow;
+    src: url("/PilcrowRounded-Medium.woff") format("woff");
+  }
+
+  :root {
+    --background: #fafafa;
+    /* --background: #3d3d3d; */
+
+    --black: #161618;
+    --light-black: #5d5f66;
+    --grey: #6c6c6c;
+    --white: #ffffff;
+    --blue: #07c4ba;
+  }
+
+  html {
+    font-family: "Public Sans", sans-serif;
+    /* font-family: "Noto Serif", serif; */
+    font-weight: 350;
+    background-color: var(--background);
+    color: var(--black);
+  }
+
+  .headline {
+    font-family: "Noto Serif", serif;
+    font-weight: 300;
+    line-height: 100%;
+  }
+
+  .highlight {
+    font-weight: 400;
+    color: var(--blue);
+  }
+
+  body {
+    margin: 0;
+  }
+
+  footer a {
+    padding: 3% 0;
+    text-decoration: none;
+    color: var(--black);
+  }
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Pilcrow;
+    max-width: 95%;
+    line-height: 125%;
+    letter-spacing: -0.1px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    letter-spacing: -2%;
+    max-width: 85%;
+    line-height: 155%;
+  }
+
+  h1 {
+    font-weight: 400;
+    line-height: 110%;
+    font-size: 4.3rem;
+    letter-spacing: -1.5px;
+    margin: 0;
+  }
+
+  .project-titles {
+    margin: 3% 0 7% 0;
+  }
+
+  .lightblack{
+    color: var(--light-black);
+  }
+
+  .design-tags {
+    padding: 0.3%;
+    margin: 1% 1% 1% 0;
+    border: 0.5px solid var(--blue);
+  }
+
+  h2 {
+    /* font-family: Pilcrow; */
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin: 5% 0;
+    /* position: sticky; */
+  }
+
+  .stack {
+    /* position: sticky; */
+    background-color: var(--background);
+    padding: 0.1rem 0 0 0;
+    margin: 0;
+    top: 0;
+    border-bottom: 1px solid var(--blue);
+    z-index: 999;
+    width: 100%;
+  }
+
+  h3 {
+    font-weight: 350;
+    font-size: 1.6rem;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 0;
+    width: 18%;
+    position: fixed;
+    /* background-color: rgb(255, 255, 157); */
+    border-radius: 15px;
+    height: 100%;
+    /* overflow: scroll; */
+  }
+
+  img {
+    display: inline-block;
+    width: 85%;
+  }
+
+  .img-header{
+    width: 100%;
+  }
+
+  hr {
+    border: 1px solid #d8d8d8;
+  }
+
+  li a,
+  li h3 {
+    display: block;
+    padding: 8px 16px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+
+  li a.active {
+    font-weight: 700;
+    /* background-color: blue;
+    color: var(--white); */
+  }
+
+  li a:hover:not(.active) {
+    /* color: var(--grey); */
+    text-decoration: underline;
+    /* background-color: var(--grey);
+    color: var(--white); */
+  }
+
+  .grid-twocolumn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(20%);
+    grid-column-gap: 0.1em;
+    align-content: center;
+  }
+
+  .flex-twocolumn {
+    display: flex;
+    align-content: space-evenly;
+  }
+
+  .grid-threecol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0.1em;
+  }
+
+  .flex-threecol {
+    display: flex;
+    align-items: center;
+  }
+
+  .blue {
+    font-family: pilcrow;
+    line-height: 85%;
+    font-size: 3rem;
+    margin: 10% 0;
+  }
+</style>

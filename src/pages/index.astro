@@ -1,37 +1,24 @@
 ---
 import LayoutProject from "../layouts/LayoutProject.astro";
 import rocket from "../assets/images/rocket.svg";
+import LayoutMay from "../layouts/Layout-May.astro";
 
 import Mariner from "../assets/mariner-splash.png";
 import Card from "../components/Card.astro";
 ---
 
-<LayoutProject title="Erika Wang">
+<LayoutMay title="Erika Wang">
+  <br />
+  <br />
   <h1>
-    Erika Wang <span class="grey">
-      is a Vancouver-based designer, with an interest in
-    </span>brand strategy, UX research,<span class="grey"> and </span> experience
-    design.
+    A Vancouver-based designer with an interest in brand strategy, UX research,
+    and experience design.
   </h1>
 
-  <div class="everything-else">
-    <h2 class="grey">
-      Previously at <a class="button-alt grey" href="https://www.excelar.ca/"
-        >Excelar Technologies</a
-      >.
+    <h2>
+      Previously at <a href="https://www.excelar.ca/">Excelar Technologies</a>
     </h2>
     <br />
-    <a
-      class="button-alt"
-      style="padding-right: 2%; color: grey;"
-      href="/about"
-      id="buttonFive">About</a
-    >
-    <a
-      class="button-alt grey"
-      href="https://drive.google.com/file/d/1nC4aRLPUDE3zWpH1NjcSoiwINQORwxyv/view?usp=drive_link"
-      >Resume</a
-    >
     <br />
     <br />
     <br />
@@ -41,108 +28,47 @@ import Card from "../components/Card.astro";
     <br />
     <br />
 
-    <h2>Projects</h2>
-
-    <div class="wrap-project">
-      <div class="wrap-project-inner">
-        <a
-          class="hover-underline-animation"
-          style="text-decoration: none;"
-          href="/carriersthatcare"
-        >
-          <img
-            class="projectimg"
-            src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1711568893/Frame_150_bjwqok.png"
-          />
-          <h2 class="heavy">Canada Post: Senior Care Service Proposal</h2>
-          <!-- <h2 class="blue">Canada Post</h2> -->
-          <h3 class="tags">
-            Service Design, Experience Design, Interface Design
-          </h3>
-        </a>
-      </div>
-    </div>
+    <a href="/carriersthatcare">
+      <img
+        style="border:none; width: 100%; margin-left: 0; padding: 0;"
+        src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1711568893/Frame_150_bjwqok.png"
+      />
+      <h3 style="margin: 0; padding: 0;">Service Design, Experience Design, Interface Design</h3>
+      <h2 style="margin: 0; padding: 0;">Canada Post</h2>
+    </a>
 
     <br />
     <br />
+    <br />
+    <br />
 
-    <div class="wrap-project">
-      <div class="wrap-project-inner">
-        <a
-          class="hover-underline-animation"
-          style="text-decoration: none;"
-          href="/sc-focus"
-        >
-          <img
-            class="projectimg"
-            src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642281828/Slide_16_9_-_10_xoxmpo.png"
-          />
-          <h2 class="heavy">SoundCloud: Focus feature</h2>
-          <!-- <h2 class="blue">Canada Post</h2> -->
-          <h3 class="tags">
-            Interface Design
-          </h3>
-        </a>
-      </div>
-    </div>
+    <a href="/fuorisalone">
+      <img
+        style="border:none; width: 100%; margin-left: 0; padding: 0;"
+        src="/Frame 424.png"
+      />
+      <h3 style="margin: 0; padding: 0;">Brand Strategy, Content Design, Interaction Design</h3>
+      <h2 style="margin: 0; padding: 0;">Fuori Salone: Pre-event microsite</h2>
+    </a>
 
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <div class="wrap-project">
-      <div class="wrap-project-inner">
-        <a
-          class="hover-underline-animation"
-          style="text-decoration: none;"
-          href="/fuorisalone"
-        >
-          <img
-            class="projectimg"
-            src="/Frame 424.png"
-          />
-          <h2 class="heavy">Fuori Salone: Pre-event microsite</h2>
-          <!-- <h2 class="blue">Fuori Salone</h2> -->
+    <a href="/sc-focus">
+      <img
+        style="border:none; width: 100%; margin-left: 0; padding: 0;"
+        src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642281828/Slide_16_9_-_10_xoxmpo.png"
+      />
+      <h3 style="margin: 0; padding: 0;">UI Design</h3>
+      <h2 style="margin: 0; padding: 0;">SoundCloud: Focus feature</h2>
+    </a>
 
-          <h3 class="tags">
-            Brand Strategy, Content Design, Interaction Design
-          </h3>
-        </a>
-      </div>
-    </div>
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <!-- <div class="wrap-project">
-      <div class="wrap-project-inner">
-        <a style="text-decoration: none;" href="/mariner">
-          <h2 class="blue">Mariner Brewing</h2>
-          <img
-            style="border:none; max-width: 85%; margin-left: 0; padding: 1% 0;"
-            src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1711568900/Frame_425_wceikg.png"
-          />
-          <h2 class="heavy">
-            Is there a fun, engaging way to keep customers updated on beer
-            education?
-          </h2>
-          <h3 class="tags">
-            Brand Strategy, Content Design, Interaction Design
-          </h3>
-        </a>
-      </div>
-    </div> -->
 
-    <div class="wrap-project">
-      <div class="wrap-project-inner">
-        <!-- <a
-          class="hover-underline-animation"
-          style="text-decoration: none;"
-          href="/careflow"
-        >
-          <h2 class="blue">Careflow</h2>
-          <h2 class="heavy">CareFlow: Co-op internship</h2>
-          <h3 class="tags">
-            Internship, User experience design, User research, Interface design
-          </h3>
-        </a> -->
-      </div>
-    </div>
-  </div>
-</LayoutProject>
+</LayoutMay>
