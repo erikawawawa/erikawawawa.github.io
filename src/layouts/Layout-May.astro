@@ -38,14 +38,14 @@ import Footer from "../components/Footer.astro";
   }
 
   :root {
-    --background: #fafafa;
+    --background: #ececec;
     /* --background: #3d3d3d; */
 
     --black: #161618;
     --light-black: #5d5f66;
     --grey: #6c6c6c;
     --white: #ffffff;
-    --blue: #07c4ba;
+    --blue: #0008ff;
   }
 
   html {
@@ -165,7 +165,7 @@ import Footer from "../components/Footer.astro";
   }
 
   hr {
-    border: 1px solid #d8d8d8;
+    border: 1px solid var(--blue);
   }
 
   li a,
@@ -179,13 +179,13 @@ import Footer from "../components/Footer.astro";
 
   li a.active {
     font-weight: 700;
-    /* background-color: blue;
-    color: var(--white); */
+    /* background-color: blue; */
+    color: var(--blue);
   }
 
   li a:hover:not(.active) {
     /* color: var(--grey); */
-    text-decoration: underline;
+    text-decoration: var(--blue) underline;
     /* background-color: var(--grey);
     color: var(--white); */
   }
@@ -217,8 +217,13 @@ import Footer from "../components/Footer.astro";
 
   .blue {
     font-family: pilcrow;
-    line-height: 85%;
+    line-height: 95%;
     font-size: 3rem;
     margin: 10% 0;
+  }
+
+  .bluetext{
+    background-color: var(--blue);
+    color: var(--white);
   }
 </style>
