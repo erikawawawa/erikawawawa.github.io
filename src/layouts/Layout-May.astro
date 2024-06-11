@@ -41,7 +41,8 @@ import Footer from "../components/Footer.astro";
     --background: #ececec;
     /* --background: #3d3d3d; */
 
-    --black: #161618;
+    --black: #1c1c1f;
+    --darkblack: black;
     --light-black: #5d5f66;
     --grey: #6c6c6c;
     --white: #ffffff;
@@ -109,7 +110,7 @@ import Footer from "../components/Footer.astro";
     margin: 3% 0 7% 0;
   }
 
-  .lightblack{
+  .lightblack {
     color: var(--light-black);
   }
 
@@ -140,6 +141,8 @@ import Footer from "../components/Footer.astro";
   }
 
   h3 {
+    color: var(--light-black);
+
     font-weight: 350;
     font-size: 1.6rem;
   }
@@ -161,7 +164,7 @@ import Footer from "../components/Footer.astro";
     width: 85%;
   }
 
-  .img-header{
+  .img-header {
     width: 100%;
   }
 
@@ -223,8 +226,13 @@ import Footer from "../components/Footer.astro";
     margin: 10% 0;
   }
 
-  .bluetext{
+  .bluetext {
     background-color: var(--blue);
     color: var(--white);
   }
+
+  .pilcrow{
+    font-family: Pilcrow;
+  }
+  
 </style>
