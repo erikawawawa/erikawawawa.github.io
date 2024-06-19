@@ -76,15 +76,8 @@ import Card from "../components/Card.astro";
   </div>
 
   <hr />
-  <h2>The Opportunity</h2>
-  <p>
-    As letter delivery becomes replaced by the internet, postal services around
-    the world have been offering new services in order to expand the definiton
-    of 'postal work'. The 'Delivering Community Power' initiative by the
-    Canadian Union of Postal Workers (CUPW) are a set of proposals inspired by a
-    sense of need for Canada Post to innovate - one of which include a proposal
-    for a senior check-in service.
-  </p>
+
+  <h3>(THE OPPORTUNITY)</h3>
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe
       src="https://player.vimeo.com/video/892041896?h=7962b203ac"
@@ -93,6 +86,18 @@ import Card from "../components/Card.astro";
       allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen></iframe>
   </div><script src="https://player.vimeo.com/api/player.js"></script>
+
+  <h2>Redefining postal work</h2>
+  <p>
+    As letter delivery becomes replaced by the internet, postal services around
+    the world have been offering new services in order to expand the definiton
+    of 'postal work'.</p>
+    <p> The 'Delivering Community Power' initiative by the
+    Canadian Union of Postal Workers (CUPW) are a set of proposals inspired by a
+    sense of need for Canada Post to innovate - one of which include a proposal
+    for a senior check-in service.
+  </p>
+ 
 
   <div class="grid-twocol">
     <div>
@@ -154,7 +159,7 @@ import Card from "../components/Card.astro";
         Canada Post infrastructure?
       </h3> -->
 
-      <h3>An emerging need for senior support infrastructure</h3>
+      <h3>There's an emerging need for senior support infrastructure</h3>
       <p>
         Through investigating reports released by the National Insititue of
         Aging, my team and myself discovered that 40% of Canadians aged 55+
@@ -203,7 +208,7 @@ import Card from "../components/Card.astro";
 
   <hr />
   <div class="grid-twocol">
-    <h2>Scoping - Are postal workers qualified for this?</h2>
+    <h2>Are postal workers qualified for this?</h2>
     <div>
       <p>
         The core requirements of Carriers that Care are primarily designed
@@ -218,17 +223,20 @@ import Card from "../components/Card.astro";
         setting where their personal preferences, circumstances, and care needs
         are met:
       </p>
-      <p style="color: black; font-weight: 500;">
-        1. Promoting Preventive Health and Better Chronic Disease Management <br
-        />
-        2. Strengthening Home and CommunityBased Care and Supports for Unpaid Caregivers
-        <br /> 3. Developing More Accessible and Safer Living Environments <br
-        />4. Improving Social Connections to Reduce Loneliness and Social
+      <div class="grid-twocolumn">
+      <p class="callout-inverted wide">
+        1. Promoting Preventive Health and Better Chronic Disease Management </p>
+        <p class="callout-inverted wide">2. Strengthening Home and Community Based Care & Supports for Unpaid Caregivers</p>
+        <p class="callout-inverted wide"> 3. Developing More Accessible and Safer Living Environments </p>
+        <p class="callout wide">4. Improving Social Connections to Reduce Loneliness and Social
         Isolation
       </p>
+    </div>
+
+    <br>
       <p>
         Carriers that Care is made with a particular focus on the fourth pillar
-        - improving social connections to reduce loneliness & social isolation.
+        - <span class="bluetext">improving social connections to reduce loneliness & social isolation.</span>
       </p>
 
       <!-- <br /> -->
@@ -296,19 +304,33 @@ import Card from "../components/Card.astro";
   <!--  <note>Maybe images/illustrations at the top of each secion might help differentiate users...?</note>-->
 
   <div>
-    <h2>The Solution</h2>
+    <h2>User Journey & Personas</h2>
   </div>
   <p>The general user journey of Carriers that Care is as follows.</p>
 
   <img src="/General - user flow.png" />
-
+<br><br>
   <p>
     Furthermore, the defined touchpoints imagine the involvement of three
     potential users. Each persona represents the possible actors in a single
-    user flow.
-    <br /><br />
-    <img src="/Persona.png" />
-  </p>
+    user flow.</p>
+
+    <div class="grid-threecol">
+      <div class="callout-inverted wide">
+        <h3>Rachel</h2>
+        <p class="wide">Lives alone in Nova Scotia. Recently widowed.</p>
+      </div>
+      <div class="callout-inverted wide">
+        <h3>Selena</h2>
+        <p class="wide">Lives in Calgary with her own family. She is considering the service for her mother, Rachel.</p>
+      </div>
+      <div class="callout-inverted wide">
+        <h3>Cindy</h2>
+        <p class="wide">Carrier for 17+ years. She has recently been trained for Carriers that Care.</p>
+      </div>
+    </div>
+    <!-- <img src="/Persona.png" /> -->
+  <br>
   <p>
     In general, we imagine that a user's first interaction with Carriers That
     Care will be a three-step process, eventually simplifying into two steps as
@@ -470,10 +492,7 @@ import Card from "../components/Card.astro";
       >
     </div>
   </div>
-  <br />
-
-  <br />
-  <br />
+  <br>
 
   <div class="grid-twocol">
     <h2>Post-visit</h2>
@@ -546,20 +565,25 @@ import Card from "../components/Card.astro";
 
   <hr />
 
-  <h2>Business Value</h2>
+  <h2>Business opportunities</h2>
+
+  <h3>1. "The Great Mail Decline"</h3>
   <p>
-    In their 2022 financial report, Canada Post revealed that letter delivery
-    has been on the decline for the past 17 years. (In the <a
-      href="https://www.canadapost-postescanada.ca/cpc/en/our-company/financial-and-sustainability-reports/2023-annual-report/executive-summary.page"
-      >2023 financial report</a
-    > that was released in May, Canada Post labelled this phoenomenon as "The Great
-    Mail Decline" .) In the parcel delivery space, they have been losing market share
+    In their 
+    <a href="https://www.canadapost-postescanada.ca/cpc/en/our-company/financial-and-sustainability-reports/2022-annual-report/our-financial-results.page">
+      2022</a>
+    and 
+    <a href="https://www.canadapost-postescanada.ca/cpc/en/our-company/financial-and-sustainability-reports/2023-annual-report/executive-summary.page"
+>2023 financial reports</a>, Canada Post has revealed that letter delivery
+    has been on the decline since 2005. In the parcel delivery space, they have been losing market share
     to faster, cheaper competitors such as FedEx or UPS. As a response, the crown
     corporation seeks to extend its offerings beyond traditional postage services.
   </p>
+
+  <h3>2. Keeping up with the world</h3>
   <p>
-    As has been mentioned in “Scoping”, we find that this is a global trend
-    shared with postal services in other countries.
+    We find that this is a global trend shared with postal services in other
+    countries.
     <a
       href="https://www.newyorker.com/culture/annals-of-inquiry/in-france-elder-care-comes-with-the-mail"
       >The New Yorker</a
@@ -569,6 +593,7 @@ import Card from "../components/Card.astro";
     which are even more extensive than our proposed Carriers That Care.
   </p>
 
+  <h3>3. Integration with other parts of the business</h3>
   <p>
     While we acknowledge that implementation of this service alone would not
     resolve Canada Post’s declining revenues, my team and I still believe that
