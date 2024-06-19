@@ -32,7 +32,7 @@ import Footer from "../components/Footer.astro";
   @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
-
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
   @font-face {
     font-family: Pilcrow;
     src: url("/PilcrowRounded-Medium.woff") format("woff");
@@ -61,9 +61,9 @@ import Footer from "../components/Footer.astro";
   }
 
   html {
-    font-family: "Public Sans", sans-serif;
+    font-family: "Palanquin", sans-serif;
     /* font-family: "Noto Serif", serif; */
-    font-weight: 350;
+    font-weight: 400;
     background-color: var(--background);
     color: var(--black);
   }
@@ -89,8 +89,14 @@ import Footer from "../components/Footer.astro";
     color: var(--black);
   }
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--black);
+    text-decoration-thickness: 4%;
+    text-decoration-color: var(--light-black);
+  }
+
+  .project{
+    text-decoration: none;
   }
 
   h1,
@@ -98,7 +104,7 @@ import Footer from "../components/Footer.astro";
   h3 {
     /* font-family: Healtheweb; */
     font-weight: 100;
-    font-family: Pilcrow;
+    font-family: "Crimson Pro";
     max-width: 95%;
     line-height: 125%;
     letter-spacing: -1px;
@@ -108,13 +114,14 @@ import Footer from "../components/Footer.astro";
     font-size: 1.1rem;
     letter-spacing: -2%;
     max-width: 75%;
-    line-height: 160%;
+    line-height: 155%;
+    margin: 1% 0 3.5% 0;
   }
 
   h1 {
     font-weight: 250;
     line-height: 110%;
-    font-size: 4.3rem;
+    font-size: 4.5rem;
     letter-spacing: -1px;
     margin: 0;
   }
@@ -136,9 +143,9 @@ import Footer from "../components/Footer.astro";
   h2 {
     /* font-family: Pilcrow; */
     color: var(--light-black);
-    font-weight: 350;
-    font-size: 2.5rem;
-    margin: 5% 0;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 3% 0;
     /* position: sticky; */
   }
 
@@ -154,10 +161,10 @@ import Footer from "../components/Footer.astro";
   }
 
   h3 {
-    color: var(--light-black);
-
+    color: var(--black);
     font-weight: 350;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    margin: 4% 0 2%;
   }
 
   ul {
@@ -182,19 +189,20 @@ import Footer from "../components/Footer.astro";
   }
 
   hr {
-    border: 1px solid var(--blue);
+    border: 0.5px solid var(--blue);
   }
 
   li a,
   li h3 {
     display: block;
-    padding: 8px 16px;
-    font-weight: 250;
+    padding: 0.3rem;
+    font-weight: 450;
+    font-size: 1rem;
     text-decoration: none;
   }
 
   li a.active {
-    font-weight: 600;
+    font-weight: 500;
     /* background-color: blue; */
     color: var(--blue);
   }
@@ -216,7 +224,8 @@ import Footer from "../components/Footer.astro";
 
   .flex-twocolumn {
     display: flex;
-    align-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 1;
   }
 
   .grid-threecol {
@@ -232,18 +241,39 @@ import Footer from "../components/Footer.astro";
   }
 
   .blue {
-    font-family: Pilcrow;
-    line-height: 95%;
+    font-family: "Crimson Pro";
+    line-height: 75%;
+    max-width: 50%;
     font-size: 3rem;
-    margin: 10% 0;
+    font-weight: 250;
+    margin: 10% 0 20%;
   }
 
   .bluetext {
-    background-color: var(--blue);
-    color: var(--white);
+    color: var(--blue);
+    font-weight: 500;
   }
 
   .pilcrow {
-    font-family: Pilcrow;
+    font-family: "Crimson Pro";
+    font-size: 1.3rem;
+  }
+
+  .callout{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 5%;
+  }
+  
+  .callout-inverted{
+    border: 1.5px solid var(--blue);
+    padding: 5%;
+  }
+  
+  .wide{
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 100%;
+    margin: 0.5%;
   }
 </style>
