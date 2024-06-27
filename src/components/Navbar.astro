@@ -11,44 +11,52 @@ const currentPath = pathname.slice(1); // remove the first "/"
 	  Brand design
 	  </h3></li> -->
   <div class="project-list">
-  <li>
-    <a
-      class={currentPath === "carriersthatcare" ? "active" : ""}
-      href="/carriersthatcare">CANADA POST</a
-    >
-  </li>
-  <li>
-    <a class={currentPath === "fuorisalone" ? "active" : ""} href="/fuorisalone"
-      >MILAN DESIGN WEEK</a
-    >
-  </li>
+    <li>
+      <a
+        class={currentPath === "carriersthatcare" ? "active" : ""}
+        href="/carriersthatcare">CANADA POST</a
+      >
+    </li>
+    <li>
+      <a
+        class={currentPath === "fuorisalone" ? "active" : ""}
+        href="/fuorisalone">MILAN DESIGN WEEK</a
+      >
+    </li>
+    <li>
+      <a class={currentPath === "careflow" ? "active" : ""} href="/careflow">
+        CAREFLOW
+      </a>
+    </li>
 
-  <!-- <li>
+    <!-- <li>
     <a class={currentPath === "careflow" ? "active" : ""} href="/careflow"
       >CAREFLOW</a
     >
   </li> -->
-  <li>
+    <!-- <li>
     <a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus"
       >SOUNDCLOUD</a
     >
-  </li>
-</div>
+  </li> -->
+  </div>
   <!-- <li><a><h3>
 	  Internship
 	  </h3></a></li>
 	
       <li><a href="/careflow">CareFlow</a></li> -->
-      <div class="about-resume">
-
-      <li>
-    <a class={currentPath === "about" ? "active" : ""} href="/about"> About </a>
-  </li>
-  <li>
-    <a
-      href="https://drive.google.com/file/d/1nC4aRLPUDE3zWpH1NjcSoiwINQORwxyv/view?usp=drive_link"
-      >Resume</a
-    >
-  </li>
-</div>
+  <div class="about-resume">
+  
+    <li>
+      <a class={currentPath === "about" ? "active" : ""} href="/about">
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/file/d/1nC4aRLPUDE3zWpH1NjcSoiwINQORwxyv/view?usp=drive_link"
+        >Resume</a
+      >
+    </li>
+  </div>
 </ul>
