@@ -93,8 +93,8 @@ import Footer from "../components/Footer.astro";
     background-color: var(--background);
     color: var(--black);
   }
-  main{
-    margin-left:30%; 
+  main {
+    margin-left: 30%;
     padding-right: 5%;
   }
 
@@ -153,7 +153,11 @@ import Footer from "../components/Footer.astro";
   }
 
   .project-titles {
-    margin: 3% 0 3% 0;
+    margin: 2% 0 0 0;
+  }
+  .categories {
+    margin: 0 0 5%;
+    color: var(--light-black);
   }
 
   .lightblack {
@@ -312,48 +316,48 @@ import Footer from "../components/Footer.astro";
     margin: 0.5%;
   }
 
-  .project-list{
+  .project-list {
     margin: 10% 0;
   }
 
   @media only screen and (max-width: 768px) {
-    h1{
+    h1 {
       font-size: 2.5rem;
     }
-    main{
-    margin-left:0%; 
-    padding: 2%;
+    main {
+      margin-left: 0%;
+      padding: 2%;
     }
-    ul{
+    ul {
       position: static;
       width: 100%;
     }
-    h2{
-      font-size:1.8rem;
-      line-height:113%;
+    h2 {
+      font-size: 1.8rem;
+      line-height: 113%;
       max-width: 100%;
       margin: 6% 0;
     }
-    h3{
+    h3 {
       font-size: 1.4rem;
       margin: 4% 0;
     }
-    p{
+    p {
       max-width: 100%;
-      line-height:125%;
+      line-height: 125%;
       margin: 9% 0;
     }
-    .blue{
+    .blue {
       margin: 0;
       max-width: 100%;
     }
-    .project-list, .about-resume{
-    display: none;
+    .project-list,
+    .about-resume {
+      display: none;
+    }
+    .grid-threecol,
+    .grid-twocolumn {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
-  .grid-threecol, .grid-twocolumn {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-
-}
 </style>
