@@ -33,10 +33,6 @@ import Footer from "../components/Footer.astro";
   @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
-  @font-face {
-    font-family: Pilcrow;
-    src: url("/PilcrowRounded-Medium.woff") format("woff");
-  }
 
   @font-face {
     font-family: Accanthis;
@@ -58,19 +54,6 @@ import Footer from "../components/Footer.astro";
     src: url("/PPNeueMontreal-Book.woff2") format("woff2");
   }
   @font-face {
-    font-family: PPTelegraf;
-    src: url("/PPTelegraf-Regular.woff") format("woff");
-  }
-
-  @font-face {
-    font-family: PPFraktionSans-Light;
-    src: url("/PPFraktionSans-Light.woff") format("woff");
-  }
-  @font-face {
-    font-family: PPFraktionSans-Bold;
-    src: url("/PPFraktionSans-Bold.woff") format("woff");
-  }
-  @font-face {
     font-family: PPRadioGrotesk-Light;
     src: url("/PPRadioGrotesk-Light.woff") format("woff");
   }
@@ -82,8 +65,9 @@ import Footer from "../components/Footer.astro";
 
     --black: #08074c;
     --darkblack: #1d165b;
-    --light-black: #434c6d;
-    --grey: #291f9b;
+    --light-black: #4D5A89;
+    --lightest-black: #7A85AE;
+    --grey: #d2d2e7;
     --white: #ffffff;
     --blue: #0007ce;
   }
@@ -92,20 +76,14 @@ import Footer from "../components/Footer.astro";
     /* font-family: Public Sans; */
     /* font-family: "Crimson Pro"; */
     font-family: "PPRadioGrotesk-Light";
-    /* font-family: PPFraktionSans-Light; */
     /* font-family: "Palanquin", sans-serif; */
     /* font-family: "Noto Serif", serif; */
     background-color: var(--background);
     color: var(--black);
   }
   main {
-    margin-left: 20%;
+    margin-left: 25%;
     padding-right: 5%;
-  }
-
-  .highlight {
-    font-weight: 400;
-    color: var(--blue);
   }
 
   body {
@@ -132,10 +110,6 @@ import Footer from "../components/Footer.astro";
   h1,
   h2,
   h3 {
-    /* font-family: Healtheweb; */
-    /* font-weight: 100; */
-    /* font-family: PPFraktionSans-Bold; */
-    /* font-family: "Crimson Pro"; */
     max-width: 100%;
     line-height: 125%;
     letter-spacing: -0.5px;
@@ -146,6 +120,10 @@ import Footer from "../components/Footer.astro";
     max-width: 63%;
     line-height: 140%;
     margin: 1% 0 4% 0;
+  }
+
+  span.small{
+    font-size: smaller;
   }
 
   h1 {
@@ -169,6 +147,7 @@ import Footer from "../components/Footer.astro";
     color: var(--light-black);
   }
 
+
   .design-tags {
     padding: 0.3%;
     margin: 1% 1% 1% 0;
@@ -176,14 +155,12 @@ import Footer from "../components/Footer.astro";
   }
 
   h2 {
-    /* font-family: Pilcrow; */
     color: var(--light-black);
     font-weight: 300;
     font-size: 3.1rem;
     margin: 3% 0;
     line-height: 120%;
     max-width: 95%;
-    /* position: sticky; */
   }
 
   .stack {
@@ -209,7 +186,7 @@ import Footer from "../components/Footer.astro";
     margin: 3% 0;
     font-weight: 500;
     font-size: 1.6rem;
-    color: #747474;
+    color: var(--lightest-black);
     letter-spacing: -0.5px;
   }
 
@@ -221,7 +198,7 @@ import Footer from "../components/Footer.astro";
     position: fixed;
     height: 100%;
     /* background-color: #f6f6fa; */
-    border-right: 1px solid #d2d2e7;
+    border-right: 1px solid var(--grey);
   }
 
   img {
@@ -234,7 +211,7 @@ import Footer from "../components/Footer.astro";
   }
 
   hr {
-    border-top: 0.5px solid #d2d2e7;
+    border-top: 0.5px solid var(--grey);
   }
 
   li a,
@@ -252,10 +229,8 @@ import Footer from "../components/Footer.astro";
   }
 
   li a:hover:not(.active) {
-    /* color: var(--grey); */
     text-decoration: var(--blue) underline;
-    /* background-color: var(--grey);
-    color: var(--white); */
+ 
   }
 
   .grid-twocolumn {
@@ -264,6 +239,22 @@ import Footer from "../components/Footer.astro";
     grid-template-rows: fit-content(20%);
     grid-column-gap: 0.1em;
     align-content: center;
+  }
+
+  .grid-twocolumn-right-heavy{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: fit-content(20%);
+    grid-column-gap: 1.3em;
+    align-items: center;
+  }
+
+  .grid-twocolumn-left-heavy{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: fit-content(20%);
+    grid-column-gap: 1.3em;
+    align-items: center;
   }
 
   .flex-twocolumn {
@@ -299,10 +290,9 @@ import Footer from "../components/Footer.astro";
     font-weight: 550;
   }
 
-  .pilcrow {
-    /* font-family: "Crimson Pro"; */
-    font-size: 1.3rem;
-  }
+ .pilcrow{
+  color: var(--light-black);
+ }
 
   .callout {
     background-color: var(--blue);
