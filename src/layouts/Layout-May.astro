@@ -70,6 +70,10 @@ import Footer from "../components/Footer.astro";
     font-family: PPFraktionSans-Bold;
     src: url("/PPFraktionSans-Bold.woff") format("woff");
   }
+  @font-face {
+    font-family: PPRadioGrotesk-Light;
+    src: url("/PPRadioGrotesk-Light.woff") format("woff");
+  }
 
   :root {
     /* --background: #ececec; */
@@ -86,7 +90,8 @@ import Footer from "../components/Footer.astro";
 
   html {
     /* font-family: Public Sans; */
-    font-family: "Crimson Pro";
+    /* font-family: "Crimson Pro"; */
+    font-family: "PPRadioGrotesk-Light";
     /* font-family: PPFraktionSans-Light; */
     /* font-family: "Palanquin", sans-serif; */
     /* font-family: "Noto Serif", serif; */
@@ -94,7 +99,7 @@ import Footer from "../components/Footer.astro";
     color: var(--black);
   }
   main {
-    margin-left: 30%;
+    margin-left: 20%;
     padding-right: 5%;
   }
 
@@ -128,26 +133,25 @@ import Footer from "../components/Footer.astro";
   h2,
   h3 {
     /* font-family: Healtheweb; */
-    font-weight: 100;
+    /* font-weight: 100; */
     /* font-family: PPFraktionSans-Bold; */
     /* font-family: "Crimson Pro"; */
     max-width: 100%;
     line-height: 125%;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
   }
 
   p {
-    font-size: 1.2rem;
-    letter-spacing: -1%;
-    max-width: 73%;
-    line-height: 145%;
+    font-size: 1.1rem;
+    max-width: 63%;
+    line-height: 140%;
     margin: 1% 0 4% 0;
   }
 
   h1 {
     font-weight: 250;
-    line-height: 100%;
-    font-size: 4.5rem;
+    line-height: 105%;
+    font-size: 5.5rem;
     letter-spacing: -1px;
     margin: 0;
   }
@@ -204,19 +208,20 @@ import Footer from "../components/Footer.astro";
     /* font-family: "crimson text"; */
     margin: 3% 0;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #747474;
     letter-spacing: -0.5px;
   }
 
   ul {
     list-style-type: none;
-    margin: 1%;
-    padding: 0;
-    width: 18%;
+    margin: 0;
+    padding: 0 1%;
+    width: 15%;
     position: fixed;
-    border-radius: 15px;
     height: 100%;
+    /* background-color: #f6f6fa; */
+    border-right: 1px solid #d2d2e7;
   }
 
   img {
@@ -229,7 +234,7 @@ import Footer from "../components/Footer.astro";
   }
 
   hr {
-    border-top: 0.5px solid var(--blue);
+    border-top: 0.5px solid #d2d2e7;
   }
 
   li a,
@@ -281,11 +286,12 @@ import Footer from "../components/Footer.astro";
 
   .blue {
     /* font-family: "Crimson Pro"; */
-    line-height: 75%;
-    max-width: 50%;
-    font-size: 3rem;
+    line-height: 85%;
+    /* max-width: 50%; */
+    font-size: 2.4rem;
     font-weight: 250;
     margin: 8% 0 10%;
+    letter-spacing: -0.5px;
   }
 
   .bluetext {
