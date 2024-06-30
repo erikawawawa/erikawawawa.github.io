@@ -103,8 +103,11 @@ import Footer from "../components/Footer.astro";
     text-decoration-color: var(--light-black);
   }
 
-  .project {
+  .project>a {
     text-decoration: none;
+  }
+  .project{
+    margin: 2% 0 14% 0;
   }
 
   h1,
@@ -248,14 +251,17 @@ import Footer from "../components/Footer.astro";
     grid-template-rows: fit-content(20%);
     grid-column-gap: 1.3em;
     align-items: center;
+    margin: 8% 0 3%;
+
   }
 
   .grid-twocolumn-left-heavy{
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 0.7fr 0.7fr;
     grid-template-rows: fit-content(20%);
-    grid-column-gap: 1.3em;
+    grid-column-gap: 1.8em;
     align-items: center;
+    margin: 7% 0;
   }
 
   .flex-twocolumn {
@@ -340,11 +346,15 @@ import Footer from "../components/Footer.astro";
   }
 
   .headline{
-    margin: 5% 0 1%; 
+    margin: 5% 0 2%; 
     padding: 0;
     font-style: italic;
   }
-
+  
+  .headline-h2{
+    margin: 1% 0 2.5% 0;
+    padding: 0;
+  }
 
   @media only screen and (max-width: 768px) {
     h1 {
