@@ -146,9 +146,9 @@ import Card from "../components/Card.astro";
         style="border-style: none;"
         src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1716336990/Slide_4_3_-_2_bcw3tx.svg"
       /> -->
-  
+  <div style="margin: 5% 0;">
   <p class="headline">THE BUSINESS PROBLEM</p>
-  <h2 style="margin: 0 0 2% 0; padding: 0;">"The Great Mail Decline"</h2>
+  <h2 class="headline-h2">"The Great Mail Decline"</h2>
   <p>
     In their
     <a
@@ -167,10 +167,11 @@ import Card from "../components/Card.astro";
     crown corporation seeks to extend its offerings beyond traditional postage
     services.
   </p>
+</div>
   <hr>
       <p class="headline">OPPORTUNITY</p>
 
-      <h2 style="margin: 0 0 2% 0; padding: 0;">
+      <h2 class="headline-h2">
         The CUPW has been advocating for a senior check-in service since 2016.
       </h2>
       <p>
@@ -270,8 +271,10 @@ import Card from "../components/Card.astro";
   <!-- <hr /> -->
   <hr />
   <div class="grid-twocol">
-    <p style="margin: 5% 0 1%; padding: 0;"><i>RESEARCH</i></p>
-    <h2 style="margin: 0 0 2% 0; padding: 0;">
+    <p class="headline">
+      RESEARCH
+    </p>
+    <h2 class="headline-h2">
       Are postal workers qualified for this?
     </h2>
     <div>
@@ -378,8 +381,11 @@ import Card from "../components/Card.astro";
   </div> -->
   <!-- <img src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1710484642/Touchpoints_xb5jwf.png"> -->
   <!--  <note>Maybe images/illustrations at the top of each secion might help differentiate users...?</note>-->
-  <p style="margin: 5% 0 1%; padding: 0;"><i>DEVELOPMENT</i></p>
-  <h2 style="margin: 0 0 2% 0; padding: 0;">Defining touchpoints & personas</h2>
+  <p class="headline">
+    DEVELOPMENT
+  </p>
+  <h2 class="headline-h2">
+    Defining touchpoints & personas</h2>
   <p>
     A user journey map was created in order to define the necessary touchpoints
     that my team would need to design to.
@@ -434,8 +440,11 @@ import Card from "../components/Card.astro";
   <hr />
 
     
-    <p style="margin: 5% 0 1%; padding: 0;"><i>FINAL PRODUCTS</i></p>
-    <h2 style="margin: 0 0 2% 0; padding: 0;">1. Web Portal</h2>
+  <p class="headline">
+    FINAL PRODUCTS
+    </p>
+    <h2 class="headline-h2">
+      1. Web Portal</h2>
     
     <div>
   
@@ -460,20 +469,17 @@ import Card from "../components/Card.astro";
       who wish to indicate to loved ones without requiring them to access the
       internet.
     </p>
-    <br />
   </div>
   </div>
 
-  <br />
-  <br />
   <div class="grid-twocol">
     <div>
-      <h2 style="margin: 0 0 2% 0; padding: 0;">2. Sign-up Process</h2>
+      <h2 class="headline-h2">
+        2. Sign-up Process</h2>
       <!-- <h3>Setting expectations & consent</h3> -->
  
     </div>
   </div>
-  <br />
 
   <div class="grid-twocol-even">
     <img
@@ -504,8 +510,10 @@ import Card from "../components/Card.astro";
   <p style="max-width: 100%;">
     <span class="small"
       ><i
-    >An example of what the service dashboard may look like before vocal
-    consent is confirmed.</i
+    >
+    An example of what the service dashboard may look like before vocal
+    consent is confirmed.
+    </i
   ></small
 >
     <p>
@@ -522,16 +530,16 @@ import Card from "../components/Card.astro";
       portal or through logging into Canada Post's website.
     </p>
 
-    <br />
-    <br />
-
-    <h2 style="margin: 0 0 2% 0; padding: 0;">3. Service Dashboard</h2>
+    <h2 class="headline-h2">
+      3. Service Dashboard</h2>
     <img style="border-radius:12px; width: 100%;" class="screen3" src="/Dashboard - Send gift.gif" />
-    <small
-    ><i
-      >Navigation from the Carriers that Care dashboard to Canada Shops.
-    </i></small
-  >
+    <p style="max-width: 100%;">
+      <span class="small"
+        ><i
+      >
+      Navigation from the Carriers that Care dashboard to Canada Shops.
+    </i></span
+  ></p>
     <div class="grid-twocol">
 
       <p>
@@ -547,13 +555,13 @@ import Card from "../components/Card.astro";
     <br />
     <div class="grid-twocol">
       <img style="border-radius:12px; width: 100%; "class="screen3" src="/Dashboard - check gift.gif" />
-      <br>
-      <small
-      ><i
+      <p style="max-width: 100%;">
+        <span class="small"
+          ><i
         >Once a purchase is made on Canada Shops, the user may receive updates
         on the purchase alongside Carrier reports.</i
-      ></small
-    >
+      ></span
+    ></p>
       <div>
         <!-- <h3>Facilitating further engagement</h3> -->
         <p>
@@ -565,14 +573,9 @@ import Card from "../components/Card.astro";
         </p>
       </div>
     </div>
-
-    <br />
-
-
   </div>
-  <br />
-  <br />
-    <h2 style="margin: 0 0 2% 0; padding: 0;">4. App for Letter Carriers</h2>
+  <h2 class="headline-h2">
+    4. App for Letter Carriers</h2>
 
     <!-- <h2>Commencement of the service</h2> -->
     <p>
@@ -589,7 +592,6 @@ import Card from "../components/Card.astro";
             class="screen3"
             src="/Letter Carrier Survey.gif"
           />
-          <br />
 
           <!-- <small
             ><i
@@ -626,19 +628,30 @@ import Card from "../components/Card.astro";
         </div>
       </div>
       </div>
-<br>
 
+<div class="grid-twocolumn-left-heavy">
+  <div>
+  <h3>b. Resources for unexpected events & emergencies</h3>
 
-      <h3>b. Resources for unexpected events & emergencies</h3>
-      <p>
+      <p style="max-width:100%;">
         To alleviate pressure on postal carriers to be experts on handling
-        risks that are outside of their expertise, would allow them to maintain
-        their focus on this service's core strategy, on preventing social
-        isolation. The 'resources' tab will act as a manual to answer questions
-        such as 'what do I do if the recipient is not answering the door'; the
-        'report an emergency' tab will connect the letter carrier to the
-        appropriate emergency service, such as the police or the ambulance.
+        risks that are outside of their expertise, these pages would allow them to maintain
+        their focus on this service's core strategy, preventing social
+        isolation.
       </p>
+    </div>
+      <div class="grid-twocolumn">
+      <img 
+      style=" border-radius: 12px;"
+      class="screen3"
+      src="report format.png">
+      <img 
+      style=" border-radius: 12px;"
+      class="screen3"
+
+      src="Emergency-resources.png">
+    </div>
+  </div>
 
   <h2>5. Emails & Other collateral</h2>
   <div>
@@ -654,9 +667,7 @@ import Card from "../components/Card.astro";
     </p>
     <img src="Frame 407.png" />
   </div>
-  <br />
-  <br />
-  <br />
+
   <hr />
 
   <h2>Value Proposition</h2>
