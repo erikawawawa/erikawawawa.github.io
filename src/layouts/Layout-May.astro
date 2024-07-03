@@ -123,6 +123,43 @@ import Footer from "../components/Footer.astro";
   }
   .project {
     margin: 2% 0% 10%;
+    animation: scale-up-center 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .project:hover {
+    /* border: 1px solid var(--blue); */
+    /* animation: scale-down-center 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  }
+  /* .project-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .project:hover .project-hover {
+    display: inline;
+  } */
+
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.95);
+    }
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(0.95);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+      transform: scale(1);
+    }
   }
 
   h1,
@@ -308,12 +345,11 @@ import Footer from "../components/Footer.astro";
     line-height: 85%;
     /* max-width: 50%; */
     font-size: 1.6rem;
-    font-weight: 850;
+    font-weight: 550;
     padding: 5% 5%;
     margin-bottom: 2%;
     letter-spacing: -0.5px;
-    color: white;
-    background-color: #0c0c0c;
+    border-bottom: 1px solid var(--grey);
   }
 
   .bluetext {
@@ -366,6 +402,11 @@ import Footer from "../components/Footer.astro";
 
   .project-list {
     margin: 0 0 1%;
+  }
+  .project-list,
+  .about-resume {
+    border-bottom: 1px solid var(--grey);
+    padding: 0 0 2%;
   }
 
   .headline {
