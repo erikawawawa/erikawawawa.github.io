@@ -113,7 +113,7 @@ import Footer from "../components/Footer.astro";
     text-decoration: none;
   }
   .project{
-    margin: 2% 0 14% 0;
+    margin: 2% 4% 10%;
   }
 
   h1,
@@ -235,7 +235,7 @@ import Footer from "../components/Footer.astro";
 
     display: block;
     padding: 0.3rem;
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     text-decoration: none;
   }
 
@@ -371,6 +371,14 @@ import Footer from "../components/Footer.astro";
     padding: 0;
   }
 
+  .landing-image{
+      margin: 7% 0 0.5% 0;
+      width: 95%;
+    }
+  .img-header-mobile{
+    display:none;
+  }
+
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 2.5rem;
@@ -382,16 +390,21 @@ import Footer from "../components/Footer.astro";
     ul {
       position: static;
       width: 100%;
+      height: auto;
     }
     h2 {
-      font-size: 1.8rem;
+      font-family: "PPRadioGrotesk-Regular";
+      font-size: 2.2rem;
       line-height: 113%;
       max-width: 100%;
       margin: 6% 0;
     }
     h3 {
-      font-size: 1.4rem;
+      font-size: 2.2rem;
       margin: 4% 0;
+    }
+    h4{
+      font-size:
     }
     p {
       max-width: 100%;
@@ -406,9 +419,29 @@ import Footer from "../components/Footer.astro";
     .about-resume {
       display: none;
     }
-    .grid-threecol,
-    .grid-twocolumn {
+    .img-header{
+    display:none;
+  }
+
+  .img-header-mobile{
+    display:block;
+    width: 100%;
+  }
+    .grid-twocolumn,
+    .grid-twocolumn-left-heavy,
+    .grid-twocolumn-right-heavy
+    {
       grid-template-columns: repeat(1, 1fr);
     }
+    
+    .grid-threecol{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .landing-image{
+      margin: 1% 0;
+      width: 95%;
+    }
+
   }
 </style>
