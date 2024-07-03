@@ -10,7 +10,7 @@ import Card from "../components/Card.astro";
 <LayoutMay title="Erika Wang">
   <br />
   <br />
-  <img src="path4.svg" style="width: 95%; margin: 7% 0 0.5% 0;" />
+  <img src="path4.svg" class="landing-image" />
 <!-- <h3>Hello!</h3> -->
  <h3>Hello there!
     Erika is a <strong>product designer</strong>, <strong>illustrator</strong>, and a <strong>perpetual hunter of good questions</strong>.
@@ -24,21 +24,23 @@ import Card from "../components/Card.astro";
       ><strong>Excelar Technologies</strong></a
     >. 
     <strong>Scroll down</strong> and check out some of my work!</h3>
+    <br><br>
 
     <hr>
-<br><br><br><br>
-<br>
+<br><br><br>
 
+<div class="grid-twocolumn">
   <div class="project">
   <a href="/carriersthatcare">
     <img
       style="width: 100%;"
-      src="Frame 445.png"
+      src="Ctc.png"
     />
 
-    <h3 style="margin: 0; padding: 0;"><strong>Canada Post: Carriers that Care</strong></h3>
+    <h2 style="margin: 0; padding: 0;">Canada Post
+    </h2>
     <h4 style="margin: 0; padding: 0;">
-      Redefining the role of postal service for rural seniors
+      Rethinking postal service for rural seniors
     </h4>
   </a>
 </div>
@@ -46,11 +48,12 @@ import Card from "../components/Card.astro";
 <div class="project">
   <a href="/fuorisalone">
     <img
-      style="width: 100%;"
-      src="/Frame 443.png"
+      style="width: 100%;
+      object-fit: fill;"
+      src="FS.png"
     />
 
-    <h2 style="margin: 0; padding: 0;">Milan Design Week: Fuori Salone</h2>
+    <h2 style="margin: 0; padding: 0;">Milan Design Week</h2>
     <h4 style="margin: 0; padding: 0;">
       An event website to explore the districts of Milan
     </h4>
@@ -61,13 +64,14 @@ import Card from "../components/Card.astro";
   <a href="/careflow">
     <img
       style="width: 100%;"
-      src="/Frame 439.png"
+      src="Careflow.png"
     />
     <h2 style="margin: 0; padding: 0;">Careflow</h2>
     <h4 style="margin: 0; padding: 0;">
       UX/UI design for clincial platform
     </h4>
   </a>
+</div>
 </div>
   <!-- <br />
   <br />
