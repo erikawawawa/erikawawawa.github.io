@@ -68,11 +68,11 @@ import Footer from "../components/Footer.astro";
     /* --background: #3d3d3d; */
     --background: #fff;
 
-    --black: #0C0C0C;
+    --black: #0c0c0c;
     /* --black: #08074c; */
     --darkblack: #393371;
-    --light-black: #7F7F7F;
-    --lightest-black: #7A85AE;
+    --light-black: #7f7f7f;
+    --lightest-black: #7a85ae;
     --grey: #d2d2e7;
     --white: #ffffff;
     --blue: #0007ce;
@@ -86,6 +86,7 @@ import Footer from "../components/Footer.astro";
     /* font-family: "Noto Serif", serif; */
     background-color: var(--background);
     color: var(--black);
+    cursor: crosshair;
   }
   main {
     margin-left: 20%;
@@ -108,11 +109,13 @@ import Footer from "../components/Footer.astro";
     text-decoration-thickness: 4%;
     text-decoration-color: var(--light-black);
   }
+  a:hover {
+  }
 
-  .project>a {
+  .project > a {
     text-decoration: none;
   }
-  .project{
+  .project {
     margin: 2% 4% 10%;
   }
 
@@ -132,7 +135,7 @@ import Footer from "../components/Footer.astro";
     margin: 1% 0 4% 0;
   }
 
-  span.small{
+  span.small {
     font-size: smaller;
   }
 
@@ -156,7 +159,6 @@ import Footer from "../components/Footer.astro";
   .lightblack {
     color: var(--black);
   }
-
 
   .design-tags {
     padding: 0.3%;
@@ -205,8 +207,8 @@ import Footer from "../components/Footer.astro";
   ul {
     list-style-type: none;
     margin: 0;
-    padding: 2% 1%;
-    width: 15%;
+    padding: 0;
+    width: 17%;
     top: 0;
     position: fixed;
     height: 100vh;
@@ -234,9 +236,10 @@ import Footer from "../components/Footer.astro";
     /* color: white;  */
 
     display: block;
-    padding: 0.3rem;
-    font-size: 1.35rem;
+    padding: 2% 5%;
+    font-size: 1.2rem;
     text-decoration: none;
+    letter-spacing: -0.5px;
   }
 
   li a.active {
@@ -247,7 +250,6 @@ import Footer from "../components/Footer.astro";
 
   li a:hover:not(.active) {
     text-decoration: var(--blue) underline;
- 
   }
 
   .grid-twocolumn {
@@ -258,17 +260,16 @@ import Footer from "../components/Footer.astro";
     align-content: center;
   }
 
-  .grid-twocolumn-right-heavy{
+  .grid-twocolumn-right-heavy {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: fit-content(20%);
     grid-column-gap: 1.3em;
     align-items: center;
     margin: 8% 0 3%;
-
   }
 
-  .grid-twocolumn-left-heavy{
+  .grid-twocolumn-left-heavy {
     display: grid;
     grid-template-columns: 0.7fr 0.7fr;
     grid-template-rows: fit-content(20%);
@@ -300,11 +301,13 @@ import Footer from "../components/Footer.astro";
     font-family: "PPRadioGrotesk-Regular";
     line-height: 85%;
     /* max-width: 50%; */
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     font-weight: 550;
-    margin: 0 0 10%;
+    padding: 6% 5%;
+    margin-bottom: 5%;
     letter-spacing: -0.5px;
-    /* color: yellow; */
+    color: white;
+    background-color: #0c0c0c;
   }
 
   .bluetext {
@@ -312,9 +315,9 @@ import Footer from "../components/Footer.astro";
     font-weight: 550;
   }
 
- .pilcrow{
-  color: var(--light-black);
- }
+  .pilcrow {
+    color: var(--light-black);
+  }
 
   .callout {
     background-color: var(--blue);
@@ -329,23 +332,23 @@ import Footer from "../components/Footer.astro";
     padding: 5%;
   }
 
-  .screen{
+  .screen {
     filter: drop-shadow(0 0 0.65rem crimson);
   }
 
-  .screen2{
+  .screen2 {
     /* filter: drop-shadow(0 0 1rem #FF00B8); */
     filter: drop-shadow(0 0 1rem var(--grey));
 
     margin: 5% 0;
   }
-  .screen3{
+  .screen3 {
     filter: drop-shadow(0 0 1rem var(--grey));
     margin: 3% 0;
   }
-  
-  .screen4{
-    filter: drop-shadow(0 0 1rem #F5F5F5);
+
+  .screen4 {
+    filter: drop-shadow(0 0 1rem #f5f5f5);
     margin: 1% 0;
   }
 
@@ -356,27 +359,27 @@ import Footer from "../components/Footer.astro";
   }
 
   .project-list {
-    margin: 15% 0;
+    margin: 0 0 1%;
   }
 
-  .headline{
+  .headline {
     color: var(--light-black);
-    margin: 5% 0 1.5%; 
+    margin: 5% 0 1.5%;
     padding: 0;
     font-style: italic;
   }
-  
-  .headline-h2{
+
+  .headline-h2 {
     margin: 1% 0 2.5% 0;
     padding: 0;
   }
 
-  .landing-image{
-      margin: 7% 0 0.5% 0;
-      width: 95%;
-    }
-  .img-header-mobile{
-    display:none;
+  .landing-image {
+    margin: 7% 0 0.5% 0;
+    width: 95%;
+  }
+  .img-header-mobile {
+    display: none;
   }
 
   @media only screen and (max-width: 768px) {
@@ -403,8 +406,8 @@ import Footer from "../components/Footer.astro";
       font-size: 2.2rem;
       margin: 4% 0;
     }
-    h4{
-      font-size:
+    h4 {
+      font-size:;
     }
     p {
       max-width: 100%;
@@ -419,29 +422,27 @@ import Footer from "../components/Footer.astro";
     .about-resume {
       display: none;
     }
-    .img-header{
-    display:none;
-  }
+    .img-header {
+      display: none;
+    }
 
-  .img-header-mobile{
-    display:block;
-    width: 100%;
-  }
+    .img-header-mobile {
+      display: block;
+      width: 100%;
+    }
     .grid-twocolumn,
     .grid-twocolumn-left-heavy,
-    .grid-twocolumn-right-heavy
-    {
+    .grid-twocolumn-right-heavy {
       grid-template-columns: repeat(1, 1fr);
     }
-    
-    .grid-threecol{
+
+    .grid-threecol {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .landing-image{
+    .landing-image {
       margin: 1% 0;
       width: 95%;
     }
-
   }
 </style>
