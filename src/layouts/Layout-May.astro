@@ -452,9 +452,19 @@ import { ViewTransitions } from 'astro:transitions';
 
   .screen2 {
     /* filter: drop-shadow(0 0 1rem #FF00B8); */
-    filter: drop-shadow(0 0 1rem var(--grey));
+    filter: drop-shadow(0 0 1rem #000000));
 
-    margin: 5% 0;
+    /* margin: 5% 0; */
+  }
+  .fit-image-fuorisalone {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(20%);
+    grid-column-gap: 1.8em;
+    align-items: center;
+    padding: 8% 18%;
+    background-color: #2c2c2c;
+    border-radius: 5px;
   }
   .fit-image {
     display: grid;
@@ -462,13 +472,13 @@ import { ViewTransitions } from 'astro:transitions';
     grid-template-rows: fit-content(20%);
     grid-column-gap: 1.8em;
     align-items: center;
-    padding: 8% 12%;
-    background-color: #F5F5F5;
+    padding: 8% 14%;
+    background-color: #f5f5f5;
     border-radius: 5px;
   }
 
   .screen3 {
-    filter: drop-shadow(0 0 0.7rem #c2c2c2);
+    filter: drop-shadow(0 0 0.7rem #dadada);
   }
 
   .screen4 {
