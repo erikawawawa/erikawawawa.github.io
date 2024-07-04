@@ -131,6 +131,7 @@ import Footer from "../components/Footer.astro";
     /* border: 1px solid var(--blue); */
     /* animation: scale-down-center 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
   }
+
   .project-hover {
     display: none;
     position: absolute;
@@ -176,7 +177,7 @@ import Footer from "../components/Footer.astro";
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 635px;
     line-height: 140%;
     margin: 1% 0 4% 0;
@@ -390,9 +391,18 @@ import Footer from "../components/Footer.astro";
 
     margin: 5% 0;
   }
+  .fit-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(20%);
+    grid-column-gap: 1.8em;
+    align-items: center;
+    padding: 7% 10% 2%;
+    /* background-color: var(--grey); */
+  }
+
   .screen3 {
-    filter: drop-shadow(0 0 1rem var(--grey));
-    margin: 3% 0;
+    filter: drop-shadow(0 0 1.3rem var(--grey));
   }
 
   .screen4 {
