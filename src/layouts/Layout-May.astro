@@ -126,19 +126,22 @@ import Footer from "../components/Footer.astro";
     animation: scale-up-center 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
   .project:hover {
+    color: #0007ce;
+
     /* border: 1px solid var(--blue); */
     /* animation: scale-down-center 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
   }
-  /* .project-hover {
+  .project-hover {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 99;
   }
+
   .project:hover .project-hover {
     display: inline;
-  } */
+  }
 
   @keyframes scale-down-center {
     0% {
@@ -164,7 +167,8 @@ import Footer from "../components/Footer.astro";
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-family: "PPRadioGrotesk-Light";
     max-width: 100%;
     line-height: 125%;
@@ -172,8 +176,8 @@ import Footer from "../components/Footer.astro";
   }
 
   p {
-    font-size: 1.2rem;
-    max-width: 60%;
+    font-size: 1rem;
+    max-width: 635px;
     line-height: 140%;
     margin: 1% 0 4% 0;
   }
@@ -183,10 +187,9 @@ import Footer from "../components/Footer.astro";
   }
 
   h1 {
-    font-weight: 250;
+    font-weight: 200;
     line-height: 105%;
-    font-size: 4rem;
-    letter-spacing: -1px;
+    font-size: 3rem;
     margin: 0;
   }
 
@@ -195,7 +198,7 @@ import Footer from "../components/Footer.astro";
   }
 
   .categories {
-    margin: 0% 0 5%;
+    margin: 0% 0 3%;
     color: var(--light-black);
   }
 
@@ -214,7 +217,7 @@ import Footer from "../components/Footer.astro";
     /* font-family: "PPRadioGrotesk-Regular"; */
 
     font-weight: 200;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 3% 0;
     line-height: 125%;
     max-width: 95%;
@@ -234,7 +237,7 @@ import Footer from "../components/Footer.astro";
   h3 {
     color: var(--black);
     font-weight: 500;
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     margin: 2% 0 2%;
   }
 
@@ -242,7 +245,7 @@ import Footer from "../components/Footer.astro";
     /* font-family: "crimson text"; */
     margin: 3% 0;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: var(--black);
     letter-spacing: -0.5px;
   }
@@ -257,7 +260,7 @@ import Footer from "../components/Footer.astro";
     height: 100vh;
     /* background-color: grey; */
     /* background-color: #f6f6fa; */
-    /* background-color: var(--black); */
+
     border-right: 1px solid var(--grey);
   }
 
@@ -350,6 +353,8 @@ import Footer from "../components/Footer.astro";
     margin-bottom: 2%;
     letter-spacing: -0.5px;
     border-bottom: 1px solid var(--grey);
+    background-color: var(--black);
+    color: white;
   }
 
   .bluetext {
@@ -359,6 +364,7 @@ import Footer from "../components/Footer.astro";
 
   .pilcrow {
     color: var(--light-black);
+    margin: 0;
   }
 
   .callout {
@@ -454,7 +460,7 @@ import Footer from "../components/Footer.astro";
       margin: 4% 0;
     }
     h4 {
-      font-size:;
+      font-size: 1.4rem;
     }
     p {
       max-width: 100%;
