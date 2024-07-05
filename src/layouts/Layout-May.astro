@@ -18,13 +18,13 @@ import { ViewTransitions } from 'astro:transitions';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/Rectangle 500.svg" />
-    <ViewTransitions />
+    <!-- <ViewTransitions /> -->
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
 
   <body>
-    <Navbar />
+    <Navbar transition:persist/>
 
     <main transition:animate="slide">
       <slot />
@@ -326,7 +326,8 @@ import { ViewTransitions } from 'astro:transitions';
     height: 100vh;
     /* background-color: grey; */
     /* background-color: #f6f6fa; */
-
+    background-color: var(--background);
+    z-index: 99999;
     border-right: 1px solid var(--grey);
   }
 
