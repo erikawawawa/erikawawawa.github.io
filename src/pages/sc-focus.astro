@@ -60,19 +60,20 @@ import LayoutMay from "../layouts/Layout-May.astro";
   </p> -->
 
   <hr />
-
-  <h2>User Interviews & Discovery</h2>
+<p class="headline">Discovery</p>
+  <h2 class="headline-h2">User Interviews</h2>
   <p>
     In order to understand and analyze the ways SoundCloud was used, I conducted
     interviews over Zoom and Discord with target demographics to discover key
     information I was looking for.
   </p>
-  <h3>Interview details</h3>
-
-  <div class="callout-inverted">
+<div class="fit-image">
+  <div class="grid-twocolumn">
+  <div>
     <h3>Interiewee criteria:</h3>
     <p>Those who have previous experience in using SoundCloud's mobile app</p>
-
+  </div>
+  <div>
     <h3>
       Research objectives:<br />
     </h3>
@@ -83,29 +84,40 @@ import LayoutMay from "../layouts/Layout-May.astro";
       usage of the app
     </p>
   </div>
-
-  <h2>Insights</h2>
-  <img
+</div>
+</div>
+  <!-- <p class="headline">Key Insights</p> -->
+  <h2>Key insights</h2>
+  <div class="fit-image">
+    <div class="grid-twocolumn">
+      <div>
+      <h3>Primary use cases</h3>
+      <p>listening to <strong
+        >instrumental soundtracks</strong
+      >
+      while they conducted their day-to-day tasks such as studying or doing their chores.</p>
+      </div>
+      <div>
+        <h3>Key distractions</h3>
+        <p>while they open SoundCloud when they intend to
+          be productive, they may
+          <strong
+            >unintentionally leave the app when they get distracted from their task.</strong
+          >, at which point the music stops playing. </p>
+      </div>
+    </div>
+  </div>
+  <h2>Problem statement</h2>
+  <!-- <img
     src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642579525/Frame_4_hf5lfm.png"
-  />
+  /> -->
   <!-- <img
     src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642579525/Slide_16_9_-_1_zhhxim.png"
   /> -->
-  <p>
+  <!-- <p>
     <small>A summary of key insights from interviews.</small>
-  </p>
-  <p>
-    A primary use case amongst interviewees included listening to <strong
-      >instrumental soundtracks</strong
-    >
-    while they conducted their day-to-day tasks such as studying or doing their chores.
-    Their issue with this was that while they open SoundCloud when they intend to
-    be productive, they may
-    <strong
-      >unintentionally leave the app when they get distracted from their task.</strong
-    >, at which point the music stops playing. This lead to my problem
-    statement:
-  </p>
+  </p> -->
+ 
 
   <h3 class="callout">
     How might we minimize the chances of users <strong
@@ -121,7 +133,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
     >
   </p> -->
   <div class="grid-twocol">
-    <h2>Pitch</h2>
+    <h2>Introducing: Focus timer</h2>
     <p>
       Seeing that outside distractions seemed to be the leading obstacle in user
       retention, I decided a fun way to prevent this issue was by proposing a <strong
@@ -237,7 +249,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <br />
 
   <div class="grid-twocol">
-    <h2>Solution: Focus mode</h2>
+    <h2>Final solution</h2>
 
     <p>
       Listeners will be able to plan a session by picking a playlist and setting
