@@ -1,12 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import LayoutMay from "../layouts/Layout-May.astro";
-import Card from "../components/Card.astro";
 ---
 
 <img class="img-header" style="margin-left: 17%;" src="/Careflow-banner.png" />
 
-<LayoutMay title="Careflow">
+<LayoutMay title="Webflow">
   <br />
   <br />
   <img class="img-header-mobile" src="/Careflow-banner.png" />
@@ -14,7 +13,7 @@ import Card from "../components/Card.astro";
   <h1 class="project-title">Webflow</h1>
   <h3 class="categories">Usability study, feature design</h3>
 
-  <hr>
+  <hr />
   <div class="grid-threecol">
     <div>
       <p class="pilcrow">Duration</p>
@@ -37,46 +36,86 @@ import Card from "../components/Card.astro";
   <hr />
   <p class="headline">OVERVIEW</p>
   <h2 class="headline-h2"></h2>
-<p>
-  As a website building platform, WebFlow is primarily targeted toward creative professionals, designers, and agencies. 
-  The users of Webflow typically have goals such as building professional websites, and launching online stores or portfolios. They may have varying levels of experience with web design, ranging from beginners with little to no coding knowledge to experienced designers who prefer a visual interface for faster prototyping and production.
-</p>
-<p>For a senior design evaluations course, I conducted usability studies along with 4 other teammates, where participants were asked to perform 4 tasks: Set up the page, Adjust the type, Adjust the image, and Adjust the button. We decided on these as they are the common procedures for any type of website building and can be executed by both novice and experienced users.</p>
+  <p>
+    As a website building platform, WebFlow is primarily targeted toward
+    creative professionals, designers, and agencies. The users of Webflow
+    typically have goals such as building professional websites, and launching
+    online stores or portfolios. They may have varying levels of experience with
+    web design, ranging from beginners with little to no coding knowledge to
+    experienced designers who prefer a visual interface for faster prototyping
+    and production.
+  </p>
+  <p>
+    For a senior design evaluations course, I conducted usability studies along
+    with 4 other teammates, where participants were asked to perform 4 tasks:
+    Set up the page, Adjust the type, Adjust the image, and Adjust the button.
+    We decided on these as they are the common procedures for any type of
+    website building and can be executed by both novice and experienced users.
+  </p>
 
   <hr />
 
-  <p>Our steps:
-    Planning (objectives of the study, identify the tasks to be performed, questionnaires)
-Participant Recruitment (8 participants)
-Pre-Screening Questions (identify the backgrounds of participants)
-Task Performance
-Post-Test Questions
-
+  <p>
+    Our steps: Planning (objectives of the study, identify the tasks to be
+    performed, questionnaires) Participant Recruitment (8 participants)
+    Pre-Screening Questions (identify the backgrounds of participants) Task
+    Performance Post-Test Questions
   </p>
-  <hr>
+  <hr />
+
+  <p class="headline">DEMOGRAPHICS</p>
+  <h2 class="headline-h2">We tested on 8 users.</h2>
+  <p>5/8 of our participants had experience with website builders.</p>
+  <p>3/8 of our participants had coding experience.</p>
+  <p>4/8 of our participants had built a website before.</p>
+  <hr />
+
   <p class="headline">THE PROBLEM</p>
   <h2 class="headline-h2">Layout manipulation is challenging.</h2>
-<p>
-  6/8 of our participants were affected by this issue regardless of skill level and experience.
-
-Resolution of this issue was divided between either failure to complete the task, or recovery by discovering a way to move the image that was not drag and drop. As this issue results in possible task failure even for intermediate-level users, we believe this should be assigned a high severity level.
-</p>
+  <p>
+    Between our user testing participants, we had them perform four tasks that
+    pertained the Webflow's core function of getting users to set up a new site
+    and adding elements: <br /><br />
+    1. Set up the page,<br />
+    2. Adjust the type, <br />
+    3. Adjust the image, <br />
+    4. Adjust the button.
+  </p>
+  <p>
+    In particular, I was focused on a problem pertaining to #3: Adjusting images.
+    <br/><br/>
+    When instructed to move an image from left to right, users would attempt to drag-and-drop.
+    However, most users would struggle to place the image in the desired spot, as demonstrated below.
+  </p>
+  <p>(image)</p>
+  <p>
+    6/8 of our participants were affected by this issue regardless of skill
+    level and experience. Resolution of this issue was divided between either
+    failure to complete the task, or recovery by discovering a way to move the
+    image that was not drag and drop. As this issue results in possible task
+    failure even for intermediate-level users, we believe this should be
+    assigned a high severity level.
+  </p>
+  <img src="/image.png" style="width: 50%;">
+  <p>3 interviewees answered that this task was impossible to complete. Overall, a majority of people felt like moving images was a somewhat challenging task.</p>
   <hr />
 
   <p class="headline">INITIAL FRAMING</p>
 
-  <h2 class="headline-h2">“HMW increase the visibility of the navigation panel so that it can successfully assist layout manipulation?”</h2>
+  <h2 class="headline-h2">
+    “HMW increase the visibility of the navigation panel so that it can
+    successfully assist layout manipulation?”
+  </h2>
   <p>(Show intended/actual user flow diagram here)</p>
   <hr />
   <p class="headline">SOLUTION</p>
 
-  <h2 class="headline-h2">Creating a 'mini' navigation panel next to mouse pointer
+  <h2 class="headline-h2">
+    Creating a 'mini' navigation panel next to mouse pointer
   </h2>
-  <p>In this solution, we expand upon the pre-existing element labels and add the navigation functionality to it.
-    When users hover over elements, they are able to see all available layers affecting the particular element they see.</p>
-
-
-
-
-
+  <p>
+    In this solution, we expand upon the pre-existing element labels and add the
+    navigation functionality to it. When users hover over elements, they are
+    able to see all available layers affecting the particular element they see.
+  </p>
 </LayoutMay>
