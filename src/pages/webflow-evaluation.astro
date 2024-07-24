@@ -63,15 +63,14 @@ import LayoutMay from "../layouts/Layout-May.astro";
   </p>
   <hr />
 
-  <p class="headline">DEMOGRAPHICS</p>
-  <h2 class="headline-h2">We tested on 8 users.</h2>
-  <p>5/8 of our participants had experience with website builders.</p>
-  <p>3/8 of our participants had coding experience.</p>
-  <p>4/8 of our participants had built a website before.</p>
-  <hr />
-
   <p class="headline">THE PROBLEM</p>
   <h2 class="headline-h2">Layout manipulation is challenging.</h2>
+  <p>We tested on 8 users.</p>
+  <p>
+    5/8 of our participants had experience with website builders.<br />
+    3/8 of our participants had coding experience.<br />
+    4/8 of our participants had built a website before.
+  </p>
   <p>
     Between our user testing participants, we had them perform four tasks that
     pertained the Webflow's core function of getting users to set up a new site
@@ -82,10 +81,12 @@ import LayoutMay from "../layouts/Layout-May.astro";
     4. Adjust the button.
   </p>
   <p>
-    In particular, I was focused on a problem pertaining to #3: Adjusting images.
-    <br/><br/>
+    In particular, I was focused on a problem pertaining to #3: Adjusting
+    images.
+    <br /><br />
     When instructed to move an image from left to right, users would attempt to drag-and-drop.
-    However, most users would struggle to place the image in the desired spot, as demonstrated below.
+    However, most users would struggle to place the image in the desired spot, as
+    demonstrated below.
   </p>
   <p>(image)</p>
   <p>
@@ -96,8 +97,12 @@ import LayoutMay from "../layouts/Layout-May.astro";
     failure even for intermediate-level users, we believe this should be
     assigned a high severity level.
   </p>
-  <img src="/image.png" style="width: 50%;">
-  <p>3 interviewees answered that this task was impossible to complete. Overall, a majority of people felt like moving images was a somewhat challenging task.</p>
+  <img src="/image.png" style="width: 50%;" />
+  <p>
+    3 interviewees answered that this task was impossible to complete. Overall,
+    a majority of people felt like moving images was a somewhat challenging
+    task.
+  </p>
   <hr />
 
   <p class="headline">INITIAL FRAMING</p>
@@ -106,7 +111,44 @@ import LayoutMay from "../layouts/Layout-May.astro";
     “HMW increase the visibility of the navigation panel so that it can
     successfully assist layout manipulation?”
   </h2>
-  <p>(Show intended/actual user flow diagram here)</p>
+
+  <h4>Choosing a point of intervention</h4>
+  <p>
+    Before ideating solutions, I created a flow chart to fully understand where
+    an appropriate point of intervention was. This chart was a visualization of
+    the common scenario in which users went through when tasked to adjust
+    images. The current flow was contrasted with the shortest route to task
+    completion, which would be the ideal scenario for us.
+  </p>
+  <img src="/1. User flows.png" style="width: 90%;" />
+  <p>
+    After identifying at what point our given tasks were failing, I created a
+    similar flowchart again to contrast the typical failure scenario and a
+    successful scenario.
+    <br /><br />
+    With the existing Webflow UI, images typically come wrapped in a "Div" element
+    container, which is not visible to novice to intermediate users who are not anticipating
+    this sort of setup. Thus, when users opt to drag and drop images, the cursor
+    would take the image out of the 'div' container and place it in another, even
+    when users mentally intend to grab the whole div container and swap its place.
+    <br /><br />
+    The less techincal summary of the problem is that because there are multiple
+    invisible layers on webflow, users are unable to see what elements they are actually
+    selecting when interacting via drag-and-drop.
+  </p>
+  <img
+    src="/2. Replicating a successful task scenario.png"
+    style="width: 80%;"
+  />
+  <p>
+    What I noticed was that Webflow already provides a solution to this problem
+    - the platform's right panel switches from a general view to a 'layers' view
+    when users click on an element. While helpful, this view would only appear
+    when users are occupied by their attempt to drag-and-drop, which made it go
+    virtually unnoticed during our user testing sessions.
+  </p>
+  <img src="/3. Navigator analysis.png" style="width: 90%;" />
+
   <hr />
   <p class="headline">SOLUTION</p>
 
@@ -118,4 +160,9 @@ import LayoutMay from "../layouts/Layout-May.astro";
     navigation functionality to it. When users hover over elements, they are
     able to see all available layers affecting the particular element they see.
   </p>
+  <p>
+    This utilizes a solution that Webflow already has and increases the
+    visibility of it, so that it is better integrated into the user's task flow.
+  </p>
+  <hr />
 </LayoutMay>
