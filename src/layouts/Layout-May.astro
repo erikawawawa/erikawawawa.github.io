@@ -8,8 +8,7 @@ const { title } = Astro.props;
 // const currentPath = pathname.slice(1); // remove the first "/"
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import { ViewTransitions } from 'astro:transitions';
-
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -24,7 +23,7 @@ import { ViewTransitions } from 'astro:transitions';
   </head>
 
   <body>
-    <Navbar transition:persist/>
+    <Navbar transition:persist />
 
     <main transition:animate="slide">
       <slot />
@@ -95,6 +94,24 @@ import { ViewTransitions } from 'astro:transitions';
     overflow-x: hidden;
   }
 
+  .callout-quote {
+    margin: 0 0 2% 0;
+    /* font-family: Crimson Pro; */
+    font-weight: 350;
+    font-size: 1.5rem;
+    line-height: 135%;
+  }
+
+  hr.top-hr {
+    padding: 0;
+    margin: 0 0 2% 0;
+  }
+
+  hr.bottom-hr {
+    padding: 0;
+    margin: 2% 0 0;
+  }
+
   main {
     margin-left: 20%;
     padding-right: 2%;
@@ -116,7 +133,6 @@ import { ViewTransitions } from 'astro:transitions';
     text-decoration-thickness: 4%;
     text-decoration-color: var(--light-black);
   }
-
 
   .project > a {
     text-decoration: none;
@@ -166,64 +182,66 @@ import { ViewTransitions } from 'astro:transitions';
     }
   }
 
-  .slide-in, .project-titles, .categories{
+  .slide-in,
+  .project-titles,
+  .categories {
     animation: swing-in-top-fwd 0.5s 0.2s both;
   }
-  .fade-in, .img-header{
+  .fade-in,
+  .img-header {
     animation: fade-in 0.5s 0.2s both;
   }
 
-@keyframes fade-in{
-  0% {
-            opacity: 0;
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.1;
+    }
+    90% {
+      opacity: 1;
+    }
   }
-  40% {
-            opacity: 0.1;
-  }
-  90% {
-            opacity: 1;
-  }
-}
 
   @keyframes swing-in-top-fwd {
     0% {
-    -webkit-transform: rotateX(-100deg);
-            transform: rotateX(-100deg);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-            opacity: 0;
+      -webkit-transform: rotateX(-100deg);
+      transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+      opacity: 0;
+    }
+    10% {
+      -webkit-transform: rotateX(-100deg);
+      transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+      opacity: 0;
+    }
+    40% {
+      -webkit-transform: rotateX(-90deg);
+      transform: rotateX(-90deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    90% {
+      -webkit-transform: rotateX(-15deg);
+      transform: rotateX(-15deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
   }
-  10% {
-    -webkit-transform: rotateX(-100deg);
-            transform: rotateX(-100deg);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-            opacity: 0;
-  }
-  40% {
-    -webkit-transform: rotateX(-90deg);
-            transform: rotateX(-90deg);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-            opacity: 0;
-  }
-  70%{
-    opacity: 1;
-
-  }
-  90% {
-    -webkit-transform: rotateX(-15deg);
-            transform: rotateX(-15deg);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-  100% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-}
 
   h1,
   h2,
@@ -232,7 +250,7 @@ import { ViewTransitions } from 'astro:transitions';
     font-family: "PPRadioGrotesk-Light";
     max-width: 100%;
     line-height: 125%;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
   }
 
   p {
@@ -282,7 +300,6 @@ import { ViewTransitions } from 'astro:transitions';
     line-height: 125%;
     /* max-width: 95%; */
     max-width: 1000px;
-
   }
 
   .stack {
@@ -302,7 +319,6 @@ import { ViewTransitions } from 'astro:transitions';
     font-size: 2.3rem;
     margin: 2% 0 2%;
     max-width: 950px;
-
   }
 
   h4 {
@@ -499,7 +515,7 @@ import { ViewTransitions } from 'astro:transitions';
   .project-list,
   .about-resume {
     border-bottom: 1px solid var(--grey);
-    padding: 0 0 2%;
+    padding: 0 0 3%;
   }
 
   .headline {
