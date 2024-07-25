@@ -22,13 +22,21 @@ const currentPath = pathname.slice(1); // remove the first "/"
       >
     </li>
     <li>
+      <a
+        class={currentPath === "webflow-evaluation" ? "active" : ""}
+        href="/webflow-evaluation"
+      >
+        WEBFLOW HEURISTICS
+      </a>
+    </li>
+    <li>
       <a class={currentPath === "careflow" ? "active" : ""} href="/careflow">
-        CAREFLOW
+        CAREFLOW (INTERNSHIP)
       </a>
     </li>
   </div>
 
-  <div class="about-resume">
+  <!-- <div class="about-resume">
     <li>
       <a class={currentPath === "mariner" ? "active" : ""} href="/mariner">
         MARINER
@@ -39,7 +47,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
         >SOUNDCLOUD</a
       >
     </li>
-  </div>
+  </div> -->
   <div class="about-resume">
     <li>
       <a class={currentPath === "about" ? "active" : ""} href="/about">
