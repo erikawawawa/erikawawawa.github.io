@@ -14,7 +14,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <h1 class="project-titles">Canada Post: Carriers that Care</h1>
   <h3 class="categories">Service design, experience design, UX/UI design</h3>
 
-  <hr />
+  <hr class="top-hr" />
   <div class="grid-threecol">
     <div>
       <p class="pilcrow">Roles</p>
@@ -34,7 +34,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
       <p>Oct 2023 - Dec 2023</p>
     </div>
   </div>
-  <hr />
+  <hr class="bottom-hr" />
   <p class="headline">OVERVIEW</p>
 
   <h2 class="headline-h2">
@@ -181,13 +181,13 @@ import LayoutMay from "../layouts/Layout-May.astro";
   </div>
   <div class="grid-twocolumn">
     <div class="callout-inverted" style="margin: 0 2% 0 0;">
-      <h4>
+      <h4 class="callout-quote">
         <span class="bluetext">7 letters per week</span> received by Canadian households
         in 2006; <span class="bluetext">2 per week</span> in 2023.
       </h4>
     </div>
     <div class="callout-inverted">
-      <h4>
+      <h4 class="callout-quote">
         <span class="bluetext">62%</span> estimated market share in parcel delivery
         prior to the pandemic; <span class="bluetext">29% </span>in 2023.
       </h4>
@@ -206,9 +206,17 @@ import LayoutMay from "../layouts/Layout-May.astro";
     The Canadian Union of Postal Workers have been advocating for a senior
     check-in service since 2016.
   </h3>
+  <p>
+    The <a
+      href="https://www.deliveringcommunitypower.ca/our_plan"
+      target="_blank">'Delivering Community Power' initiative</a
+    >, created by the Canadian Union of Postal Workers (CUPW), are a set of
+    proposals inspired by a sense of need for Canada Post to innovate - one of
+    which include a proposal for a senior check-in service.
+  </p>
 
   <div class="callout-inverted">
-    <h4 style="margin: 0 0 2% 0;">
+    <h4 class="callout-quote">
       "Postal workers could also become a point of contact between seniors and
       healthcare or social services when the need arises. Postal workers are
       already trusted and reliable members of our communities. Why not leverage
@@ -222,16 +230,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
       >)
     </p>
   </div>
-  <br>
-
-  <p>
-    The <a
-      href="https://www.deliveringcommunitypower.ca/our_plan"
-      target="_blank">'Delivering Community Power' initiative</a
-    >, created by the Canadian Union of Postal Workers (CUPW), are a set of
-    proposals inspired by a sense of need for Canada Post to innovate - one of
-    which include a proposal for a senior check-in service.
-  </p>
+  <br />
 
   <!-- <h2 style="margin: 0 0 2% 0; padding: 0;">
         An emerging need for senior support infrastructure
@@ -273,11 +272,12 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <p class="headline">KEY INSIGHT #2</p>
 
   <h3 class="headline-h2">
-    In the golden age of communications, seniors and their families still don't communicate everything.
+    In the golden age of communications, seniors and their families still don't
+    communicate everything.
   </h3>
   <div class="callout-inverted">
-    <h4 style="margin: 0 0 2% 0;">
-      "In the past year, Monique has encountered various “problems”—a fall in
+    <h4 class="callout-quote">
+      "In the past year, Monique has encountered various 'problems' - a fall in
       the garden, a slip on the stairs. She describes them as if they were
       avoidable mistakes, the result of her absentmindedness."
     </h4>
@@ -290,7 +290,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
       >)
     </p>
   </div>
-  <br>
+  <br />
   <p>
     Further investigation into these services by us allowed us to discover why
     these services were working: Both France and Japan have seen an increase in
@@ -337,6 +337,8 @@ import LayoutMay from "../layouts/Layout-May.astro";
       our service.
     </p>
     <img src="/Customer Journey.png" />
+    <p>(result: landing page that focused too much on medical services.)</p>
+
     <p>
       This journey map allowed us to shape our next steps: HMW ensure a
       successful first-time visit to ensure trust in the service?
@@ -383,7 +385,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
       </div>
     </div> -->
 
-    <h4>Concerns around designing for a vulnerable community</h4>
+    <h4>Key concerns</h4>
     <!-- <img src="/User Testing - questions.png"> -->
 
     <p>
@@ -402,30 +404,46 @@ import LayoutMay from "../layouts/Layout-May.astro";
       <h4>Would you sign your family up for this service?</h4>
       <div class="grid-twocolumn">
         <div class="callout-inverted wide">
-          <h4>Lack of trust in the carrier</h4>
-          <p>
-            "I'd rather trust a family member or a neighbor to ask these
-            questions rather than a postman"
+          <h4
+            style="font-size: 1.2rem; color: var(--light-black); font-family: PPRadioGrotesk-Regular;"
+          >
+            Lack of trust in the carrier
+          </h4>
+          <p style="font-size: 1.6rem; color: black;">
+            "I'd rather trust a family member or a neighbour to check in, rather
+            than a postman."
           </p>
         </div>
         <div class="callout-inverted wide">
-          <h4>"I'll do it myself"</h4>
-          <p>
-            “I feel like i'd go visit myself, since i don't have terrible
-            relationship with parents.”
+          <h4
+            style="font-size: 1.2rem; color: var(--light-black); font-family: PPRadioGrotesk-Regular;"
+          >
+            "I'll do it myself"
+          </h4>
+          <p style="font-size: 1.6rem; color: black;">
+            "I feel like i'd go visit myself, since I don't have a terrible
+            relationship with parents."
           </p>
         </div>
         <div class="callout-inverted wide">
-          <h4>Feels impersonal</h4>
-          <p>
+          <h4
+            style="font-size: 1.2rem; color: var(--light-black); font-family: PPRadioGrotesk-Regular;"
+          >
+            Feels impersonal
+          </h4>
+          <p style="font-size: 1.6rem; color: black;">
             "It just feels like I'd be asked, "Why won't my kids just call me
             instead?""
           </p>
         </div>
 
         <div class="callout-inverted wide">
-          <h4>Stubbornness and rejecting care</h4>
-          <p>
+          <h4
+            style="font-size: 1.2rem; color: var(--light-black); font-family: PPRadioGrotesk-Regular;"
+          >
+            Stubbornness and rejecting care
+          </h4>
+          <p style="font-size: 1.6rem; color: black;">
             "Would she want to give her info to some guy she doesn't know,
             especially when I don't know if it will be the same person each
             week?"
@@ -881,8 +899,8 @@ import LayoutMay from "../layouts/Layout-May.astro";
       <br /><br />
       <h4 class="headline-h2">For the customer</h4>
       <p style="color: black;">
-        The Canadian National Institute of Aging suggests “Improving Social
-        Connections to Reduce Loneliness and Social Isolation” as one of its
+        The Canadian National Institute of Aging suggests "Improving Social
+        Connections to Reduce Loneliness and Social Isolation" as one of its
         recommendations for better enabling aging at home. Carriers that Care
         provides opportunity to foster consistent social engagement by providing
         a means for seniors to maintain relationships and social connections.
