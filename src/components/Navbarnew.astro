@@ -1,0 +1,64 @@
+---
+export interface Props {}
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+---
+
+<ul class="swing-in-first">
+  <li><h1><a class="blue" href="/">ERIKA WANG</a></h1></li>
+
+  <div class="project-list">
+    <li>
+      <a
+        class={currentPath === "carriersthatcare" ? "active" : ""}
+        href="/carriersthatcare">CANADA POST</a
+      >
+    </li>
+    <li>
+      <a
+        class={currentPath === "fuorisalone" ? "active" : ""}
+        href="/fuorisalone">MILAN DESIGN WEEK</a
+      >
+    </li>
+    <li>
+      <a
+        class={currentPath === "webflow-evaluation" ? "active" : ""}
+        href="/webflow-evaluation"
+      >
+        WEBFLOW HEURISTICS
+      </a>
+    </li>
+    <li>
+      <a class={currentPath === "careflow" ? "active" : ""} href="/careflow">
+        CAREFLOW (INTERNSHIP)
+      </a>
+    </li>
+  </div>
+
+  <!-- <div class="about-resume">
+    <li>
+      <a class={currentPath === "mariner" ? "active" : ""} href="/mariner">
+        MARINER
+      </a>
+    </li>
+    <li>
+      <a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus"
+        >SOUNDCLOUD</a
+      >
+    </li>
+  </div> -->
+  <div class="about-resume">
+    <li>
+      <a class={currentPath === "about" ? "active" : ""} href="/about">
+        about
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/file/d/1K2fbVxB_BJxhQJ5Pt5Fael638fE26ZJW/view?usp=sharing"
+        >resume</a
+      >
+    </li>
+  </div>
+</ul>
