@@ -91,8 +91,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
       district in Milan that is participating in Fuori Salone.</strong
     >
   </p>
-  <img src="Frame 44.png" />
-  
+
   <p>
     What we realized was that with over 900 known exhibits, there would be major
     scalability issues with attempting to display all of them on a singular
@@ -100,7 +99,9 @@ import LayoutMay from "../layouts/Layout-May.astro";
     features four to seven participating districts. This felt like a viable way
     to categorize our content, and thus was the solution we decided to explore.
   </p>
-  <p>(show map)</p>
+  <div class="fit-image">
+    <img src="Frame 44.png" />
+  </div>
   <h4>Showcasing event by exhibit</h4>
   <p>
     Our initial approach with the districts-based approach was to attempt to
@@ -110,13 +111,14 @@ import LayoutMay from "../layouts/Layout-May.astro";
     understandings of the locations they might visit. We called this a
     'choose-your-own adventure' approach.
   </p>
+  <img src="Frame 37.png" />
   <p>
     The problem with this approach was that it was too informative, and thus
     detracting from the sense of 'adventure'. While Fuori Salone's primary charm
     is its ability to create dialogue around design, we were too focused on the
     tourism aspects of Milan.
   </p>
-  <h4>Choose your own adventure</h4>
+  <!-- <h4>Choose your own adventure</h4> -->
   <p>
     Instead, we had discovered that every year, every district participating in
     Fuorisalone provides an overarching theme that exhibiting designers are
@@ -126,44 +128,51 @@ import LayoutMay from "../layouts/Layout-May.astro";
     philosophies, getting them to focus on dialogue around design rather than
     the physical experience of being in Milan.
   </p>
-  <h4>(Getting into interaction)</h4>
+  <h4>From content strategy to interaction</h4>
   <p>
     In translating these into an interaction approach, I wanted to continue the
     theme of “choose your own adventure”. This was done in a way where the
     themes were placed at the forefront of the navigation. Rather than exploring
     districts by geographical information or name, I wanted visitors to be
     unsure of what they were looking at, with only the themes of each district
-    acting as the waypoint. <br /><br />
-
+    acting as the waypoint.
+  </p>
+  <img src="Frame 46.png" />
+  <p>
     With an overwhelmingly text-heavy landing page, I was unsure whether or not
     a visitor would be able to quickly understand that they were to read and
     comprehend all the themes before proceeding. I modified the page a bit and
-    added a CTA to serve as a prompt for interaction. <br /><br />
-
+    added a CTA to serve as a prompt for interaction.
+  </p>
+  <img src="Nav 33.png" style="width: 40%;" />
+  <br /><br />
+  <p>
     This layout, visually, still felt overwhelming. To orient the visitor before
     they are asked to complete the quiz, a teammate added an intro screen, which
     would load into a screen I made that would only contain the above CTA and a
     button to begin the task whenever a visitor was ready. By incrementing the
     initial parts of the website this way, the hopes are to ease the visitor
-    into the extensive task of completing a quiz.<br /><br />
+    into the extensive task of completing a quiz.
   </p>
+  <img src="Frame 406.png" style="width:100%;" />
   <hr />
   <div class="grid-twocol">
-    <h2>Sitemap & Approach</h2>
+    <p class="headline">FINAL APPROACH</p>
+    <h2 class="headline-h2">It's <i>your</i> adventure</h2>
 
     <div>
       <img
-        style="border-style: none;"
+        style="border-style: none; width: 100%;"
         src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1710022524/Frame_412_bks0jd.png"
       />
-      <h3>It's <i>your</i> adventure</h3>
 
       <p>
-        Because the Fuori Salone hosts a large number of exhibits, our biggest
-        challenge was in scoping the amount of content that we would host in the
-        microsite. Rather than putting the focus on individual exhibits, we
-        opted for an approach that focuses on the districts, through tools such
-        as quizzes, layouts, and custom-created content.
+        Following completion of the quiz, the navigational order of the site
+        will change such that each district is presented in the order that the
+        themes were clicked on, ensuring a personalized experience per visitor.
+        This approach surfaces these themes and primes the audience for the
+        event by having them resonate with the themes, rather than explicitly
+        talking about the exhibits.
       </p>
       <!-- <p>
         (Insert user persona here - a designer seeking to attend Milan Design
