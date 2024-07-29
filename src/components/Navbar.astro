@@ -30,24 +30,25 @@ const currentPath = pathname.slice(1); // remove the first "/"
       </a>
     </li>
     <li>
+      <a class={currentPath === "mariner" ? "active" : ""} href="/mariner">
+        MARINER BREWING
+      </a>
+    </li>
+   
+  </div>
+
+  <div class="about-resume">
+   <li>
       <a class={currentPath === "careflow" ? "active" : ""} href="/careflow">
         CAREFLOW (INTERNSHIP)
       </a>
     </li>
-  </div>
-
-  <!-- <div class="about-resume">
-    <li>
-      <a class={currentPath === "mariner" ? "active" : ""} href="/mariner">
-        MARINER
-      </a>
-    </li>
-    <li>
+    <!-- <li>
       <a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus"
         >SOUNDCLOUD</a
       >
-    </li>
-  </div> -->
+    </li> -->
+  </div>
   <div class="about-resume">
     <li>
       <a class={currentPath === "about" ? "active" : ""} href="/about">
