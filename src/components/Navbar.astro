@@ -5,23 +5,31 @@ const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
-<ul class="swing-in-first">
-  <li><h1><a class="blue" href="/">ERIKA WANG</a></h1></li>
+<div class="navbar">
+  <div class="topbar">
+    <h1>
+      <a href="/" class="me-about">ERIKA WANG</a>
+    </h1>
+    <h1>
+      <a href="/about" class="me-about">about</a>
+    </h1>
+  </div>
 
-  <div class="project-list">
-    <li>
-      <a
-        class={currentPath === "carriersthatcare" ? "active" : ""}
-        href="/carriersthatcare">CANADA POST</a
-      >
-    </li>
-    <li>
-      <a
-        class={currentPath === "fuorisalone" ? "active" : ""}
-        href="/fuorisalone">MILAN DESIGN WEEK</a
-      >
-    </li>
-    <!-- <li>
+  <ul class="swing-in-first">
+    <div class="project-list">
+      <li>
+        <a
+          class={currentPath === "carriersthatcare" ? "active" : ""}
+          href="/carriersthatcare">CANADA POST</a
+        >
+      </li>
+      <li>
+        <a
+          class={currentPath === "fuorisalone" ? "active" : ""}
+          href="/fuorisalone">MILAN DESIGN WEEK</a
+        >
+      </li>
+      <!-- <li>
       <a
         class={currentPath === "webflow-evaluation" ? "active" : ""}
         href="/webflow-evaluation"
@@ -29,37 +37,37 @@ const currentPath = pathname.slice(1); // remove the first "/"
         WEBFLOW HEURISTICS
       </a>
     </li> -->
-    <li>
-      <a class={currentPath === "mariner" ? "active" : ""} href="/mariner">
-        MARINER BREWING
-      </a>
-    </li>
-   
-  </div>
+      <li>
+        <a class={currentPath === "mariner" ? "active" : ""} href="/mariner">
+          MARINER BREWING
+        </a>
+      </li>
+    </div>
 
-  <div class="about-resume">
-   <li>
-      <a class={currentPath === "careflow" ? "active" : ""} href="/careflow">
-        CAREFLOW (INTERNSHIP)
-      </a>
-    </li>
-    <!-- <li>
+    <div class="about-resume">
+      <li>
+        <a class={currentPath === "careflow" ? "active" : ""} href="/careflow">
+          CAREFLOW (INTERNSHIP)
+        </a>
+      </li>
+      <!-- <li>
       <a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus"
         >SOUNDCLOUD</a
       >
     </li> -->
-  </div>
-  <div class="about-resume">
-    <li>
-      <a class={currentPath === "about" ? "active" : ""} href="/about">
-        about
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://drive.google.com/file/d/1K2fbVxB_BJxhQJ5Pt5Fael638fE26ZJW/view?usp=sharing"
-        >resume</a
-      >
-    </li>
-  </div>
-</ul>
+    </div>
+    <div class="about-resume">
+      <li>
+        <a class={currentPath === "about" ? "active" : ""} href="/about">
+          about
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://drive.google.com/file/d/1K2fbVxB_BJxhQJ5Pt5Fael638fE26ZJW/view?usp=sharing"
+          >resume</a
+        >
+      </li>
+    </div>
+  </ul>
+</div>
