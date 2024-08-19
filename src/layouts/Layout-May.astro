@@ -323,23 +323,44 @@ import { ViewTransitions } from "astro:transitions";
   }
 
   h4 {
-    /* font-family: "crimson text"; */
     margin: 3% 0;
     font-weight: 500;
     font-size: 1.9rem;
     color: var(--black);
   }
 
-  ul {
-    list-style-type: none;
+  .navbar {
     margin: 0;
     padding: 0;
-    width: 17%;
     top: 0;
     position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .topbar {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5%;
+  }
+
+  .me-about {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0 1%;
+    font-size: 2rem;
+    width: 100%;
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 17%;
     height: 100vh;
-    /* background-color: grey; */
-    /* background-color: #f6f6fa; */
     background-color: var(--background);
     z-index: 99999;
     border-right: 1px solid var(--grey);
@@ -546,8 +567,8 @@ import { ViewTransitions } from "astro:transitions";
     }
 
     .headline-h2 {
-    margin: 8% 0 0;
-  }
+      margin: 8% 0 0;
+    }
 
     ul {
       position: static;
@@ -610,14 +631,14 @@ import { ViewTransitions } from "astro:transitions";
     }
 
     .fit-image {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: fit-content(20%);
-    grid-column-gap: 1.8em;
-    align-items: center;
-    padding: 6% 10%;
-    background-color: #f5f5f5;
-    border-radius: 3px;
-  }
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: fit-content(20%);
+      grid-column-gap: 1.8em;
+      align-items: center;
+      padding: 6% 10%;
+      background-color: #f5f5f5;
+      border-radius: 3px;
+    }
   }
 </style>
