@@ -240,7 +240,29 @@ import { ViewTransitions } from "astro:transitions";
       transform-origin: top;
     }
   }
+  .scrollmenu {
+    width: 100%;
+    height: fit-content;
+background-color: #0007ce;
+    /**used to scroll text*/
+    white-space: nowrap;    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /**keep scrolling when
+      *finger or cursor scrolling*/
+    -webkit-overflow-scrolling: touch; 
+}
+.product-card {
+  width: 100%;
+  height: auto;
+    float: none;
+    display: inline-block;
+}
 
+/*to hide the scrollbars*/
+::-webkit-scrollbar {
+    display: none;
+}
   h1,
   h2,
   h3,
