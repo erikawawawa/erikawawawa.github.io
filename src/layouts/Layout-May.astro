@@ -258,7 +258,11 @@ import { ViewTransitions } from "astro:transitions";
     float: none;
     display: inline-block;
 }
-
+.product-card-mobile {
+  height: auto;
+    float: none;
+    display: inline-block;
+}
 /*to hide the scrollbars*/
 ::-webkit-scrollbar {
     display: none;
@@ -537,6 +541,17 @@ import { ViewTransitions } from "astro:transitions";
     grid-column-gap: 1.8em;
     align-items: center;
     padding: 8% 14%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+
+  .fit-image-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(20%);
+    grid-column-gap: 1.8em;
+    align-items: center;
+    padding: 8% 5%;
     background-color: #f5f5f5;
     border-radius: 5px;
   }
