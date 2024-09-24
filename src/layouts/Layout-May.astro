@@ -243,7 +243,8 @@ import { ViewTransitions } from "astro:transitions";
   .scrollmenu {
     width: 100%;
     height: fit-content;
-/* background-color: #0007ce; */
+    background-color: #f5f5f5;
+    border-radius: 12px;
     /**used to scroll text*/
     white-space: nowrap;    
     overflow-x: scroll;
@@ -253,13 +254,14 @@ import { ViewTransitions } from "astro:transitions";
     -webkit-overflow-scrolling: touch; 
 }
 .product-card {
-  width: 100%;
+  width: 85%;
   height: auto;
     float: none;
     display: inline-block;
 }
 .product-card-mobile {
-  height: auto;
+  width: auto;
+  height: 10%;
     float: none;
     display: inline-block;
 }
@@ -323,7 +325,7 @@ import { ViewTransitions } from "astro:transitions";
     margin: 3% 0;
     line-height: 125%;
     /* max-width: 95%; */
-    max-width: 850px;
+    max-width: 900px;
   }
 
   .stack {
@@ -553,6 +555,16 @@ import { ViewTransitions } from "astro:transitions";
     grid-column-gap: 1.8em;
     align-items: center;
     padding: 8% 14%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  .fit-image-scrollthrough {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(20%);
+    grid-column-gap: 1.8em;
+    align-items: center;
+    padding: 8% 10%;
     background-color: #f5f5f5;
     border-radius: 5px;
   }
