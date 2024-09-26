@@ -16,7 +16,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <img class="img-header-mobile" src="FS.png" />
   <div>
     <h1 class="project-titles">Milan Design Week: Fuori Salone</h1>
-    <h4 class="categories">Interaction design, content design</h4>
+    <h4 class="categories"></h4>
   </div>
   <!-- <h1 class="project-titles"></h1>
   <h3 class="categories">
@@ -34,8 +34,11 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <!-- <hr class="top-hr" /> -->
   <div class="grid-threecol">
     <div>
-      <p class="pilcrow">Duration</p>
-      <p>Sept 2023 - Oct 2023</p>
+      <p class="pilcrow">Roles</p>
+      <p>
+        Content Strategy<br />Interaction Design<br />
+        Interface Design<br />
+      </p>
     </div>
     <div>
       <p class="pilcrow">Team</p>
@@ -44,11 +47,8 @@ import LayoutMay from "../layouts/Layout-May.astro";
       </p>
     </div>
     <div>
-      <p class="pilcrow">Roles</p>
-      <p>
-        Contextual Research<br />Interaction Design<br />Interface Design<br />
-        Product Strategy<br />
-      </p>
+      <p class="pilcrow">Duration</p>
+      <p>Sept 2023 - Oct 2023</p>
     </div>
   </div>
   <hr class="bottom-hr" />
@@ -91,6 +91,11 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <div class="grid-twocolumn-text">
     <p class="headline">INITIAL IDEATIONS</p>
     <div>
+      <h3 class="headline-h2">
+        How might we represent an event with over 900 exhibits on a single
+        website?
+      </h3>
+      <h4>The issue with scalability</h4>
       <p>
         Using pre-existing websites and the <a
           href="https://www.fuorisalone.it/"
@@ -99,6 +104,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
         > as reference, we initially had differing ideas on ways we would structure
         the site:
       </p>
+      <h4>Proposed strategies</h4>
       <h4>
         <ol>
           <li>
@@ -132,7 +138,10 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <div class="grid-twocolumn-text">
     <p class="headline">STARTING POINT</p>
     <div>
-      <h3 class="headline-h2">Grouping exhibits per district</h3>
+      <h3 class="headline-h2">
+        Let's try grouping exhibits per district... ish
+      </h3>
+      <h4>An attempt at a 'choose-your-own adventure' approach</h4>
       <p>
         Our initial approach with the districts-based approach was to attempt to
         create a travel itinerary for each area, and showcase not only
@@ -141,13 +150,16 @@ import LayoutMay from "../layouts/Layout-May.astro";
         understandings of the locations they might visit. We called this a
         'choose-your-own adventure' approach.
       </p>
-    </div>
+      <img src="/Frame 37.png" style="width: 100%;" />
+      <p><span class="small">Diagram of initial content flow.</span></p>
+      <!-- </div>
   </div>
 
-  <img src="/Frame 37.png" style="width: 100%;" />
   <div class="grid-twocolumn-text">
     <div></div>
-    <div>
+    <div> -->
+      <h4>Less 'choose', more 'adventure'</h4>
+
       <p>
         The problem with this approach was that it was too informative, and thus
         detracting from the sense of 'adventure'. While Fuori Salone's primary
@@ -155,17 +167,27 @@ import LayoutMay from "../layouts/Layout-May.astro";
         focused on the tourism aspects of Milan.
       </p>
       <!-- <h4>Choose your own adventure</h4> -->
+      <h4>Driving navigation through each district's design themes</h4>
       <p>
         Instead, we had discovered that every year, every district participating
         in Fuorisalone provides an overarching theme that exhibiting designers
         are expected to follow. (For example, Isola was x, Brera was y) Much
-        like how visitors say that everything is a surprise at fuori salone,
+        like how visitors say that everything is a surprise at Fuori Salone,
         these themes would allow for us to obscure the districts and dilute them
         into design philosophies, getting them to focus on dialogue around
         design rather than the physical experience of being in Milan.
       </p>
-      <h2>From content strategy to interaction</h2>
-      <h4>Iteration 1</h4>
+      <img src="/Frame 37-revised.png" style="width: 100%;" />
+      <p><span class="small">Diagram of revised content flow.</span></p>
+    </div>
+  </div>
+
+  <div class="grid-twocolumn-text">
+    <p class="headline">EXPLORING INTERACTIONS</p>
+    <div>
+      <h2 class="headline-h2">From content strategy to interaction</h2>
+      <p class="headline">ITERATION 1</p>
+      <h4 class="headline-h2">Obscuring the districts</h4>
       <p>
         In translating these into an interaction approach, I wanted to continue
         the theme of “choose your own adventure”. This was done in a way where
@@ -181,7 +203,9 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <div class="grid-twocolumn-text">
     <div></div>
     <div>
-      <h4>Iteration 2</h4>
+      <p class="headline">ITERATION 2</p>
+
+      <h4 class="headline-h2">Introducing a quiz format</h4>
 
       <p>
         With an overwhelmingly text-heavy landing page, I was unsure whether or
@@ -196,7 +220,8 @@ import LayoutMay from "../layouts/Layout-May.astro";
   <div class="grid-twocolumn-text">
     <div></div>
     <div>
-      <h4>Iteration 3</h4>
+      <p class="headline">ITERATION 3</p>
+      <h4 class="headline-h2">Fragmenting the quiz format</h4>
 
       <p>
         Iteration 2, visually, still felt overwhelming. To orient the visitor
@@ -268,10 +293,15 @@ import LayoutMay from "../layouts/Layout-May.astro";
     <div>
       <p class="headline">ONBOARDING</p>
 
-      <h3 style="margin: 0 0 2% 0; padding: 0;">a. Preloader</h3>
+      <h3 style="margin: 0 0 2% 0; padding: 0;">Preloader & Quiz</h3>
       <p>
         Upon entering the site, users are given a brief introduction to the site
         then prompted to complete a quiz.
+      </p>
+      <p>
+        The quiz connects each district to their respective themes, while
+        personalizing the site experience to the audience. Results of the quiz
+        inform the navigational order of the site.
       </p>
     </div>
   </div>
@@ -283,18 +313,7 @@ import LayoutMay from "../layouts/Layout-May.astro";
       style="width: 100%;"
     />
   </div>
-  <div class="grid-twocolumn-text">
-    <div></div>
-    <div>
-      <h3>b. Quiz</h3>
-      <p>
-        The quiz connects each district to their respective themes, while
-        personalizing the site experience to the audience. Results of the quiz
-        inform the navigational order of the site.
-      </p>
-    </div>
-  </div>
-
+<br>
   <div class="fit-image-fuorisalone">
     <img
       src="/Quiz_ickmya.gif"
