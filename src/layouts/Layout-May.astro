@@ -50,11 +50,8 @@ import { ViewTransitions } from "astro:transitions";
     }
 
   :root {
-    /* --background: #ececec; */
-    /* --background: #3d3d3d; */
     --background: #fff;
     --black: #0c0c0c;
-    /* --black: #08074c; */
     --darkblack: #393371;
     --light-black: #7f7f7f;
     --lightest-black: #7a85ae;
@@ -67,9 +64,6 @@ import { ViewTransitions } from "astro:transitions";
     font-family: "PPRadioGrotesk-Light";
     background-color: var(--background);
     color: var(--black);
-    /* cursor:
-      url("Rectangle 500.svg") 2 2,
-      auto; */
     overflow-x: hidden;
   }
 
@@ -97,8 +91,6 @@ import { ViewTransitions } from "astro:transitions";
 
   body {
     margin: 0;
-    overflow-y: scroll; /* Show scrollbars */
-
   }
 
   footer a {
@@ -123,9 +115,6 @@ import { ViewTransitions } from "astro:transitions";
   }
   .project:hover {
     color: #0007ce;
-
-    /* border: 1px solid var(--blue); */
-    /* animation: scale-down-center 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
   }
 
   .project-hover {
@@ -222,35 +211,7 @@ import { ViewTransitions } from "astro:transitions";
       transform-origin: top;
     }
   }
-  .scrollmenu {
-    width: 100%;
-    height: fit-content;
-    background-color: #f5f5f5;
-    border-radius: 12px;
-    /**used to scroll text*/
-    white-space: nowrap;    
-    overflow-x: scroll;
-    /* overflow-y: hidden; */
-    /**keep scrolling when
-      *finger or cursor scrolling*/
-    /* -webkit-overflow-scrolling: touch;  */
-}
-.product-card {
-  width: 85%;
-  height: auto;
-    float: none;
-    display: inline-block;
-}
-.product-card-mobile {
-  width: auto;
-  height: 10%;
-    float: none;
-    display: inline-block;
-}
-/*to hide the scrollbars*/
-::-webkit-scrollbar {
-    display: none;
-}
+
   h1,
   h2,
   h3,
@@ -461,10 +422,8 @@ import { ViewTransitions } from "astro:transitions";
   }
 
   .blue {
-    /* font-family: "Crimson Pro"; */
     font-family: "PPRadioGrotesk-Regular";
     line-height: 85%;
-    /* max-width: 50%; */
     font-size: 1.3rem;
     font-weight: 550;
     padding: 5% 5%;
@@ -515,11 +474,9 @@ import { ViewTransitions } from "astro:transitions";
   }
 
   .screen2 {
-    /* filter: drop-shadow(0 0 1rem #FF00B8); */
     filter: drop-shadow(0 0 1rem #000000);
-
-    /* margin: 5% 0; */
   }
+
   .fit-image-fuorisalone {
     display: grid;
     grid-template-columns: 1fr;
