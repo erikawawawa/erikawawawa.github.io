@@ -2,11 +2,15 @@
 import LayoutProject from "../layouts/LayoutProject.astro";
 import rocket from "../assets/images/rocket.svg";
 import LayoutMay from "../layouts/Layout-May.astro";
+import Navbar from "../components/Navbar.astro";
+
 
 import Mariner from "../assets/mariner-splash.png";
 ---
 
+
 <LayoutMay title="Erika Wang">
+
   <br />
   <br />
   <br /><br />
@@ -31,7 +35,7 @@ import Mariner from "../assets/mariner-splash.png";
       <br /><br />
     </h3>
     <hr />
-    <h4>Selected works</h4>
+    <h4 style="color: var(--dark-black);">Selected works</h4>
     <div class="grid-twocolumn">
       <div class="project">
         <a href="/carriersthatcare">
@@ -44,8 +48,8 @@ import Mariner from "../assets/mariner-splash.png";
           <h4 style="margin: 1% 0; padding: 0; opacity: 60%;">Canada Post</h4>
 
           <h3 style="margin: 0; padding: 0;">
-            Keeping rural seniors connected through a door-to-door check-in
-            service
+            Door-to-door check-in
+            service, to keep rural seniors connected
           </h3>
         </a>
       </div>
