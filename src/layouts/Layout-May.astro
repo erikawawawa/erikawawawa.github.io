@@ -404,6 +404,16 @@ import { ViewTransitions } from "astro:transitions";
       margin: 3% 0 2% 0;
     }
 
+    .grid-twocolumn-main-page {
+      display: grid;
+      grid-template-columns: 0.4fr 1fr;
+      grid-template-rows: fit-content(20%);
+      grid-column-gap: 0.5em;
+      margin: 4% 0;
+      padding: 0 1%;
+      align-items: start;
+    }
+
     .grid-twocolumn-left-heavy {
       display: grid;
       grid-template-columns: 0.7fr 0.7fr;
@@ -643,7 +653,8 @@ import { ViewTransitions } from "astro:transitions";
       .grid-twocolumn,
       .grid-twocolumn-left-heavy,
       .grid-twocolumn-right-heavy,
-      .grid-twocolumn-text {
+      .grid-twocolumn-text,
+      .grid-twocolumn-main-page {
         grid-template-columns: repeat(1, 1fr);
       }
 
