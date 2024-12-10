@@ -1,56 +1,42 @@
 ---
-import LayoutProject from "../layouts/LayoutProject.astro";
-import rocket from "../assets/images/rocket.svg";
 import LayoutMay from "../layouts/Layout-May.astro";
-import Navbar from "../components/Navbar.astro";
-
-import Mariner from "../assets/mariner-splash.png";
 ---
-
-<LayoutMay title="Erika Wang">
-  <br />
-  <br />
-  <br /><br />
-
-  <!-- <h3>Hello!</h3> -->
-  <h3 class="slide-in" style="max-width: 100%;">
-    <h3>Welcome!</h3>
-    <h3 class="slide-in" style="max-width: 100%;">
-      Erika is a <strong>UX designer</strong> and a <strong
-        >perpetual hunter of good questions</strong
-      >. She finds joy in finding solutions that foster communities and
-      connections.
-      <!-- Hi! I'm a product designer based in Vancouver, with experience in brand
-    strategy, UX research, and interface design. -->
-      <!-- A Vancouver-based designer with an interest in brand strategy, UX research,
-    and experience design.
-     -->
-
-      <!-- Previously a <strong>UX/UI designer</strong> at <a
+<h3 class="slide-in" style="max-width: 100%;">
+  <div
+    class="grid-twocolumn-main-page"
+  >
+    <div>
+      <!-- <h3>Erika Wang</h3> -->
+      <h4 class="slide-in" style="position: sticky;">
+        Erika is a <strong>UX designer</strong> and a <strong
+          >perpetual hunter of good questions</strong
+        >. She finds joy in finding solutions that foster communities and
+        connections.
+<br><br>
+        Previously a <strong>UX/UI designer</strong> at <a
         href="https://www.excelar.ca/">Excelar Technologies</a
-      >. -->
-      <br /><br />
-    </h3>
-    <hr />
-    <h4 style="color: var(--dark-black);">Selected works</h4>
-    <div class="grid-twocolumn">
-      <div class="project">
-        <a href="/carriersthatcare">
-          <img style="width: 100%;" src="Ctc.png" class="project-img" />
-          <img
-            style="width: 100%;"
-            src="Ctc-hover.png"
-            class="project-img project-hover"
-          />
-          <h4 style="margin: 1% 0; padding: 0; opacity: 60%;">Canada Post</h4>
+      >.
+      </h4>
+    </div>
+    <div>
+      <div class="grid-twocolumn">
+        <div class="project">
+          <a href="/carriersthatcare">
+            <img style="width: 100%;" src="Ctc.png" class="project-img" />
+            <img
+              style="width: 100%;"
+              src="Ctc-hover.png"
+              class="project-img project-hover"
+            />
+            <h4 style="margin: 1% 0; padding: 0; opacity: 60%;">Canada Post</h4>
 
-          <h3 style="margin: 0; padding: 0;">
-            Door-to-door check-in service to keep rural seniors in touch
-          </h3>
-        </a>
-      </div>
+            <h3 style="margin: 0; padding: 0;">
+              Door-to-door check-in service to keep rural seniors in touch
+            </h3>
+          </a>
+        </div>
 
-      <!-- <div class="project">
+        <!-- <div class="project">
         <a href="/fuorisalone">
           <img style="width: 100%;
       object-fit: fill;" src="FS.png" />
@@ -68,7 +54,7 @@ import Mariner from "../assets/mariner-splash.png";
         </a>
       </div> -->
 
-      <!-- <div class="project">
+        <!-- <div class="project">
         <a href="/LOTR">
           <img style="width: 100%;" src="LOTR.png" />
           <img
@@ -86,42 +72,44 @@ import Mariner from "../assets/mariner-splash.png";
         </a>
       </div> -->
 
-      <div class="project">
-        <a href="/careflow">
-          <img style="width: 100%;" src="Careflow.png" />
-          <img
-            style="width: 100%;"
-            src="Careflow-hover.png"
-            class="project-img project-hover"
-          />
+        <div class="project">
+          <a href="/careflow">
+            <img style="width: 100%;" src="Careflow.png" />
+            <img
+              style="width: 100%;"
+              src="Careflow-hover.png"
+              class="project-img project-hover"
+            />
 
-          <h4 style="margin: 1% 0; padding: 0; opacity: 60%;">Careflow</h4>
-          <h3 style="margin: 0; padding: 0;">
-            Designing a smooth process for clinical data evaluation
-          </h3>
-        </a>
-      </div>
-      <div class="project">
-        <a href="/anirevo-app">
-          <img style="width: 100%;" src="Anirevo.png" />
-          <img
-            style="width: 100%;"
-            src="AR-hover.png"
-            class="project-img project-hover"
-          />
+            <h4 style="margin: 1% 0; padding: 0; opacity: 60%;">Careflow</h4>
+            <h3 style="margin: 0; padding: 0;">
+              Designing a smooth process for clinical data evaluation
+            </h3>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/anirevo-app">
+            <img style="width: 100%;" src="Anirevo.png" />
+            <img
+              style="width: 100%;"
+              src="AR-hover.png"
+              class="project-img project-hover"
+            />
 
-          <h4 style="margin: 1% 0; padding: 0; opacity: 60%;">Anirevo App</h4>
-          <h3 style="margin: 0; padding: 0;">Turning schedule management into a social experience</h3>
-        </a>
+            <h4 style="margin: 1% 0; padding: 0; opacity: 60%;">Anirevo App</h4>
+            <h3 style="margin: 0; padding: 0;">
+              Turning schedule management into a social experience
+            </h3>
+          </a>
+        </div>
       </div>
-    </div>
-    <!-- <br />
+      <!-- <br />
   <br />
   <br />
   <br />
   <br />
   <br /> -->
-    <!-- <a class="project" href="/sc-focus">
+      <!-- <a class="project" href="/sc-focus">
     <img
       style="border:none; width: 100%; margin-left: 0; padding: 0;"
       src="https://res.cloudinary.com/dbiwj2oo8/image/upload/v1642281828/Slide_16_9_-_10_xoxmpo.png"
@@ -129,7 +117,10 @@ import Mariner from "../assets/mariner-splash.png";
     <h2 style="margin: 0; padding: 0;">SoundCloud: Focus feature</h2>
     <h3 style="margin: 0; padding: 0;">UI Design</h3>
   </a> -->
-  </h3>
+    </div>
+  </div>
+</h3>
+<LayoutMay title="Erika Wang">
   <!-- <hr /> -->
   <!-- <img src="path4.svg" style="width: 80%;" class="landing-image fade-in" /> -->
 </LayoutMay>
