@@ -15,7 +15,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
     </h1>
   </div>
 
-  <!-- <ul class="swing-in-first">
+  <ul class="swing-in-first">
     <div class="project-list">
       <li>
         <a
@@ -24,11 +24,17 @@ const currentPath = pathname.slice(1); // remove the first "/"
         >
       </li>
       <li>
+        <a class={currentPath === "careflow" ? "active" : ""} href="/careflow">
+          CAREFLOW (INTERNSHIP)
+        </a>
+      </li>
+      <li>
         <a
-          class={currentPath === "fuorisalone" ? "active" : ""}
-          href="/fuorisalone">MILAN DESIGN WEEK</a
+          class={currentPath === "anirevo-app" ? "active" : ""}
+          href="/anirevo-app">ANIME REVOLUTION GUIDE</a
         >
       </li>
+  
       <!-- <li>
       <a
         class={currentPath === "webflow-evaluation" ? "active" : ""}
@@ -38,28 +44,29 @@ const currentPath = pathname.slice(1); // remove the first "/"
       </a>
     </li> -->
       <!-- <li>
-      <a class={currentPath === "LOTR" ? "active" : ""} href="/LOTR">
-        LEGACY OF THE RIFT
-      </a>
-    </li> -->
-      <li>
+        <a class={currentPath === "LOTR" ? "active" : ""} href="/LOTR">
+          LEGACY OF THE RIFT
+        </a>
+      </li> -->
+      <!-- <li>
         <a class={currentPath === "mariner" ? "active" : ""} href="/mariner">
           MARINER BREWING
         </a>
-      </li>
+      </li> -->
     </div>
 
     <div class="about-resume">
-      <li>
-        <a class={currentPath === "careflow" ? "active" : ""} href="/careflow">
-          CAREFLOW (INTERNSHIP)
-        </a>
+        <li>
+        <a
+          class={currentPath === "fuorisalone" ? "active" : ""}
+          href="/fuorisalone">MILAN DESIGN WEEK</a
+        >
       </li>
       <!-- <li>
-      <a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus"
-        >SOUNDCLOUD</a
-      >
-    </li> -->
+        <a class={currentPath === "sc-focus" ? "active" : ""} href="/sc-focus"
+          >SOUNDCLOUD</a
+        >
+      </li> -->
     </div>
     <div class="about-resume">
       <li>
@@ -74,5 +81,5 @@ const currentPath = pathname.slice(1); // remove the first "/"
         >
       </li>
     </div>
-  </ul> -->
+  </ul>
 </div>
