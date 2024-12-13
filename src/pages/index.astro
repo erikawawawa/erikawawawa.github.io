@@ -1,23 +1,31 @@
 ---
-import LayoutMay from "../layouts/Layout-May.astro";
+import LayoutJuly from "../layouts/Layout-May copy.astro";
+import Navbar from "../components/Navbar.astro";
 ---
-<h3 class="slide-in" style="max-width: 100%;">
-  <div
-    class="grid-twocolumn-main-page"
-  >
+
+<LayoutJuly title="Erika Wang">
+  <br /><br />
+
+  <h3 class="slide-in">
     <div>
-      <!-- <h3>Erika Wang</h3> -->
-      <h4 class="slide-in" style="position: sticky;">
-        Erika is a <strong>UX designer</strong> and a <strong
-          >perpetual hunter of good questions</strong
-        >. She finds joy in finding solutions that foster communities and
-        connections.
-<br><br>
-        Previously a <strong>UX/UI designer</strong> at <a
-        href="https://www.excelar.ca/">Excelar Technologies</a
-      >.
-      </h4>
+      <h3 class="slide-in" style="max-width: 100%;">
+        <h4>Welcome!</h4>
+        <h3 class="slide-in" style="max-width: 100%;">
+          Erika is a <strong>UX designer</strong> and a <strong
+            >perpetual hunter of good questions</strong
+          >. She finds joy in finding solutions that foster communities and
+          connections.
+        </h3>
+
+        <h4>
+          Previously a <strong>UX/UI designer</strong> at <a
+            href="https://www.excelar.ca/">Excelar Technologies</a
+          >.
+        </h4>
+      </h3>
     </div>
+    <hr />
+    <p>UX DESIGN PROJECTS</p>
     <div>
       <div class="grid-twocolumn">
         <div class="project">
@@ -119,9 +127,28 @@ import LayoutMay from "../layouts/Layout-May.astro";
     <h3 style="margin: 0; padding: 0;">UI Design</h3>
   </a> -->
     </div>
-  </div>
-</h3>
-<LayoutMay title="Erika Wang">
-  <!-- <hr /> -->
-  <!-- <img src="path4.svg" style="width: 80%;" class="landing-image fade-in" /> -->
-</LayoutMay>
+    <hr />
+    <p>BRAND DESIGN PROJECTS</p>
+    <div class="grid-twocolumn">
+      <div class="project">
+        <a href="/fuorisalone">
+          <img style="width: 100%;
+      object-fit: fill;" src="FS.png" />
+          <img
+            style="width: 100%;"
+            src="FS-hover.png"
+            class="project-img project-hover"
+          />
+
+          <h4 style="margin: 1% 0; padding: 0; opacity: 60%;">Fuori Salone</h4>
+          <h3 style="margin: 0; padding: 0;">
+            An adventure-based web experience to promote design exhibitions in
+            Milan
+          </h3>
+        </a>
+      </div>
+    </div>
+  </h3>
+</LayoutJuly>
+<!-- <hr /> -->
+<!-- <img src="path4.svg" style="width: 80%;" class="landing-image fade-in" /> -->
